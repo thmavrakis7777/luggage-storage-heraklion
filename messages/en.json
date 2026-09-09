@@ -196,6 +196,7 @@
       "duration": "{days, plural, one {# day} other {# days}}",
       "dropoffTime": "Drop-off Time",
       "pickupTime": "Pick-up Time",
+      "selectTime": "Select Time",
       "advanceBookingWarning": "Advance booking required for this time. Staff is available on-site by appointment.",
       "luggageSize": "Luggage",
       "backpack": "Backpack",

@@ -196,6 +196,7 @@
       "duration": "{days, plural, one {# ημέρα} other {# ημέρες}}",
       "dropoffTime": "Ώρα Παράδοσης",
       "pickupTime": "Ώρα Παραλαβής",
+      "selectTime": "Επιλέξτε Ώρα",
       "advanceBookingWarning": "Απαιτείται προκράτηση για αυτή την ώρα. Το προσωπικό είναι διαθέσιμο επί τόπου κατόπιν ραντεβού.",
       "luggageSize": "Αποσκευές",
       "backpack": "Σακίδιο",

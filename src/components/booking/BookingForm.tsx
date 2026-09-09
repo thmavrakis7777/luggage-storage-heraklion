@@ -17,7 +17,7 @@ import {
   LUGGAGE_SIZES,
   type LuggageQuantities,
 } from '@/lib/pricing';
-import { isAdvanceBookingRequired } from '@/lib/hours';
+import { isAdvanceBookingRequired, timeOptionsFor } from '@/lib/hours';
 import type { Locale } from '@/i18n/config';
 
 const inputClass =
@@ -49,6 +49,16 @@ export function BookingForm() {
     [dropoffDate, pickupDate]
   );
   const price = useMemo(() => calculatePrice(items, storageDays), [items, storageDays]);
+
+  const dropoffTimeOptions = useMemo(
+    () => (dropoffDate ? timeOptionsFor(dropoffDate) : []),
+    [dropoffDate]
+  );
+  const pickupTimeOptions = useMemo(() => {
+    if (!pickupDate) return [];
+    const options = timeOptionsFor(pickupDate);
+    return pickupDate === dropoffDate ? options.filter((time) => time > dropoffTime) : options;
+  }, [pickupDate, dropoffDate, dropoffTime]);
 
   const needsAdvanceBooking = useMemo(
     () => (dropoffDate && dropoffTime ? isAdvanceBookingRequired(dropoffDate, dropoffTime) : false),
@@ -177,6 +187,8 @@ export function BookingForm() {
               min={today}
               onChange={(e) => {
                 setDropoffDate(e.target.value);
+                setDropoffTime('');
+                setPickupTime('');
                 if (pickupDate && pickupDate < e.target.value) setPickupDate(e.target.value);
               }}
               className={inputClass}
@@ -194,7 +206,10 @@ export function BookingForm() {
               type="date"
               value={pickupDate}
               min={dropoffDate || today}
-              onChange={(e) => setPickupDate(e.target.value)}
+              onChange={(e) => {
+                setPickupDate(e.target.value);
+                setPickupTime('');
+              }}
               className={inputClass}
             />
           </div>
@@ -214,13 +229,22 @@ export function BookingForm() {
           </label>
           <div className="relative">
             <ClockIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-ink-400" />
-            <input
+            <select
               id="dropoff"
-              type="time"
               value={dropoffTime}
               onChange={(e) => setDropoffTime(e.target.value)}
-              className={inputClass}
-            />
+              disabled={!dropoffDate}
+              className={`${inputClass} appearance-none disabled:opacity-60`}
+            >
+              <option value="" disabled>
+                {t('form.selectTime')}
+              </option>
+              {dropoffTimeOptions.map((time) => (
+                <option key={time} value={time}>
+                  {time}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
         <div>
@@ -229,13 +253,22 @@ export function BookingForm() {
           </label>
           <div className="relative">
             <ClockIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-ink-400" />
-            <input
+            <select
               id="pickup"
-              type="time"
               value={pickupTime}
               onChange={(e) => setPickupTime(e.target.value)}
-              className={inputClass}
-            />
+              disabled={!pickupDate}
+              className={`${inputClass} appearance-none disabled:opacity-60`}
+            >
+              <option value="" disabled>
+                {t('form.selectTime')}
+              </option>
+              {pickupTimeOptions.map((time) => (
+                <option key={time} value={time}>
+                  {time}
+                </option>
+              ))}
+            </select>
           </div>
         </div>
       </div>

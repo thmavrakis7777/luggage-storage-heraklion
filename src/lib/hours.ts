@@ -69,3 +69,40 @@ export function isAdvanceBookingRequired(dropoffDate: string, dropoffTime: strin
   if (weekday === 0) return true;
   return ADVANCE_BOOKING_AFTERNOON_DAYS.has(weekday) && dropoffTime >= ADVANCE_BOOKING_CUTOFF;
 }
+
+export const TIME_SLOT_INTERVAL_MINUTES = 30;
+
+function minutesOf(hhmm: string): number {
+  const [h, m] = hhmm.split(':').map(Number);
+  return h * 60 + m;
+}
+
+function toHHMM(totalMinutes: number): string {
+  const h = Math.floor(totalMinutes / 60)
+    .toString()
+    .padStart(2, '0');
+  const m = (totalMinutes % 60).toString().padStart(2, '0');
+  return `${h}:${m}`;
+}
+
+/**
+ * Selectable time-of-day options for a given calendar date, generated from
+ * that date's weekday opening hours at TIME_SLOT_INTERVAL_MINUTES intervals
+ * (inclusive of both the opening and closing time). Used to populate the
+ * drop-off/pick-up time selects so only in-hours times are ever offered.
+ */
+export function timeOptionsFor(dateStr: string): string[] {
+  const { open, close } = OPENING_HOURS[weekdayOf(dateStr)];
+  const start = minutesOf(open);
+  const end = minutesOf(close);
+  const options: string[] = [];
+  for (let t = start; t <= end; t += TIME_SLOT_INTERVAL_MINUTES) {
+    options.push(toHHMM(t));
+  }
+  return options;
+}
+
+/** Server-authoritative check: is this time one of the valid in-hours slots for this date? */
+export function isValidTimeSlot(dateStr: string, time: string): boolean {
+  return timeOptionsFor(dateStr).includes(time);
+}

@@ -196,6 +196,7 @@
       "duration": "{days, plural, one {# jour} other {# jours}}",
       "dropoffTime": "Heure de Dépôt",
       "pickupTime": "Heure de Retrait",
+      "selectTime": "Sélectionner l'Heure",
       "advanceBookingWarning": "Réservation à l'avance requise pour cet horaire. Le personnel n'est disponible sur place que sur rendez-vous.",
       "luggageSize": "Bagages",
       "backpack": "Sac à Dos",

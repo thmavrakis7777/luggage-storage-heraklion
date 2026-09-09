@@ -1,5 +1,6 @@
 import { z } from 'zod';
 import { LUGGAGE_SIZES } from './pricing';
+import { isValidTimeSlot } from './hours';
 import { locales } from '@/i18n/config';
 
 const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'invalid_date');
@@ -43,6 +44,14 @@ export const bookingInputSchema = z
   })
   .refine((data) => data.pickupDate !== data.dropoffDate || data.pickupTime > data.dropoffTime, {
     message: 'pickup_before_dropoff_time',
+    path: ['pickupTime'],
+  })
+  .refine((data) => isValidTimeSlot(data.dropoffDate, data.dropoffTime), {
+    message: 'dropoff_time_outside_hours',
+    path: ['dropoffTime'],
+  })
+  .refine((data) => isValidTimeSlot(data.pickupDate, data.pickupTime), {
+    message: 'pickup_time_outside_hours',
     path: ['pickupTime'],
   });
 

@@ -196,6 +196,7 @@
       "duration": "{days, plural, one {# giorno} other {# giorni}}",
       "dropoffTime": "Orario di Consegna",
       "pickupTime": "Orario di Ritiro",
+      "selectTime": "Seleziona Orario",
       "advanceBookingWarning": "Prenotazione anticipata richiesta per questo orario. Il personale è disponibile in sede solo su appuntamento.",
       "luggageSize": "Bagagli",
       "backpack": "Zaino",

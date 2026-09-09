@@ -196,6 +196,7 @@
       "duration": "{days, plural, one {# dag} other {# dagen}}",
       "dropoffTime": "Inlevertijd",
       "pickupTime": "Ophaaltijd",
+      "selectTime": "Selecteer Tijd",
       "advanceBookingWarning": "Voor dit tijdstip is vooraf boeken verplicht. Personeel is alleen op afspraak aanwezig.",
       "luggageSize": "Bagage",
       "backpack": "Rugzak",

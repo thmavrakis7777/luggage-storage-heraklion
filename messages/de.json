@@ -196,6 +196,7 @@
       "duration": "{days, plural, one {# Tag} other {# Tage}}",
       "dropoffTime": "Abgabezeit",
       "pickupTime": "Abholzeit",
+      "selectTime": "Uhrzeit Auswählen",
       "advanceBookingWarning": "Für diese Zeit ist eine Vorausbuchung erforderlich. Personal ist nur nach Vereinbarung vor Ort verfügbar.",
       "luggageSize": "Gepäck",
       "backpack": "Rucksack",
