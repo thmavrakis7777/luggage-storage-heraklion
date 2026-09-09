@@ -50,30 +50,41 @@ export async function POST(req: NextRequest) {
     quantity: input.items[size],
   }));
 
-  const supabase = getSupabaseClient();
+  let reference: string;
+  try {
+    const supabase = getSupabaseClient();
 
-  const { data, error } = await supabase.rpc('create_booking', {
-    p_customer_name: input.customerName,
-    p_customer_phone: input.customerPhone,
-    p_dropoff_date: input.dropoffDate,
-    p_pickup_date: input.pickupDate,
-    p_dropoff_time: input.dropoffTime,
-    p_pickup_time: input.pickupTime,
-    p_items: itemsPayload,
-    p_language: input.language,
-  });
+    const { data, error } = await supabase.rpc('create_booking', {
+      p_customer_name: input.customerName,
+      p_customer_phone: input.customerPhone,
+      p_dropoff_date: input.dropoffDate,
+      p_pickup_date: input.pickupDate,
+      p_dropoff_time: input.dropoffTime,
+      p_pickup_time: input.pickupTime,
+      p_items: itemsPayload,
+      p_language: input.language,
+    });
 
-  if (error || !data || data.length === 0) {
-    console.error('[api/book] Supabase insert failed:', error?.message);
+    if (error || !data || data.length === 0) {
+      console.error('[api/book] Supabase insert failed:', error?.message);
+      return NextResponse.json({ error: 'booking_failed' }, { status: 500 });
+    }
+
+    reference = data[0].booking_reference;
+  } catch (err) {
+    // Never let a Supabase/config failure surface its message to the client —
+    // no fake success, no technical detail, just a generic failure the
+    // client already maps to a localized error string.
+    console.error('[api/book] Unexpected error creating booking:', err instanceof Error ? err.message : err);
     return NextResponse.json({ error: 'booking_failed' }, { status: 500 });
   }
 
-  const booking = data[0];
+  // The booking is already saved at this point — a failure below (e.g. the
+  // best-effort Telegram notification) must never turn into a false
+  // "booking_failed" response for a booking that actually succeeded.
   const storageDays = computeStorageDays(input.dropoffDate, input.pickupDate);
   const price = calculatePrice(input.items, storageDays);
+  await notifyTelegram({ reference, input, price });
 
-  // Best-effort — never blocks or fails the booking response.
-  await notifyTelegram({ reference: booking.booking_reference, input, price });
-
-  return NextResponse.json({ reference: booking.booking_reference }, { status: 201 });
+  return NextResponse.json({ reference }, { status: 201 });
 }
