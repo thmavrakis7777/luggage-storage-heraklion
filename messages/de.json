@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "title": "Gepäckaufbewahrung Heraklion Stadtzentrum | Online Buchen & 10% Sparen",
+    "description": "Sichere Gepäckaufbewahrung im Herzen von Heraklion, Kreta. Jede Gepäckgröße, flexible Zeiten, freundlicher Familienbetrieb. Jetzt online buchen in 30 Sekunden und 10% sparen."
+  },
+  "nav": {
+    "home": "Startseite",
+    "luggageStorage": "Gepäckaufbewahrung",
+    "pricing": "Preise",
+    "howItWorks": "So Funktioniert's",
+    "location": "Standort",
+    "faq": "FAQ",
+    "bookNow": "Jetzt Buchen"
+  },
+  "hero": {
+    "eyebrow": "Heraklion Stadtzentrum",
+    "title": "Gepäckaufbewahrung im Zentrum von Heraklion",
+    "subtitle": "Geben Sie Ihr Gepäck in wenigen Minuten ab und erkunden Sie Heraklion ohne Gepäck. 100% sicher, jede Gepäckgröße, zentrale Lage.",
+    "ctaPrimary": "Jetzt Buchen — 10% Sparen",
+    "ctaSecondary": "So Finden Sie Uns"
+  },
+  "walkIn": {
+    "title": "Spontanbesuche Willkommen — Keine Reservierung Nötig",
+    "subtitle": "Buchen Sie jederzeit online für 10% Rabatt (25% ab 3 Tagen Aufbewahrung). Vorausbuchung erforderlich Mo, Mi & Sa nach 15:00 Uhr sowie sonntags ganztägig."
+  },
+  "benefits": {
+    "price": "Ab €3 / Tag",
+    "discount": "10% Rabatt bei Online-Buchung",
+    "payment": "Bar oder Karte vor Ort",
+    "anySize": "Jede Gepäckgröße",
+    "secure": "100% Sicher",
+    "longStay": "25% Rabatt ab 3 Tagen"
+  },
+  "howItWorks": {
+    "eyebrow": "So Funktioniert's",
+    "title": "Ihr Gepäck in 3 Einfachen Schritten Verstauen",
+    "step1": {
+      "number": "01",
+      "title": "Online Buchen",
+      "description": "Reservieren Sie Ihre Gepäckaufbewahrung in etwa 30 Sekunden."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Gepäck Abgeben",
+      "description": "Kommen Sie zu unserem zentralen Standort in Heraklion."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Heraklion Erkunden",
+      "description": "Genießen Sie die Stadt, ohne Ihr Gepäck zu tragen."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Preise",
+    "title": "Einfache, Transparente Preise",
+    "subtitle": "Zahlung pro Gepäckstück, pro Tag. Jede Gepäckgröße wird angenommen.",
+    "backpack": {
+      "name": "Rucksack",
+      "price": "€3",
+      "unit": "/ Tag"
+    },
+    "cabin": {
+      "name": "Kabinengröße / Mittel",
+      "price": "€4",
+      "unit": "/ Tag"
+    },
+    "large": {
+      "name": "Groß",
+      "price": "€5",
+      "unit": "/ Tag"
+    },
+    "anySize": "Jede Gepäckgröße wird angenommen. Kombinieren Sie verschiedene Größen in einer Buchung.",
+    "specialRates": "Buchung für eine große Gruppe? Fragen Sie uns nach unseren Sonderkonditionen.",
+    "discountNote": "Online buchen und automatisch 10% Rabatt erhalten. Bleiben Sie 3 Tage oder länger und sparen Sie stattdessen 25%.",
+    "cta": "Jetzt Buchen — 10% Sparen"
+  },
+  "why": {
+    "eyebrow": "Warum Wir",
+    "title": "Ein Vertrauenswürdiger, Freundlicher Familienbetrieb",
+    "items": {
+      "secure": {
+        "title": "Sichere Aufbewahrung",
+        "description": "Ihr Gepäck wird bei uns sicher aufbewahrt, so lange Sie möchten."
+      },
+      "flexible": {
+        "title": "Flexibler Service",
+        "description": "Geben Sie Ihr Gepäck ab und holen Sie es ab, wann es Ihnen passt."
+      },
+      "family": {
+        "title": "Freundlicher Familienbetrieb",
+        "description": "Ein persönlicher, herzlicher Service — kein anonymer Schließfachraum."
+      },
+      "central": {
+        "title": "Zentrale Lage in Heraklion",
+        "description": "Nur Minuten von der Kathedrale, dem Löwenplatz, dem Hafen und dem Flughafenbus entfernt."
+      },
+      "anySize": {
+        "title": "Jede Gepäckgröße",
+        "description": "Rucksäcke, Handgepäck, große Koffer — wir bewahren alles auf."
+      },
+      "toilet": {
+        "title": "Kostenlose Toilette",
+        "description": "Für unsere Kunden steht eine kostenlose Toilette zur Verfügung."
+      },
+      "transfer": {
+        "title": "Flughafentransfer",
+        "description": "Wir können Ihren Transfer von und zum Flughafen Heraklion organisieren."
+      }
+    }
+  },
+  "location": {
+    "eyebrow": "Standort",
+    "title": "Finden Sie Uns im Zentrum von Heraklion",
+    "addressLabel": "Adresse",
+    "hoursLabel": "Öffnungszeiten",
+    "distances": {
+      "cathedral": "1 Min. von der Agios-Minas-Kathedrale",
+      "lions": "5 Min. vom Löwenplatz",
+      "port": "15 Min. vom Hafen von Heraklion",
+      "busStation": "1 Min. von der Flughafenbus-Haltestelle",
+      "airport": "6,5 km vom Flughafen Heraklion"
+    },
+    "openMaps": "In Google Maps Öffnen",
+    "call": "Anrufen",
+    "whatsapp": "WhatsApp"
+  },
+  "hours": {
+    "weekdays": "Montag–Freitag",
+    "saturday": "Samstag",
+    "sunday": "Sonntag",
+    "advanceBookingNote": "Personal ist nur nach Vereinbarung vor Ort: Mo, Mi & Sa nach 15:00 Uhr sowie sonntags ganztägig — in diesen Zeiten ist eine Vorausbuchung erforderlich."
+  },
+  "transfer": {
+    "eyebrow": "Flughafentransfer",
+    "title": "Flughafentransfer",
+    "description": "Wir können Flughafentransfers für unsere Kunden organisieren. Kontaktieren Sie uns und wir kümmern uns um die Details.",
+    "cta": "Nach Flughafentransfer Fragen"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Häufig Gestellte Fragen",
+    "items": {
+      "size": {
+        "question": "Gibt es ein Limit für die Gepäckgröße?",
+        "answer": "Nein — wir nehmen jede Gepäckgröße an, von kleinen Rucksäcken bis zu großen Koffern, und Sie können verschiedene Größen in einer Buchung kombinieren."
+      },
+      "security": {
+        "question": "Ist mein Gepäck bei Ihnen sicher?",
+        "answer": "Ja. Ihr Gepäck wird an unserem zentralen Standort in Heraklion sicher aufbewahrt, so lange Sie möchten."
+      },
+      "payment": {
+        "question": "Wie bezahle ich?",
+        "answer": "Sie bezahlen vor Ort in bar oder mit Karte. Es gibt keine Online-Zahlung — die Online-Buchung reserviert lediglich Ihren Platz und gibt Ihnen einen Rabatt."
+      },
+      "discount": {
+        "question": "Wie funktionieren die Online-Rabatte?",
+        "answer": "Buchen Sie online und erhalten Sie automatisch 10% Rabatt — kein Gutscheincode nötig. Bleiben Sie 3 Tage oder länger, erhalten Sie stattdessen 25% Rabatt."
+      },
+      "groups": {
+        "question": "Bieten Sie Tarife für große Gruppen an?",
+        "answer": "Kontaktieren Sie uns direkt, wir besprechen gerne Sonderkonditionen für große Gruppen."
+      },
+      "account": {
+        "question": "Muss ich ein Konto erstellen, um zu buchen?",
+        "answer": "Kein Konto, kein Passwort, keine E-Mail nötig. Geben Sie einfach Ihren Namen, Ihre Telefonnummer und die Aufbewahrungsdetails ein — das dauert etwa 30 Sekunden."
+      },
+      "walkIn": {
+        "question": "Kann ich einfach ohne Buchung vorbeikommen?",
+        "answer": "Ja — Spontanbesuche sind während unserer regulären Öffnungszeiten willkommen. Eine Vorausbuchung ist nur Mo, Mi & Sa nach 15:00 Uhr sowie sonntags ganztägig erforderlich, wenn Personal nur nach Vereinbarung vor Ort ist."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Geben Sie Ihr Gepäck Ab. Genießen Sie Heraklion.",
+    "subtitle": "Online Buchen & 10% Sparen.",
+    "cta": "Jetzt Buchen"
+  },
+  "footer": {
+    "tagline": "Sichere, freundliche Gepäckaufbewahrung im Herzen von Heraklion, Kreta.",
+    "quickLinksTitle": "Schnellzugriff",
+    "contactTitle": "Kontakt",
+    "languageTitle": "Sprache",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "booking": {
+    "eyebrow": "Jetzt Buchen",
+    "title": "Ihre Gepäckaufbewahrung Reservieren",
+    "subtitle": "Dauert etwa 30 Sekunden. Kein Konto, keine E-Mail, keine Online-Zahlung.",
+    "form": {
+      "name": "Vollständiger Name",
+      "namePlaceholder": "Ihr Name",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "z. B. +30 690 000 0000",
+      "dropoffDate": "Abgabedatum",
+      "pickupDate": "Abholdatum",
+      "duration": "{days, plural, one {# Tag} other {# Tage}}",
+      "dropoffTime": "Abgabezeit",
+      "pickupTime": "Abholzeit",
+      "advanceBookingWarning": "Für diese Zeit ist eine Vorausbuchung erforderlich. Personal ist nur nach Vereinbarung vor Ort verfügbar.",
+      "luggageSize": "Gepäck",
+      "backpack": "Rucksack",
+      "cabin": "Kabinengröße / Mittel",
+      "large": "Groß",
+      "submit": "Buchung Bestätigen",
+      "submitting": "Wird gebucht..."
+    },
+    "summary": {
+      "title": "Preisübersicht",
+      "duration": "Dauer",
+      "bags": "Gepäckstücke Gesamt",
+      "original": "Originalpreis",
+      "discount": "{percent}% Rabatt",
+      "final": "Gesamtbetrag vor Ort",
+      "paymentNote": "Zahlung vor Ort — bar oder mit Karte."
+    },
+    "errors": {
+      "name": "Bitte geben Sie Ihren Namen ein.",
+      "phone": "Bitte geben Sie eine gültige Telefonnummer ein.",
+      "dropoffDate": "Bitte wählen Sie ein Abgabedatum.",
+      "pickupDate": "Bitte wählen Sie ein Abholdatum.",
+      "dateInPast": "Bitte wählen Sie heute oder ein zukünftiges Datum.",
+      "dropoffTime": "Bitte wählen Sie eine Abgabezeit.",
+      "pickupTime": "Bitte wählen Sie eine Abholzeit.",
+      "pickupBeforeDropoffDate": "Das Abholdatum darf nicht vor dem Abgabedatum liegen.",
+      "pickupBeforeDropoffTime": "Bei einer Buchung am selben Tag muss die Abholzeit nach der Abgabezeit liegen.",
+      "noItems": "Bitte wählen Sie mindestens 1 Gepäckstück.",
+      "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per WhatsApp.",
+      "rateLimited": "Zu viele Versuche. Bitte warten Sie einen Moment und versuchen Sie es erneut."
+    }
+  },
+  "success": {
+    "title": "Ihre Gepäckaufbewahrung ist reserviert. Ihre Reise kann beginnen.",
+    "reference": "Buchungsnummer",
+    "details": "Buchungsdetails",
+    "dates": "Daten",
+    "duration": "Dauer",
+    "dropoffTime": "Abgabezeit",
+    "pickupTime": "Abholzeit",
+    "luggage": "Gepäck",
+    "bags": "Gepäckstücke Gesamt",
+    "original": "Originalpreis",
+    "discount": "{percent}% Rabatt",
+    "final": "Gesamtbetrag vor Ort",
+    "paymentNote": "Zahlung vor Ort — bar oder mit Karte.",
+    "addressTitle": "So Finden Sie Uns",
+    "openMaps": "In Google Maps Öffnen",
+    "call": "Anrufen",
+    "whatsapp": "WhatsApp",
+    "backHome": "Zurück zur Startseite",
+    "notFound": "Wir konnten diese Buchung nicht finden. Falls Sie glauben, dass dies ein Fehler ist, kontaktieren Sie uns per WhatsApp."
+  },
+  "mobileBar": {
+    "book": "Buchen",
+    "whatsapp": "WhatsApp",
+    "call": "Anrufen",
+    "map": "Karte"
+  }
+}

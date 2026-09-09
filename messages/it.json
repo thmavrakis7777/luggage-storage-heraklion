@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "title": "Deposito Bagagli Heraklion Centro | Prenota Online e Risparmia il 10%",
+    "description": "Deposito bagagli sicuro nel cuore di Heraklion, Creta. Ogni misura di bagaglio, orari flessibili, gestione familiare e cordiale. Prenota online in 30 secondi e ottieni il 10% di sconto."
+  },
+  "nav": {
+    "home": "Home",
+    "luggageStorage": "Deposito Bagagli",
+    "pricing": "Prezzi",
+    "howItWorks": "Come Funziona",
+    "location": "Dove Siamo",
+    "faq": "FAQ",
+    "bookNow": "Prenota Ora"
+  },
+  "hero": {
+    "eyebrow": "Heraklion Centro",
+    "title": "Deposito Bagagli nel Centro di Heraklion",
+    "subtitle": "Lascia i tuoi bagagli in pochi minuti ed esplora Heraklion a mani libere. 100% sicuro, ogni misura di bagaglio, posizione centrale.",
+    "ctaPrimary": "Prenota Ora — Sconto 10%",
+    "ctaSecondary": "Come Trovarci"
+  },
+  "walkIn": {
+    "title": "Accettiamo Clienti Senza Prenotazione",
+    "subtitle": "Prenota online in qualsiasi momento per il 10% di sconto (25% per soggiorni di 3+ giorni). Prenotazione anticipata richiesta lun, mer e sab dopo le 15:00, e tutta la domenica."
+  },
+  "benefits": {
+    "price": "Da €3 / Giorno",
+    "discount": "10% di Sconto su Prenotazione Online",
+    "payment": "Contanti o Carta in Negozio",
+    "anySize": "Qualsiasi Misura di Bagaglio",
+    "secure": "100% Sicuro",
+    "longStay": "25% di Sconto per 3+ Giorni"
+  },
+  "howItWorks": {
+    "eyebrow": "Come Funziona",
+    "title": "Deposita i Tuoi Bagagli in 3 Semplici Passaggi",
+    "step1": {
+      "number": "01",
+      "title": "Prenota Online",
+      "description": "Prenota il tuo deposito bagagli in circa 30 secondi."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Lascia i Tuoi Bagagli",
+      "description": "Vieni presso la nostra sede centrale a Heraklion."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Esplora Heraklion",
+      "description": "Goditi la città senza portare i bagagli."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Prezzi",
+    "title": "Prezzi Semplici e Trasparenti",
+    "subtitle": "Paghi per bagaglio, per giorno. Accettiamo qualsiasi misura.",
+    "backpack": {
+      "name": "Zaino",
+      "price": "€3",
+      "unit": "/ giorno"
+    },
+    "cabin": {
+      "name": "Bagaglio a Mano / Medio",
+      "price": "€4",
+      "unit": "/ giorno"
+    },
+    "large": {
+      "name": "Grande",
+      "price": "€5",
+      "unit": "/ giorno"
+    },
+    "anySize": "Accettiamo qualsiasi misura di bagaglio. Puoi combinare misure diverse nella stessa prenotazione.",
+    "specialRates": "Prenoti per un gruppo numeroso? Chiedici le nostre tariffe speciali.",
+    "discountNote": "Prenota online per il 10% di sconto — automaticamente. Resta 3 giorni o più e risparmia il 25% invece.",
+    "cta": "Prenota Ora — Sconto 10%"
+  },
+  "why": {
+    "eyebrow": "Perché Sceglierci",
+    "title": "Un'Attività Familiare Affidabile e Cordiale",
+    "items": {
+      "secure": {
+        "title": "Deposito Sicuro",
+        "description": "I tuoi bagagli sono al sicuro con noi per tutto il tempo di cui hai bisogno."
+      },
+      "flexible": {
+        "title": "Servizio Flessibile",
+        "description": "Lascia e ritira i tuoi bagagli negli orari più comodi per te."
+      },
+      "family": {
+        "title": "Attività Familiare e Cordiale",
+        "description": "Un servizio personale e accogliente — non un anonimo deposito bagagli."
+      },
+      "central": {
+        "title": "Posizione Centrale a Heraklion",
+        "description": "A pochi minuti dalla cattedrale, da Piazza dei Leoni, dal porto e dal bus per l'aeroporto."
+      },
+      "anySize": {
+        "title": "Qualsiasi Misura di Bagaglio",
+        "description": "Zaini, bagagli a mano, valigie grandi — depositiamo di tutto."
+      },
+      "toilet": {
+        "title": "Bagno Gratuito",
+        "description": "Un bagno gratuito è disponibile per i nostri clienti."
+      },
+      "transfer": {
+        "title": "Transfer Aeroportuale",
+        "description": "Possiamo organizzare il tuo transfer da e per l'Aeroporto di Heraklion."
+      }
+    }
+  },
+  "location": {
+    "eyebrow": "Dove Siamo",
+    "title": "Trovaci nel Centro di Heraklion",
+    "addressLabel": "Indirizzo",
+    "hoursLabel": "Orari di Apertura",
+    "distances": {
+      "cathedral": "1 min dalla Cattedrale di San Minas",
+      "lions": "5 min da Piazza dei Leoni",
+      "port": "15 min dal Porto di Heraklion",
+      "busStation": "1 min dalla fermata del bus per l'aeroporto",
+      "airport": "6,5 km dall'Aeroporto di Heraklion"
+    },
+    "openMaps": "Apri in Google Maps",
+    "call": "Chiama",
+    "whatsapp": "WhatsApp"
+  },
+  "hours": {
+    "weekdays": "Lunedì–Venerdì",
+    "saturday": "Sabato",
+    "sunday": "Domenica",
+    "advanceBookingNote": "Il personale è in sede solo su appuntamento lun, mer e sab dopo le 15:00, e tutta la domenica — in questi orari è richiesta la prenotazione anticipata."
+  },
+  "transfer": {
+    "eyebrow": "Transfer Aeroportuale",
+    "title": "Transfer Aeroportuale",
+    "description": "Possiamo organizzare transfer da e per l'aeroporto per i nostri clienti. Contattaci e ci occuperemo dei dettagli.",
+    "cta": "Chiedi Info sul Transfer Aeroportuale"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Domande Frequenti",
+    "items": {
+      "size": {
+        "question": "C'è un limite alla misura del bagaglio?",
+        "answer": "No — accettiamo qualsiasi misura di bagaglio, da piccoli zaini a valigie grandi, e puoi combinare misure diverse nella stessa prenotazione."
+      },
+      "security": {
+        "question": "I miei bagagli sono al sicuro con voi?",
+        "answer": "Sì. I tuoi bagagli vengono custoditi in sicurezza presso la nostra sede centrale a Heraklion per tutto il tempo di cui hai bisogno."
+      },
+      "payment": {
+        "question": "Come si paga?",
+        "answer": "Si paga in negozio, in contanti o con carta. Non c'è pagamento online: la prenotazione online serve solo a riservare il tuo posto e a darti uno sconto."
+      },
+      "discount": {
+        "question": "Come funzionano gli sconti online?",
+        "answer": "Prenota online e ricevi automaticamente il 10% di sconto — nessun codice promozionale necessario. Resta 3 giorni o più e riceverai il 25% di sconto invece."
+      },
+      "groups": {
+        "question": "Offrite tariffe per gruppi numerosi?",
+        "answer": "Contattaci direttamente e saremo lieti di parlarti delle tariffe speciali per gruppi numerosi."
+      },
+      "account": {
+        "question": "Devo creare un account per prenotare?",
+        "answer": "Nessun account, nessuna password, nessuna email richiesta. Basta inserire nome, numero di telefono e dettagli del deposito — richiede circa 30 secondi."
+      },
+      "walkIn": {
+        "question": "Posso venire direttamente senza prenotare?",
+        "answer": "Sì — accettiamo clienti senza prenotazione durante i nostri orari regolari. La prenotazione anticipata è richiesta solo lun, mer e sab dopo le 15:00, e tutta la domenica, quando il personale è in sede solo su appuntamento."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Lascia i Tuoi Bagagli. Goditi Heraklion.",
+    "subtitle": "Prenota Online e Risparmia il 10%.",
+    "cta": "Prenota Ora"
+  },
+  "footer": {
+    "tagline": "Deposito bagagli sicuro e cordiale nel cuore di Heraklion, Creta.",
+    "quickLinksTitle": "Link Rapidi",
+    "contactTitle": "Contatti",
+    "languageTitle": "Lingua",
+    "rights": "Tutti i diritti riservati."
+  },
+  "booking": {
+    "eyebrow": "Prenota Ora",
+    "title": "Prenota il Tuo Deposito Bagagli",
+    "subtitle": "Richiede circa 30 secondi. Nessun account, nessuna email, nessun pagamento online.",
+    "form": {
+      "name": "Nome Completo",
+      "namePlaceholder": "Il tuo nome",
+      "phone": "Numero di Telefono",
+      "phonePlaceholder": "es. +30 690 000 0000",
+      "dropoffDate": "Data di Consegna",
+      "pickupDate": "Data di Ritiro",
+      "duration": "{days, plural, one {# giorno} other {# giorni}}",
+      "dropoffTime": "Orario di Consegna",
+      "pickupTime": "Orario di Ritiro",
+      "advanceBookingWarning": "Prenotazione anticipata richiesta per questo orario. Il personale è disponibile in sede solo su appuntamento.",
+      "luggageSize": "Bagagli",
+      "backpack": "Zaino",
+      "cabin": "Bagaglio a Mano / Medio",
+      "large": "Grande",
+      "submit": "Conferma Prenotazione",
+      "submitting": "Prenotazione in corso..."
+    },
+    "summary": {
+      "title": "Riepilogo Prezzo",
+      "duration": "Durata",
+      "bags": "Bagagli Totali",
+      "original": "Prezzo Originale",
+      "discount": "{percent}% Sconto",
+      "final": "Totale da Pagare in Negozio",
+      "paymentNote": "Paga in negozio — contanti o carta accettati."
+    },
+    "errors": {
+      "name": "Inserisci il tuo nome.",
+      "phone": "Inserisci un numero di telefono valido.",
+      "dropoffDate": "Seleziona una data di consegna.",
+      "pickupDate": "Seleziona una data di ritiro.",
+      "dateInPast": "Seleziona la data odierna o una data futura.",
+      "dropoffTime": "Seleziona un orario di consegna.",
+      "pickupTime": "Seleziona un orario di ritiro.",
+      "pickupBeforeDropoffDate": "La data di ritiro non può essere precedente alla data di consegna.",
+      "pickupBeforeDropoffTime": "Per una prenotazione nello stesso giorno, l'orario di ritiro deve essere successivo all'orario di consegna.",
+      "noItems": "Seleziona almeno 1 bagaglio.",
+      "generic": "Qualcosa è andato storto. Riprova o contattaci su WhatsApp.",
+      "rateLimited": "Troppi tentativi. Attendi un momento e riprova."
+    }
+  },
+  "success": {
+    "title": "I vostri bagagli sono al sicuro. Il vostro viaggio può iniziare.",
+    "reference": "Codice Prenotazione",
+    "details": "Dettagli Prenotazione",
+    "dates": "Date",
+    "duration": "Durata",
+    "dropoffTime": "Orario di Consegna",
+    "pickupTime": "Orario di Ritiro",
+    "luggage": "Bagagli",
+    "bags": "Bagagli Totali",
+    "original": "Prezzo Originale",
+    "discount": "{percent}% Sconto",
+    "final": "Totale da Pagare in Negozio",
+    "paymentNote": "Paga in negozio — contanti o carta accettati.",
+    "addressTitle": "Come Trovarci",
+    "openMaps": "Apri in Google Maps",
+    "call": "Chiama",
+    "whatsapp": "WhatsApp",
+    "backHome": "Torna alla Home",
+    "notFound": "Non abbiamo trovato questa prenotazione. Se pensi si tratti di un errore, contattaci su WhatsApp."
+  },
+  "mobileBar": {
+    "book": "Prenota",
+    "whatsapp": "WhatsApp",
+    "call": "Chiama",
+    "map": "Mappa"
+  }
+}

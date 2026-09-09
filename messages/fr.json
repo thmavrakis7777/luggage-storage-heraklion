@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "title": "Consigne à Bagages Héraklion Centre-Ville | Réservez en Ligne et Économisez 10%",
+    "description": "Consigne à bagages sécurisée au cœur d'Héraklion, en Crète. Toutes tailles de bagages, horaires flexibles, entreprise familiale accueillante. Réservez en ligne en 30 secondes et bénéficiez de 10% de réduction."
+  },
+  "nav": {
+    "home": "Accueil",
+    "luggageStorage": "Consigne à Bagages",
+    "pricing": "Tarifs",
+    "howItWorks": "Comment Ça Marche",
+    "location": "Emplacement",
+    "faq": "FAQ",
+    "bookNow": "Réserver"
+  },
+  "hero": {
+    "eyebrow": "Héraklion Centre-Ville",
+    "title": "Consigne à Bagages au Centre d'Héraklion",
+    "subtitle": "Déposez vos bagages en quelques minutes et explorez Héraklion les mains libres. 100% sécurisé, toutes tailles de bagages, emplacement central.",
+    "ctaPrimary": "Réserver — 10% de Réduction",
+    "ctaSecondary": "Nous Trouver"
+  },
+  "walkIn": {
+    "title": "Sans Rendez-vous Bienvenus — Aucune Réservation Nécessaire",
+    "subtitle": "Réservez en ligne à tout moment pour 10% de réduction (25% pour un séjour de 3 jours ou plus). Réservation à l'avance requise lun, mer et sam après 15h00, et le dimanche toute la journée."
+  },
+  "benefits": {
+    "price": "Dès €3 / Jour",
+    "discount": "10% de Réduction en Réservant en Ligne",
+    "payment": "Espèces ou Carte en Magasin",
+    "anySize": "Toutes Tailles de Bagages",
+    "secure": "100% Sécurisé",
+    "longStay": "25% de Réduction dès 3 Jours"
+  },
+  "howItWorks": {
+    "eyebrow": "Comment Ça Marche",
+    "title": "Déposez Vos Bagages en 3 Étapes Simples",
+    "step1": {
+      "number": "01",
+      "title": "Réservez en Ligne",
+      "description": "Réservez votre consigne à bagages en environ 30 secondes."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Déposez Vos Bagages",
+      "description": "Rendez-vous à notre emplacement central à Héraklion."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Explorez Héraklion",
+      "description": "Profitez de la ville sans porter vos bagages."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Tarifs",
+    "title": "Des Tarifs Simples et Transparents",
+    "subtitle": "Vous payez par bagage, par jour. Toutes tailles de bagages acceptées.",
+    "backpack": {
+      "name": "Sac à Dos",
+      "price": "€3",
+      "unit": "/ jour"
+    },
+    "cabin": {
+      "name": "Cabine / Moyen",
+      "price": "€4",
+      "unit": "/ jour"
+    },
+    "large": {
+      "name": "Grand",
+      "price": "€5",
+      "unit": "/ jour"
+    },
+    "anySize": "Toutes tailles de bagages acceptées. Combinez différentes tailles dans une même réservation.",
+    "specialRates": "Vous réservez pour un grand groupe ? Demandez-nous nos tarifs spéciaux.",
+    "discountNote": "Réservez en ligne pour 10% de réduction — automatiquement. Restez 3 jours ou plus et économisez 25% à la place.",
+    "cta": "Réserver — 10% de Réduction"
+  },
+  "why": {
+    "eyebrow": "Pourquoi Nous Choisir",
+    "title": "Une Entreprise Familiale Fiable et Accueillante",
+    "items": {
+      "secure": {
+        "title": "Stockage Sécurisé",
+        "description": "Vos bagages sont conservés en sécurité chez nous aussi longtemps que nécessaire."
+      },
+      "flexible": {
+        "title": "Service Flexible",
+        "description": "Déposez et récupérez vos bagages aux horaires qui vous conviennent."
+      },
+      "family": {
+        "title": "Entreprise Familiale Accueillante",
+        "description": "Un service personnel et chaleureux — pas une salle de casiers anonyme."
+      },
+      "central": {
+        "title": "Emplacement Central à Héraklion",
+        "description": "À quelques minutes de la cathédrale, de la Place des Lions, du port et du bus pour l'aéroport."
+      },
+      "anySize": {
+        "title": "Toutes Tailles de Bagages",
+        "description": "Sacs à dos, bagages cabine, grandes valises — nous stockons tout."
+      },
+      "toilet": {
+        "title": "Toilettes Gratuites",
+        "description": "Des toilettes gratuites sont disponibles pour nos clients."
+      },
+      "transfer": {
+        "title": "Transfert Aéroport",
+        "description": "Nous pouvons organiser votre transfert vers et depuis l'aéroport d'Héraklion."
+      }
+    }
+  },
+  "location": {
+    "eyebrow": "Emplacement",
+    "title": "Retrouvez-nous au Centre d'Héraklion",
+    "addressLabel": "Adresse",
+    "hoursLabel": "Horaires d'Ouverture",
+    "distances": {
+      "cathedral": "1 min de la Cathédrale Saint-Ménas",
+      "lions": "5 min de la Place des Lions",
+      "port": "15 min du Port d'Héraklion",
+      "busStation": "1 min de l'arrêt de bus pour l'aéroport",
+      "airport": "6,5 km de l'Aéroport d'Héraklion"
+    },
+    "openMaps": "Ouvrir dans Google Maps",
+    "call": "Appeler",
+    "whatsapp": "WhatsApp"
+  },
+  "hours": {
+    "weekdays": "Lundi–Vendredi",
+    "saturday": "Samedi",
+    "sunday": "Dimanche",
+    "advanceBookingNote": "Le personnel n'est présent que sur rendez-vous lun, mer et sam après 15h00, et le dimanche toute la journée — une réservation à l'avance est requise durant ces horaires."
+  },
+  "transfer": {
+    "eyebrow": "Transfert Aéroport",
+    "title": "Transfert Aéroport",
+    "description": "Nous pouvons organiser des transferts aéroport pour nos clients. Contactez-nous et nous nous occuperons des détails.",
+    "cta": "Demander un Transfert Aéroport"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Questions Fréquentes",
+    "items": {
+      "size": {
+        "question": "Y a-t-il une limite de taille pour les bagages ?",
+        "answer": "Non — nous acceptons toutes tailles de bagages, des petits sacs à dos aux grandes valises, et vous pouvez combiner différentes tailles dans une même réservation."
+      },
+      "security": {
+        "question": "Mes bagages sont-ils en sécurité chez vous ?",
+        "answer": "Oui. Vos bagages sont conservés en sécurité à notre emplacement central à Héraklion aussi longtemps que nécessaire."
+      },
+      "payment": {
+        "question": "Comment puis-je payer ?",
+        "answer": "Vous payez en magasin, en espèces ou par carte. Il n'y a pas de paiement en ligne — la réservation en ligne réserve simplement votre place et vous donne une réduction."
+      },
+      "discount": {
+        "question": "Comment fonctionnent les réductions en ligne ?",
+        "answer": "Réservez en ligne et bénéficiez automatiquement de 10% de réduction — aucun code promo nécessaire. Restez 3 jours ou plus et vous bénéficierez de 25% de réduction à la place."
+      },
+      "groups": {
+        "question": "Proposez-vous des tarifs pour les grands groupes ?",
+        "answer": "Contactez-nous directement et nous serons ravis de discuter de tarifs spéciaux pour les grands groupes."
+      },
+      "account": {
+        "question": "Dois-je créer un compte pour réserver ?",
+        "answer": "Aucun compte, aucun mot de passe, aucun email requis. Indiquez simplement votre nom, votre téléphone et les détails du stockage — cela prend environ 30 secondes."
+      },
+      "walkIn": {
+        "question": "Puis-je venir directement sans réserver ?",
+        "answer": "Oui — les visites sans réservation sont les bienvenues pendant nos horaires habituels. Une réservation à l'avance n'est requise que lun, mer et sam après 15h00, et le dimanche toute la journée, lorsque le personnel n'est présent que sur rendez-vous."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Déposez Vos Bagages. Profitez d'Héraklion.",
+    "subtitle": "Réservez en Ligne et Économisez 10%.",
+    "cta": "Réserver"
+  },
+  "footer": {
+    "tagline": "Consigne à bagages sécurisée et accueillante au cœur d'Héraklion, en Crète.",
+    "quickLinksTitle": "Liens Rapides",
+    "contactTitle": "Contact",
+    "languageTitle": "Langue",
+    "rights": "Tous droits réservés."
+  },
+  "booking": {
+    "eyebrow": "Réserver",
+    "title": "Réservez Votre Consigne à Bagages",
+    "subtitle": "Prend environ 30 secondes. Aucun compte, aucun email, aucun paiement en ligne.",
+    "form": {
+      "name": "Nom Complet",
+      "namePlaceholder": "Votre nom",
+      "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "ex. +30 690 000 0000",
+      "dropoffDate": "Date de Dépôt",
+      "pickupDate": "Date de Retrait",
+      "duration": "{days, plural, one {# jour} other {# jours}}",
+      "dropoffTime": "Heure de Dépôt",
+      "pickupTime": "Heure de Retrait",
+      "advanceBookingWarning": "Réservation à l'avance requise pour cet horaire. Le personnel n'est disponible sur place que sur rendez-vous.",
+      "luggageSize": "Bagages",
+      "backpack": "Sac à Dos",
+      "cabin": "Cabine / Moyen",
+      "large": "Grand",
+      "submit": "Confirmer la Réservation",
+      "submitting": "Réservation en cours..."
+    },
+    "summary": {
+      "title": "Résumé du Prix",
+      "duration": "Durée",
+      "bags": "Total des Bagages",
+      "original": "Prix Original",
+      "discount": "{percent}% de Réduction",
+      "final": "Total à Payer en Magasin",
+      "paymentNote": "Paiement en magasin — espèces ou carte acceptées."
+    },
+    "errors": {
+      "name": "Veuillez saisir votre nom.",
+      "phone": "Veuillez saisir un numéro de téléphone valide.",
+      "dropoffDate": "Veuillez sélectionner une date de dépôt.",
+      "pickupDate": "Veuillez sélectionner une date de retrait.",
+      "dateInPast": "Veuillez sélectionner aujourd'hui ou une date future.",
+      "dropoffTime": "Veuillez sélectionner une heure de dépôt.",
+      "pickupTime": "Veuillez sélectionner une heure de retrait.",
+      "pickupBeforeDropoffDate": "La date de retrait ne peut pas être antérieure à la date de dépôt.",
+      "pickupBeforeDropoffTime": "Pour une réservation le même jour, l'heure de retrait doit être postérieure à l'heure de dépôt.",
+      "noItems": "Veuillez sélectionner au moins 1 bagage.",
+      "generic": "Une erreur s'est produite. Veuillez réessayer ou nous contacter sur WhatsApp.",
+      "rateLimited": "Trop de tentatives. Veuillez patienter un instant et réessayer."
+    }
+  },
+  "success": {
+    "title": "Vos bagages sont réservés. Votre voyage peut commencer.",
+    "reference": "Référence de Réservation",
+    "details": "Détails de la Réservation",
+    "dates": "Dates",
+    "duration": "Durée",
+    "dropoffTime": "Heure de Dépôt",
+    "pickupTime": "Heure de Retrait",
+    "luggage": "Bagages",
+    "bags": "Total des Bagages",
+    "original": "Prix Original",
+    "discount": "{percent}% de Réduction",
+    "final": "Total à Payer en Magasin",
+    "paymentNote": "Paiement en magasin — espèces ou carte acceptées.",
+    "addressTitle": "Comment Nous Trouver",
+    "openMaps": "Ouvrir dans Google Maps",
+    "call": "Appeler",
+    "whatsapp": "WhatsApp",
+    "backHome": "Retour à l'Accueil",
+    "notFound": "Nous n'avons pas trouvé cette réservation. Si vous pensez qu'il s'agit d'une erreur, contactez-nous sur WhatsApp."
+  },
+  "mobileBar": {
+    "book": "Réserver",
+    "whatsapp": "WhatsApp",
+    "call": "Appeler",
+    "map": "Carte"
+  }
+}

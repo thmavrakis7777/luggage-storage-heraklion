@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "title": "Bagageopslag Heraklion Centrum | Online Boeken & 10% Korting",
+    "description": "Veilige bagageopslag in het hart van Heraklion, Kreta. Elke koffergrootte, flexibele tijden, vriendelijk familiebedrijf. Boek online in 30 seconden en krijg 10% korting."
+  },
+  "nav": {
+    "home": "Home",
+    "luggageStorage": "Bagageopslag",
+    "pricing": "Prijzen",
+    "howItWorks": "Hoe Het Werkt",
+    "location": "Locatie",
+    "faq": "Veelgestelde Vragen",
+    "bookNow": "Nu Boeken"
+  },
+  "hero": {
+    "eyebrow": "Heraklion Centrum",
+    "title": "Bagageopslag in het Centrum van Heraklion",
+    "subtitle": "Breng je tas in enkele minuten weg en verken Heraklion met lege handen. 100% veilig, elke koffergrootte, centrale ligging.",
+    "ctaPrimary": "Nu Boeken — 10% Korting",
+    "ctaSecondary": "Vind Ons"
+  },
+  "walkIn": {
+    "title": "Loop Gerust Binnen — Geen Reservering Nodig",
+    "subtitle": "Boek online op elk moment voor 10% korting (25% bij een verblijf van 3+ dagen). Vooraf boeken verplicht op ma, wo & za na 15:00 uur, en de hele zondag."
+  },
+  "benefits": {
+    "price": "Vanaf €3 / Dag",
+    "discount": "10% Korting bij Online Boeking",
+    "payment": "Contant of Kaart in de Winkel",
+    "anySize": "Elke Koffergrootte",
+    "secure": "100% Veilig",
+    "longStay": "25% Korting vanaf 3 Dagen"
+  },
+  "howItWorks": {
+    "eyebrow": "Hoe Het Werkt",
+    "title": "Berg je Bagage op in 3 Eenvoudige Stappen",
+    "step1": {
+      "number": "01",
+      "title": "Boek Online",
+      "description": "Reserveer je bagageopslag in ongeveer 30 seconden."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Breng je Tassen",
+      "description": "Kom naar onze centrale locatie in Heraklion."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Verken Heraklion",
+      "description": "Geniet van de stad zonder je bagage mee te dragen."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Prijzen",
+    "title": "Eenvoudige, Transparante Prijzen",
+    "subtitle": "Je betaalt per tas, per dag. Elke koffergrootte wordt geaccepteerd.",
+    "backpack": {
+      "name": "Rugzak",
+      "price": "€3",
+      "unit": "/ dag"
+    },
+    "cabin": {
+      "name": "Handbagage / Middel",
+      "price": "€4",
+      "unit": "/ dag"
+    },
+    "large": {
+      "name": "Groot",
+      "price": "€5",
+      "unit": "/ dag"
+    },
+    "anySize": "Elke koffergrootte wordt geaccepteerd. Combineer verschillende maten in één boeking.",
+    "specialRates": "Boeken voor een grote groep? Vraag ons naar onze speciale tarieven.",
+    "discountNote": "Boek online voor 10% korting — automatisch. Blijf 3 dagen of langer en bespaar in plaats daarvan 25%.",
+    "cta": "Nu Boeken — 10% Korting"
+  },
+  "why": {
+    "eyebrow": "Waarom Wij",
+    "title": "Een Betrouwbaar, Vriendelijk Familiebedrijf",
+    "items": {
+      "secure": {
+        "title": "Veilige Opslag",
+        "description": "Je bagage wordt bij ons veilig bewaard, zo lang als je nodig hebt."
+      },
+      "flexible": {
+        "title": "Flexibele Service",
+        "description": "Breng en haal je bagage op momenten die jou uitkomen."
+      },
+      "family": {
+        "title": "Vriendelijk Familiebedrijf",
+        "description": "Een persoonlijke, gastvrije service — geen anonieme kluisruimte."
+      },
+      "central": {
+        "title": "Centrale Locatie in Heraklion",
+        "description": "Enkele minuten van de kathedraal, het Leeuwenplein, de haven en de luchthavenbus."
+      },
+      "anySize": {
+        "title": "Elke Koffergrootte",
+        "description": "Rugzakken, handbagage, grote koffers — wij bewaren alles."
+      },
+      "toilet": {
+        "title": "Gratis Toilet",
+        "description": "Een gratis toilet is beschikbaar voor onze klanten."
+      },
+      "transfer": {
+        "title": "Luchthaventransfer",
+        "description": "Wij kunnen je transfer van en naar Luchthaven Heraklion regelen."
+      }
+    }
+  },
+  "location": {
+    "eyebrow": "Locatie",
+    "title": "Vind Ons in het Centrum van Heraklion",
+    "addressLabel": "Adres",
+    "hoursLabel": "Openingstijden",
+    "distances": {
+      "cathedral": "1 min van de Agios Minas Kathedraal",
+      "lions": "5 min van het Leeuwenplein",
+      "port": "15 min van de Haven van Heraklion",
+      "busStation": "1 min van het bushalte naar de luchthaven",
+      "airport": "6,5 km van Luchthaven Heraklion"
+    },
+    "openMaps": "Openen in Google Maps",
+    "call": "Bellen",
+    "whatsapp": "WhatsApp"
+  },
+  "hours": {
+    "weekdays": "Maandag–Vrijdag",
+    "saturday": "Zaterdag",
+    "sunday": "Zondag",
+    "advanceBookingNote": "Personeel is alleen op afspraak aanwezig op ma, wo & za na 15:00 uur, en de hele zondag — op die momenten is vooraf boeken verplicht."
+  },
+  "transfer": {
+    "eyebrow": "Luchthaventransfer",
+    "title": "Luchthaventransfer",
+    "description": "Wij kunnen luchthaventransfers voor onze klanten regelen. Neem contact op en wij regelen de details.",
+    "cta": "Vraag naar Luchthaventransfer"
+  },
+  "faq": {
+    "eyebrow": "Veelgestelde Vragen",
+    "title": "Veelgestelde Vragen",
+    "items": {
+      "size": {
+        "question": "Is er een limiet aan de koffergrootte?",
+        "answer": "Nee — wij accepteren elke koffergrootte, van kleine rugzakken tot grote koffers, en je kunt verschillende maten combineren in één boeking."
+      },
+      "security": {
+        "question": "Is mijn bagage veilig bij jullie?",
+        "answer": "Ja. Je bagage wordt veilig bewaard op onze centrale locatie in Heraklion, zo lang als je nodig hebt."
+      },
+      "payment": {
+        "question": "Hoe betaal ik?",
+        "answer": "Je betaalt in de winkel, contant of met kaart. Er is geen online betaling — met de online boeking reserveer je alleen je plek en krijg je een korting."
+      },
+      "discount": {
+        "question": "Hoe werken de online kortingen?",
+        "answer": "Boek online en krijg automatisch 10% korting — geen kortingscode nodig. Blijf 3 dagen of langer en krijg in plaats daarvan 25% korting."
+      },
+      "groups": {
+        "question": "Bieden jullie tarieven voor grote groepen?",
+        "answer": "Neem rechtstreeks contact met ons op, dan bespreken we graag speciale tarieven voor grote groepen."
+      },
+      "account": {
+        "question": "Moet ik een account aanmaken om te boeken?",
+        "answer": "Geen account, geen wachtwoord, geen e-mail nodig. Vul gewoon je naam, telefoonnummer en opslagdetails in — dit duurt ongeveer 30 seconden."
+      },
+      "walkIn": {
+        "question": "Kan ik gewoon binnenlopen zonder te boeken?",
+        "answer": "Ja — je bent van harte welkom zonder boeking tijdens onze reguliere openingstijden. Vooraf boeken is alleen verplicht op ma, wo & za na 15:00 uur, en de hele zondag, wanneer personeel alleen op afspraak aanwezig is."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Breng je Tassen Weg. Geniet van Heraklion.",
+    "subtitle": "Boek Online & Bespaar 10%.",
+    "cta": "Nu Boeken"
+  },
+  "footer": {
+    "tagline": "Veilige, vriendelijke bagageopslag in het hart van Heraklion, Kreta.",
+    "quickLinksTitle": "Snelle Links",
+    "contactTitle": "Contact",
+    "languageTitle": "Taal",
+    "rights": "Alle rechten voorbehouden."
+  },
+  "booking": {
+    "eyebrow": "Nu Boeken",
+    "title": "Reserveer je Bagageopslag",
+    "subtitle": "Duurt ongeveer 30 seconden. Geen account, geen e-mail, geen online betaling.",
+    "form": {
+      "name": "Volledige Naam",
+      "namePlaceholder": "Je naam",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "bijv. +30 690 000 0000",
+      "dropoffDate": "Inleverdatum",
+      "pickupDate": "Ophaaldatum",
+      "duration": "{days, plural, one {# dag} other {# dagen}}",
+      "dropoffTime": "Inlevertijd",
+      "pickupTime": "Ophaaltijd",
+      "advanceBookingWarning": "Voor dit tijdstip is vooraf boeken verplicht. Personeel is alleen op afspraak aanwezig.",
+      "luggageSize": "Bagage",
+      "backpack": "Rugzak",
+      "cabin": "Handbagage / Middel",
+      "large": "Groot",
+      "submit": "Boeking Bevestigen",
+      "submitting": "Bezig met boeken..."
+    },
+    "summary": {
+      "title": "Prijsoverzicht",
+      "duration": "Duur",
+      "bags": "Totaal Aantal Tassen",
+      "original": "Oorspronkelijke Prijs",
+      "discount": "{percent}% Korting",
+      "final": "Totaal te Betalen in de Winkel",
+      "paymentNote": "Betaal in de winkel — contant of met kaart."
+    },
+    "errors": {
+      "name": "Vul je naam in.",
+      "phone": "Vul een geldig telefoonnummer in.",
+      "dropoffDate": "Selecteer een inleverdatum.",
+      "pickupDate": "Selecteer een ophaaldatum.",
+      "dateInPast": "Selecteer vandaag of een datum in de toekomst.",
+      "dropoffTime": "Selecteer een inlevertijd.",
+      "pickupTime": "Selecteer een ophaaltijd.",
+      "pickupBeforeDropoffDate": "De ophaaldatum kan niet vóór de inleverdatum liggen.",
+      "pickupBeforeDropoffTime": "Bij een boeking op dezelfde dag moet de ophaaltijd na de inlevertijd liggen.",
+      "noItems": "Selecteer ten minste 1 tas.",
+      "generic": "Er ging iets mis. Probeer het opnieuw of neem contact op via WhatsApp.",
+      "rateLimited": "Te veel pogingen. Wacht even en probeer het opnieuw."
+    }
+  },
+  "success": {
+    "title": "Uw bagage is gereserveerd. Uw reis kan beginnen.",
+    "reference": "Boekingsnummer",
+    "details": "Boekingsgegevens",
+    "dates": "Data",
+    "duration": "Duur",
+    "dropoffTime": "Inlevertijd",
+    "pickupTime": "Ophaaltijd",
+    "luggage": "Bagage",
+    "bags": "Totaal Aantal Tassen",
+    "original": "Oorspronkelijke Prijs",
+    "discount": "{percent}% Korting",
+    "final": "Totaal te Betalen in de Winkel",
+    "paymentNote": "Betaal in de winkel — contant of met kaart.",
+    "addressTitle": "Zo Vind je Ons",
+    "openMaps": "Openen in Google Maps",
+    "call": "Bellen",
+    "whatsapp": "WhatsApp",
+    "backHome": "Terug naar Home",
+    "notFound": "We konden deze boeking niet vinden. Als je denkt dat dit een fout is, neem dan contact op via WhatsApp."
+  },
+  "mobileBar": {
+    "book": "Boeken",
+    "whatsapp": "WhatsApp",
+    "call": "Bellen",
+    "map": "Kaart"
+  }
+}

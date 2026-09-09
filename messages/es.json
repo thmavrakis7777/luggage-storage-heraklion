@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "title": "Consigna de Equipaje Heraklion Centro | Reserva Online y Ahorra 10%",
+    "description": "Consigna de equipaje segura en el corazón de Heraklion, Creta. Cualquier tamaño de maleta, horarios flexibles, negocio familiar y cercano. Reserva online en 30 segundos y consigue un 10% de descuento."
+  },
+  "nav": {
+    "home": "Inicio",
+    "luggageStorage": "Consigna de Equipaje",
+    "pricing": "Precios",
+    "howItWorks": "Cómo Funciona",
+    "location": "Ubicación",
+    "faq": "Preguntas Frecuentes",
+    "bookNow": "Reservar"
+  },
+  "hero": {
+    "eyebrow": "Heraklion Centro",
+    "title": "Consigna de Equipaje en el Centro de Heraklion",
+    "subtitle": "Deja tu equipaje en minutos y explora Heraklion con las manos libres. 100% seguro, cualquier tamaño de maleta, ubicación central.",
+    "ctaPrimary": "Reservar Ahora — 10% de Descuento",
+    "ctaSecondary": "Cómo Llegar"
+  },
+  "walkIn": {
+    "title": "Aceptamos Clientes Sin Reserva",
+    "subtitle": "Reserva online en cualquier momento y obtén un 10% de descuento (25% para estancias de 3+ días). Reserva anticipada necesaria lun, mié y sáb después de las 15:00, y todo el domingo."
+  },
+  "benefits": {
+    "price": "Desde €3 / Día",
+    "discount": "10% de Descuento por Reserva Online",
+    "payment": "Efectivo o Tarjeta en Tienda",
+    "anySize": "Cualquier Tamaño de Maleta",
+    "secure": "100% Seguro",
+    "longStay": "25% Dto. en Estancias de 3+ Días"
+  },
+  "howItWorks": {
+    "eyebrow": "Cómo Funciona",
+    "title": "Guarda tu Equipaje en 3 Sencillos Pasos",
+    "step1": {
+      "number": "01",
+      "title": "Reserva Online",
+      "description": "Reserva tu consigna de equipaje en unos 30 segundos."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Deja tu Equipaje",
+      "description": "Ven a nuestra ubicación central en Heraklion."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Explora Heraklion",
+      "description": "Disfruta de la ciudad sin cargar con tu equipaje."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Precios",
+    "title": "Precios Simples y Transparentes",
+    "subtitle": "Pagas por maleta, por día. Aceptamos cualquier tamaño.",
+    "backpack": {
+      "name": "Mochila",
+      "price": "€3",
+      "unit": "/ día"
+    },
+    "cabin": {
+      "name": "Cabina / Mediana",
+      "price": "€4",
+      "unit": "/ día"
+    },
+    "large": {
+      "name": "Grande",
+      "price": "€5",
+      "unit": "/ día"
+    },
+    "anySize": "Aceptamos cualquier tamaño de maleta. Combina distintos tamaños en una misma reserva.",
+    "specialRates": "¿Reservas para un grupo grande? Pregúntanos por nuestras tarifas especiales.",
+    "discountNote": "Reserva online y consigue un 10% de descuento automáticamente. Quédate 3 días o más y ahorra un 25% en su lugar.",
+    "cta": "Reservar Ahora — 10% de Descuento"
+  },
+  "why": {
+    "eyebrow": "Por Qué Elegirnos",
+    "title": "Un Negocio Familiar de Confianza y Cercano",
+    "items": {
+      "secure": {
+        "title": "Almacenamiento Seguro",
+        "description": "Tu equipaje se guarda de forma segura con nosotros durante el tiempo que necesites."
+      },
+      "flexible": {
+        "title": "Servicio Flexible",
+        "description": "Deja y recoge tu equipaje en los horarios que mejor te convengan."
+      },
+      "family": {
+        "title": "Negocio Familiar y Cercano",
+        "description": "Un servicio personal y acogedor, no una sala de taquillas anónima."
+      },
+      "central": {
+        "title": "Ubicación Central en Heraklion",
+        "description": "A minutos de la catedral, la Plaza de los Leones, el puerto y el autobús al aeropuerto."
+      },
+      "anySize": {
+        "title": "Cualquier Tamaño de Maleta",
+        "description": "Mochilas, maletas de cabina, maletas grandes: guardamos de todo."
+      },
+      "toilet": {
+        "title": "Aseo Gratuito",
+        "description": "Disponemos de un aseo gratuito para nuestros clientes."
+      },
+      "transfer": {
+        "title": "Traslado al Aeropuerto",
+        "description": "Podemos organizar tu traslado hacia y desde el Aeropuerto de Heraklion."
+      }
+    }
+  },
+  "location": {
+    "eyebrow": "Ubicación",
+    "title": "Encuéntranos en el Centro de Heraklion",
+    "addressLabel": "Dirección",
+    "hoursLabel": "Horario de Apertura",
+    "distances": {
+      "cathedral": "1 min de la Catedral de San Minas",
+      "lions": "5 min de la Plaza de los Leones",
+      "port": "15 min del Puerto de Heraklion",
+      "busStation": "1 min de la parada del autobús al aeropuerto",
+      "airport": "6,5 km del Aeropuerto de Heraklion"
+    },
+    "openMaps": "Abrir en Google Maps",
+    "call": "Llamar",
+    "whatsapp": "WhatsApp"
+  },
+  "hours": {
+    "weekdays": "Lunes–Viernes",
+    "saturday": "Sábado",
+    "sunday": "Domingo",
+    "advanceBookingNote": "El personal está presente solo con cita previa lun, mié y sáb después de las 15:00, y todo el domingo — se requiere reserva anticipada en esos horarios."
+  },
+  "transfer": {
+    "eyebrow": "Traslado al Aeropuerto",
+    "title": "Traslado al Aeropuerto",
+    "description": "Podemos organizar traslados al aeropuerto para nuestros clientes. Contáctanos y nos encargamos de los detalles.",
+    "cta": "Preguntar por el Traslado al Aeropuerto"
+  },
+  "faq": {
+    "eyebrow": "Preguntas Frecuentes",
+    "title": "Preguntas Frecuentes",
+    "items": {
+      "size": {
+        "question": "¿Hay un límite de tamaño para el equipaje?",
+        "answer": "No: aceptamos cualquier tamaño de equipaje, desde pequeñas mochilas hasta maletas grandes, y puedes combinar distintos tamaños en una misma reserva."
+      },
+      "security": {
+        "question": "¿Está seguro mi equipaje con vosotros?",
+        "answer": "Sí. Tu equipaje se guarda de forma segura en nuestra ubicación central en Heraklion durante el tiempo que necesites."
+      },
+      "payment": {
+        "question": "¿Cómo pago?",
+        "answer": "Pagas en la tienda, en efectivo o con tarjeta. No hay pago online: la reserva online simplemente asegura tu plaza y te da un descuento."
+      },
+      "discount": {
+        "question": "¿Cómo funcionan los descuentos online?",
+        "answer": "Reserva online y obtén un 10% de descuento automáticamente, sin necesidad de código promocional. Quédate 3 días o más y obtendrás un 25% de descuento en su lugar."
+      },
+      "groups": {
+        "question": "¿Ofrecéis tarifas para grupos grandes?",
+        "answer": "Contáctanos directamente y estaremos encantados de hablar de tarifas especiales para grupos grandes."
+      },
+      "account": {
+        "question": "¿Necesito crear una cuenta para reservar?",
+        "answer": "Sin cuenta, sin contraseña, sin necesidad de email. Solo indica tu nombre, tu teléfono y los detalles del almacenamiento: tarda unos 30 segundos."
+      },
+      "walkIn": {
+        "question": "¿Puedo venir directamente sin reservar?",
+        "answer": "Sí — aceptamos clientes sin reserva durante nuestro horario habitual. Solo se requiere reserva anticipada lun, mié y sáb después de las 15:00, y todo el domingo, cuando el personal está presente solo con cita previa."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Deja tu Equipaje. Disfruta Heraklion.",
+    "subtitle": "Reserva Online y Ahorra un 10%.",
+    "cta": "Reservar Ahora"
+  },
+  "footer": {
+    "tagline": "Consigna de equipaje segura y cercana en el corazón de Heraklion, Creta.",
+    "quickLinksTitle": "Enlaces Rápidos",
+    "contactTitle": "Contacto",
+    "languageTitle": "Idioma",
+    "rights": "Todos los derechos reservados."
+  },
+  "booking": {
+    "eyebrow": "Reservar",
+    "title": "Reserva tu Consigna de Equipaje",
+    "subtitle": "Tarda unos 30 segundos. Sin cuenta, sin email, sin pago online.",
+    "form": {
+      "name": "Nombre Completo",
+      "namePlaceholder": "Tu nombre",
+      "phone": "Número de Teléfono",
+      "phonePlaceholder": "ej. +30 690 000 0000",
+      "dropoffDate": "Fecha de Entrega",
+      "pickupDate": "Fecha de Recogida",
+      "duration": "{days, plural, one {# día} other {# días}}",
+      "dropoffTime": "Hora de Entrega",
+      "pickupTime": "Hora de Recogida",
+      "advanceBookingWarning": "Se requiere reserva anticipada para este horario. El personal está disponible en tienda solo con cita previa.",
+      "luggageSize": "Equipaje",
+      "backpack": "Mochila",
+      "cabin": "Cabina / Mediana",
+      "large": "Grande",
+      "submit": "Confirmar Reserva",
+      "submitting": "Reservando..."
+    },
+    "summary": {
+      "title": "Resumen de Precio",
+      "duration": "Duración",
+      "bags": "Maletas Totales",
+      "original": "Precio Original",
+      "discount": "{percent}% Descuento",
+      "final": "Total a Pagar en Tienda",
+      "paymentNote": "Paga en la tienda — se acepta efectivo o tarjeta."
+    },
+    "errors": {
+      "name": "Por favor, introduce tu nombre.",
+      "phone": "Por favor, introduce un teléfono válido.",
+      "dropoffDate": "Por favor, selecciona una fecha de entrega.",
+      "pickupDate": "Por favor, selecciona una fecha de recogida.",
+      "dateInPast": "Por favor, selecciona hoy o una fecha futura.",
+      "dropoffTime": "Por favor, selecciona una hora de entrega.",
+      "pickupTime": "Por favor, selecciona una hora de recogida.",
+      "pickupBeforeDropoffDate": "La fecha de recogida no puede ser anterior a la fecha de entrega.",
+      "pickupBeforeDropoffTime": "Para una reserva el mismo día, la hora de recogida debe ser posterior a la hora de entrega.",
+      "noItems": "Por favor, selecciona al menos 1 maleta.",
+      "generic": "Algo salió mal. Inténtalo de nuevo o contáctanos por WhatsApp.",
+      "rateLimited": "Demasiados intentos. Espera un momento e inténtalo de nuevo."
+    }
+  },
+  "success": {
+    "title": "Su equipaje está reservado. Su viaje puede comenzar.",
+    "reference": "Código de Reserva",
+    "details": "Detalles de la Reserva",
+    "dates": "Fechas",
+    "duration": "Duración",
+    "dropoffTime": "Hora de Entrega",
+    "pickupTime": "Hora de Recogida",
+    "luggage": "Equipaje",
+    "bags": "Maletas Totales",
+    "original": "Precio Original",
+    "discount": "{percent}% Descuento",
+    "final": "Total a Pagar en Tienda",
+    "paymentNote": "Paga en la tienda — se acepta efectivo o tarjeta.",
+    "addressTitle": "Cómo Encontrarnos",
+    "openMaps": "Abrir en Google Maps",
+    "call": "Llamar",
+    "whatsapp": "WhatsApp",
+    "backHome": "Volver al Inicio",
+    "notFound": "No pudimos encontrar esa reserva. Si crees que es un error, contáctanos por WhatsApp."
+  },
+  "mobileBar": {
+    "book": "Reservar",
+    "whatsapp": "WhatsApp",
+    "call": "Llamar",
+    "map": "Mapa"
+  }
+}

@@ -1,0 +1,258 @@
+{
+  "meta": {
+    "title": "Luggage Storage Heraklion City Center | Book Online & Save 10%",
+    "description": "Secure luggage storage in the heart of Heraklion, Crete. Any bag size, flexible hours, friendly family business. Book online in 30 seconds and get 10% off."
+  },
+  "nav": {
+    "home": "Home",
+    "luggageStorage": "Luggage Storage",
+    "pricing": "Pricing",
+    "howItWorks": "How It Works",
+    "location": "Location",
+    "faq": "FAQ",
+    "bookNow": "Book Now"
+  },
+  "hero": {
+    "eyebrow": "Heraklion City Center",
+    "title": "Luggage Storage in Heraklion City Center",
+    "subtitle": "Drop your bags in minutes and explore Heraklion hands-free. 100% secure, any luggage size, central location.",
+    "ctaPrimary": "Book Now — Get 10% OFF",
+    "ctaSecondary": "Find Us"
+  },
+  "walkIn": {
+    "title": "Walk-ins Welcome — No Reservation Required",
+    "subtitle": "Book online anytime for 10% off (25% for stays of 3+ days). Advance booking required Mon, Wed & Sat after 15:00, and all day Sunday."
+  },
+  "benefits": {
+    "price": "From €3 / Day",
+    "discount": "10% OFF Online Booking",
+    "payment": "Cash or Card at Store",
+    "anySize": "Any Luggage Size",
+    "secure": "100% Secure",
+    "longStay": "25% OFF for 3+ Days"
+  },
+  "howItWorks": {
+    "eyebrow": "How It Works",
+    "title": "Store Your Bags in 3 Simple Steps",
+    "step1": {
+      "number": "01",
+      "title": "Book Online",
+      "description": "Reserve your luggage storage in around 30 seconds."
+    },
+    "step2": {
+      "number": "02",
+      "title": "Drop Off Your Bags",
+      "description": "Come to our central Heraklion location."
+    },
+    "step3": {
+      "number": "03",
+      "title": "Explore Heraklion",
+      "description": "Enjoy the city without carrying your luggage."
+    }
+  },
+  "pricing": {
+    "eyebrow": "Pricing",
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Pay per bag, per day. Any luggage size accepted.",
+    "backpack": {
+      "name": "Backpack",
+      "price": "€3",
+      "unit": "/ day"
+    },
+    "cabin": {
+      "name": "Cabin / Medium",
+      "price": "€4",
+      "unit": "/ day"
+    },
+    "large": {
+      "name": "Large",
+      "price": "€5",
+      "unit": "/ day"
+    },
+    "anySize": "Any luggage size accepted. Mix and match sizes in one booking.",
+    "specialRates": "Booking for a large group? Ask us for our special rates.",
+    "discountNote": "Book online for 10% off — automatically. Stay 3 or more days and save 25% instead.",
+    "cta": "Book Now — Save 10%"
+  },
+  "why": {
+    "eyebrow": "Why Choose Us",
+    "title": "A Trusted, Friendly Family Business",
+    "items": {
+      "secure": {
+        "title": "Secure Storage",
+        "description": "Your luggage is kept safe with us for as long as you need."
+      },
+      "flexible": {
+        "title": "Flexible Service",
+        "description": "Drop off and pick up your bags at times that suit your schedule."
+      },
+      "family": {
+        "title": "Friendly Family Business",
+        "description": "A personal, welcoming service — not a faceless locker room."
+      },
+      "central": {
+        "title": "Central Heraklion Location",
+        "description": "Minutes from the cathedral, Lions Square, the port and the airport bus."
+      },
+      "anySize": {
+        "title": "Any Luggage Size",
+        "description": "Backpacks, cabin bags, large suitcases — we store it all."
+      },
+      "toilet": {
+        "title": "Free Toilet",
+        "description": "A free toilet is available for our customers."
+      },
+      "transfer": {
+        "title": "Airport Transfer",
+        "description": "We can organize your transfer to and from Heraklion Airport."
+      }
+    }
+  },
+  "location": {
+    "eyebrow": "Location",
+    "title": "Find Us in Heraklion City Center",
+    "addressLabel": "Address",
+    "hoursLabel": "Opening Hours",
+    "distances": {
+      "cathedral": "1 min from Saint Minas Cathedral",
+      "lions": "5 min from Lions Square",
+      "port": "15 min from Heraklion Port",
+      "busStation": "1 min from the airport bus station",
+      "airport": "6.5 km from Heraklion Airport"
+    },
+    "openMaps": "Open in Google Maps",
+    "call": "Call",
+    "whatsapp": "WhatsApp"
+  },
+  "hours": {
+    "weekdays": "Monday–Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday",
+    "advanceBookingNote": "Staff is on-site by appointment only Mon, Wed & Sat after 15:00, and all day Sunday — advance booking required during those times."
+  },
+  "transfer": {
+    "eyebrow": "Airport Transfer",
+    "title": "Airport Transfer",
+    "description": "We can organize airport transfers for our customers. Get in touch and we'll take care of the details.",
+    "cta": "Ask About Airport Transfer"
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Frequently Asked Questions",
+    "items": {
+      "size": {
+        "question": "Is there a limit on luggage size?",
+        "answer": "No — we accept any luggage size, from small backpacks to large suitcases, and you can mix different sizes in one booking."
+      },
+      "security": {
+        "question": "Is my luggage safe with you?",
+        "answer": "Yes. Your bags are stored securely at our central Heraklion location for as long as you need."
+      },
+      "payment": {
+        "question": "How do I pay?",
+        "answer": "You pay at the store in cash or by card. There is no online payment — booking online simply reserves your spot and gives you a discount."
+      },
+      "discount": {
+        "question": "How do the online discounts work?",
+        "answer": "Book online and get 10% off automatically — no coupon code required. Stay 3 or more days and you'll get 25% off instead."
+      },
+      "groups": {
+        "question": "Do you offer rates for large groups?",
+        "answer": "Contact us directly and we'll be happy to discuss special rates for large groups."
+      },
+      "account": {
+        "question": "Do I need to create an account to book?",
+        "answer": "No account, no password, no email required. Just fill in your name, phone number and storage details — it takes about 30 seconds."
+      },
+      "walkIn": {
+        "question": "Can I just walk in without booking?",
+        "answer": "Yes — walk-ins are welcome during our regular hours. Advance booking is only required Mon, Wed & Sat after 15:00, and all day Sunday, when staff is on-site by appointment."
+      }
+    }
+  },
+  "finalCta": {
+    "title": "Leave Your Bags. Enjoy Heraklion.",
+    "subtitle": "Book Online & Save 10%.",
+    "cta": "Book Now"
+  },
+  "footer": {
+    "tagline": "Secure, friendly luggage storage in the heart of Heraklion, Crete.",
+    "quickLinksTitle": "Quick Links",
+    "contactTitle": "Contact",
+    "languageTitle": "Language",
+    "rights": "All rights reserved."
+  },
+  "booking": {
+    "eyebrow": "Book Now",
+    "title": "Reserve Your Luggage Storage",
+    "subtitle": "Takes about 30 seconds. No account, no email, no online payment.",
+    "form": {
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "phone": "Phone Number",
+      "phonePlaceholder": "e.g. +30 690 000 0000",
+      "dropoffDate": "Drop-off Date",
+      "pickupDate": "Pick-up Date",
+      "duration": "{days, plural, one {# day} other {# days}}",
+      "dropoffTime": "Drop-off Time",
+      "pickupTime": "Pick-up Time",
+      "advanceBookingWarning": "Advance booking required for this time. Staff is available on-site by appointment.",
+      "luggageSize": "Luggage",
+      "backpack": "Backpack",
+      "cabin": "Cabin / Medium",
+      "large": "Large",
+      "submit": "Confirm Booking",
+      "submitting": "Booking..."
+    },
+    "summary": {
+      "title": "Price Summary",
+      "duration": "Duration",
+      "bags": "Total Bags",
+      "original": "Original Price",
+      "discount": "{percent}% Discount",
+      "final": "Total to Pay at Store",
+      "paymentNote": "Pay at the store — cash or card accepted."
+    },
+    "errors": {
+      "name": "Please enter your name.",
+      "phone": "Please enter a valid phone number.",
+      "dropoffDate": "Please select a drop-off date.",
+      "pickupDate": "Please select a pick-up date.",
+      "dateInPast": "Please select today or a future date.",
+      "dropoffTime": "Please select a drop-off time.",
+      "pickupTime": "Please select a pick-up time.",
+      "pickupBeforeDropoffDate": "Pick-up date cannot be before the drop-off date.",
+      "pickupBeforeDropoffTime": "For a same-day booking, pick-up time must be after drop-off time.",
+      "noItems": "Please select at least one bag.",
+      "generic": "Something went wrong. Please try again or contact us on WhatsApp.",
+      "rateLimited": "Too many attempts. Please wait a moment and try again."
+    }
+  },
+  "success": {
+    "title": "Your bags are booked. Your journey can begin.",
+    "reference": "Booking Reference",
+    "details": "Booking Details",
+    "dates": "Dates",
+    "duration": "Duration",
+    "dropoffTime": "Drop-off Time",
+    "pickupTime": "Pick-up Time",
+    "luggage": "Luggage",
+    "bags": "Total Bags",
+    "original": "Original Price",
+    "discount": "{percent}% Discount",
+    "final": "Total to Pay at Store",
+    "paymentNote": "Pay at the store — cash or card accepted.",
+    "addressTitle": "Where to Find Us",
+    "openMaps": "Open in Google Maps",
+    "call": "Call",
+    "whatsapp": "WhatsApp",
+    "backHome": "Back to Home",
+    "notFound": "We couldn't find that booking. If you think this is a mistake, contact us on WhatsApp."
+  },
+  "mobileBar": {
+    "book": "Book",
+    "whatsapp": "WhatsApp",
+    "call": "Call",
+    "map": "Map"
+  }
+}
