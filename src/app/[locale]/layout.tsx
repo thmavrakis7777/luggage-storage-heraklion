@@ -31,6 +31,12 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
+// [locale] structurally matches any single path segment. Without this, an
+// arbitrary URL like /whatever would render the (English-fallback) homepage
+// at 200 instead of 404ing — a duplicate-content/crawlability risk. This
+// restricts valid values to the 7 real locales from generateStaticParams.
+export const dynamicParams = false;
+
 export async function generateMetadata({
   params,
 }: {

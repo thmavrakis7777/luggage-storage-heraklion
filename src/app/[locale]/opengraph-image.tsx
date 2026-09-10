@@ -1,12 +1,19 @@
 import { ImageResponse } from 'next/og';
 import { readFile } from 'node:fs/promises';
 import { join } from 'node:path';
+import { getTranslations } from 'next-intl/server';
 import { business } from '@/lib/site';
 
 export const size = { width: 1200, height: 630 };
 export const contentType = 'image/png';
 
-export default async function OpengraphImage() {
+export default async function OpengraphImage({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'benefits' });
   const logoData = await readFile(join(process.cwd(), 'public', 'logo.jpg'));
   const logoSrc = `data:image/jpeg;base64,${logoData.toString('base64')}`;
 
@@ -55,7 +62,7 @@ export default async function OpengraphImage() {
             textTransform: 'uppercase',
           }}
         >
-          Book Online & Save 10%
+          {t('discount')}
         </div>
       </div>
     ),

@@ -5,7 +5,7 @@ Marketing site and booking system for **Luggage Storage Heraklion City Center**,
 ## Features
 
 - Editorial, premium design with restrained animation (respects `prefers-reduced-motion`)
-- Six-language site (English, Greek, German, Italian, Spanish, Dutch) with localized URLs, hreflang, and per-locale SEO metadata
+- Seven-language site (English, Greek, German, Italian, Spanish, Dutch, French) with localized URLs, hreflang, and per-locale SEO metadata
 - 30-second booking flow — no account, no email, no online payment
 - Server-side, database-enforced pricing (never trusts client-submitted prices)
 - Supabase backend with Row Level Security locked to two RPC entry points (no direct table access from the browser)
@@ -29,11 +29,10 @@ See [.env.example](.env.example). At minimum for local development you need:
 - `NEXT_PUBLIC_SITE_URL` — used for canonical URLs, hreflang, sitemap, OG tags
 - `NEXT_PUBLIC_SUPABASE_URL` / `NEXT_PUBLIC_SUPABASE_ANON_KEY` — public, safe to expose; RLS restricts what they can do
 - `TELEGRAM_BOT_TOKEN` / `TELEGRAM_CHAT_ID` — optional; booking notifications are skipped (not failed) if unset
-- `SUPABASE_SERVICE_ROLE_KEY` / `ADMIN_PASSWORD` — required only for the admin panel (server-only, never exposed to the client)
 
 ## Database
 
-The `bookings` table and its two public RPC functions (`create_booking`, `get_booking_by_reference`) live in the `luggage-storage-heraklion` Supabase project. Price fields are always recalculated by a Postgres trigger from `luggage_size` and `number_of_bags` — client-submitted prices are never trusted. The anon key has no direct table access (no SELECT/UPDATE/DELETE, no INSERT policy); every write and read goes through the RPC functions, which are the only exposed surface.
+The `bookings`/`booking_items` tables and their `SECURITY DEFINER` RPC functions (`create_booking`, `get_booking_by_reference`, `mark_telegram_notified`) live in the `luggage-storage-heraklion` Supabase project. Price fields are always recalculated inside `create_booking` from `luggage_size` and `quantity` — client-submitted prices are never trusted, and that same function re-validates opening hours, past dates, and a per-phone booking rate limit, since it's directly callable with the public anon key. RLS is enabled with no policies on either table, so the anon key has no direct table access at all (no SELECT/INSERT/UPDATE/DELETE) — every write and read goes through the RPC functions, which are the only exposed surface.
 
 ## Tech Stack
 

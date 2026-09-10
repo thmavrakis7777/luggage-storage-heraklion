@@ -255,5 +255,10 @@
     "whatsapp": "WhatsApp",
     "call": "Bellen",
     "map": "Kaart"
+  },
+  "notFound": {
+    "title": "Pagina Niet Gevonden",
+    "description": "De pagina die je zoekt bestaat niet of is mogelijk verplaatst. We brengen je terug op weg.",
+    "cta": "Terug naar Home"
   }
 }

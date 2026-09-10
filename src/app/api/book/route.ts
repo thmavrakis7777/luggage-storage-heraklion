@@ -1,13 +1,10 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { bookingInputSchema } from '@/lib/booking-schema';
 import { calculatePrice, computeStorageDays, LUGGAGE_SIZES } from '@/lib/pricing';
+import { todayInHeraklion } from '@/lib/hours';
 import { getSupabaseClient } from '@/lib/supabase';
 import { notifyTelegram } from '@/lib/telegram';
 import { isRateLimited } from '@/lib/rate-limit';
-
-function todayInHeraklion(): string {
-  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Athens' }).format(new Date());
-}
 
 export async function POST(req: NextRequest) {
   const ip = req.headers.get('x-forwarded-for')?.split(',')[0]?.trim() ?? 'unknown';

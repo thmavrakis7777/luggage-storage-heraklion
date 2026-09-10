@@ -255,5 +255,10 @@
     "whatsapp": "WhatsApp",
     "call": "Llamar",
     "map": "Mapa"
+  },
+  "notFound": {
+    "title": "Página No Encontrada",
+    "description": "La página que buscas no existe o puede haberse movido. Te ayudamos a volver al camino correcto.",
+    "cta": "Volver al Inicio"
   }
 }

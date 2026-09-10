@@ -81,16 +81,8 @@
     @apply max-w-7xl mx-auto;
   }
 
-  .text-display {
-    @apply text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-serif font-light leading-[1.05] tracking-tight;
-  }
-
   .text-headline {
     @apply text-3xl sm:text-4xl md:text-5xl font-serif font-light leading-tight;
-  }
-
-  .text-subheadline {
-    @apply text-xl sm:text-2xl font-serif font-light text-ink-500;
   }
 
   .text-body-large {
@@ -121,17 +113,6 @@
            hover:text-ink-900 transition-colors duration-200;
   }
 
-  .card-hover {
-    @apply transition-transform duration-300 ease-out hover:-translate-y-1;
-  }
-
-  .gradient-fade-bottom {
-    @apply relative after:absolute after:inset-x-0 after:bottom-0 after:h-1/3 after:bg-gradient-to-t after:from-black/60 after:to-transparent;
-  }
-
-  .gradient-fade-full {
-    @apply relative after:absolute after:inset-0 after:bg-gradient-to-t after:from-black/70 after:via-black/30 after:to-transparent;
-  }
 }
 
 @layer utilities {

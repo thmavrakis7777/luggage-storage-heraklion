@@ -50,6 +50,14 @@ const ADVANCE_BOOKING_CUTOFF = '15:00';
 /** Monday, Wednesday, Saturday — matches Date#getUTCDay() (0=Sun). */
 const ADVANCE_BOOKING_AFTERNOON_DAYS = new Set([1, 3, 6]);
 
+/** Today's calendar date in Heraklion (Europe/Athens), regardless of the
+ * executing environment's own timezone — the single source of truth for
+ * "today" used by both the booking form's date picker and the /api/book
+ * route's authoritative past-date check, so the two can never disagree. */
+export function todayInHeraklion(): string {
+  return new Intl.DateTimeFormat('en-CA', { timeZone: 'Europe/Athens' }).format(new Date());
+}
+
 /** Day-of-week for a plain YYYY-MM-DD date string, with zero dependence on
  * the executing environment's local timezone (Heraklion's calendar date is
  * fixed regardless of server/browser timezone — this just reads it back

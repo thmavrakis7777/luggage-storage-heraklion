@@ -17,7 +17,7 @@ import {
   LUGGAGE_SIZES,
   type LuggageQuantities,
 } from '@/lib/pricing';
-import { isAdvanceBookingRequired, timeOptionsFor } from '@/lib/hours';
+import { isAdvanceBookingRequired, timeOptionsFor, todayInHeraklion } from '@/lib/hours';
 import type { Locale } from '@/i18n/config';
 
 const inputClass =
@@ -42,7 +42,7 @@ export function BookingForm() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const today = useMemo(() => new Date().toISOString().slice(0, 10), []);
+  const today = useMemo(() => todayInHeraklion(), []);
 
   const storageDays = useMemo(
     () => (dropoffDate && pickupDate ? computeStorageDays(dropoffDate, pickupDate) : 1),
