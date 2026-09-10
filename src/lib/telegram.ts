@@ -1,5 +1,6 @@
 import { formatCents, LUGGAGE_SIZES } from './pricing';
 import { getSupabaseClient } from './supabase';
+import { business } from './site';
 import type { BookingInput } from './booking-schema';
 import type { PriceBreakdown } from './pricing';
 
@@ -9,7 +10,7 @@ interface NotifyArgs {
   price: PriceBreakdown;
 }
 
-const SIZE_LABELS = { backpack: 'Backpack', cabin: 'Cabin / Medium', large: 'Large' } as const;
+const SIZE_LABELS = { backpack: 'Backpack', cabin: 'Cabin/Medium', large: 'Large' } as const;
 
 /** Parses a YYYY-MM-DD date string as UTC (no local-timezone drift) and
  * renders it in a short, mobile-friendly form, e.g. "Mon, 14 Sep 2026". */
@@ -46,31 +47,45 @@ export async function notifyTelegram({ reference, input, price }: NotifyArgs): P
     return false;
   }
 
-  const itemsLine = LUGGAGE_SIZES.filter((size) => input.items[size] > 0)
-    .map((size) => `${input.items[size]}× ${SIZE_LABELS[size]}`)
-    .join(', ');
+  const luggageLines = LUGGAGE_SIZES.filter((size) => input.items[size] > 0).map(
+    (size) => `• ${SIZE_LABELS[size]} × ${input.items[size]}`
+  );
+
+  const dateRange =
+    input.dropoffDate === input.pickupDate
+      ? formatDateForTelegram(input.dropoffDate)
+      : `${formatDateForTelegram(input.dropoffDate)} → ${formatDateForTelegram(input.pickupDate)}`;
 
   const text = [
     '🧳 *NEW BOOKING*',
+    `Reference: ${reference}`,
     '',
-    `*Reference:* ${reference}`,
-    `*Status:* Pending`,
+    '*Customer:*',
+    `Name: ${escapeMarkdown(input.customerName)}`,
+    `Phone: ${escapeMarkdown(input.customerPhone)}`,
     '',
-    `*Customer:* ${escapeMarkdown(input.customerName)}`,
-    `*Phone:* ${escapeMarkdown(input.customerPhone)}`,
+    '*Storage:*',
+    `Date(s): ${dateRange}`,
+    `Drop-off: ${input.dropoffTime}`,
+    `Pick-up: ${input.pickupTime}`,
+    `Bags: ${price.totalBags}`,
     '',
-    `*Drop-off:* ${formatDateForTelegram(input.dropoffDate)} · ${input.dropoffTime}`,
-    `*Pick-up:* ${formatDateForTelegram(input.pickupDate)} · ${input.pickupTime}`,
-    `*Duration:* ${price.storageDays} day${price.storageDays === 1 ? '' : 's'}`,
+    '*Luggage:*',
+    ...luggageLines,
     '',
-    `*Luggage:* ${escapeMarkdown(itemsLine)} (${price.totalBags} bag${price.totalBags === 1 ? '' : 's'} total)`,
+    '*Pricing:*',
+    `Original: ${formatCents(price.originalPriceCents)}`,
+    `Online discount: ${price.discountPercentage}% (-${formatCents(price.discountAmountCents)})`,
+    `Final: ${formatCents(price.finalPriceCents)}`,
     '',
-    `*Original price:* ${formatCents(price.originalPriceCents)}`,
-    `*${price.discountPercentage}% discount:* -${formatCents(price.discountAmountCents)}`,
-    `*Final price:* ${formatCents(price.finalPriceCents)}`,
-    `*Payment:* Cash/Card at store`,
+    '*Payment:*',
+    'Pay at store — Cash/Card',
     '',
     `*Language:* ${input.language.toUpperCase()}`,
+    '',
+    '*Location:*',
+    business.name,
+    `${business.streetAddress}, ${business.addressLocality}`,
   ].join('\n');
 
   try {
