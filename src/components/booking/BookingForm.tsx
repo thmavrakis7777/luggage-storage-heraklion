@@ -23,7 +23,7 @@ import type { Locale } from '@/i18n/config';
 const inputClass =
   'w-full pl-12 pr-4 py-4 bg-paper-50 border border-ink-200 focus:border-ink-500 focus:outline-none transition-colors text-ink-900';
 
-const EMPTY_ITEMS: LuggageQuantities = { backpack: 0, cabin: 1, large: 0 };
+const EMPTY_ITEMS: LuggageQuantities = { backpack: 0, cabin: 0, large: 0 };
 
 export function BookingForm() {
   const t = useTranslations('booking');
