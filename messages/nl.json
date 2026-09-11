@@ -10,7 +10,8 @@
     "howItWorks": "Hoe Het Werkt",
     "location": "Locatie",
     "faq": "Veelgestelde Vragen",
-    "bookNow": "Nu Boeken"
+    "bookNow": "Nu Boeken",
+    "journal": "Journal"
   },
   "hero": {
     "eyebrow": "Heraklion Centrum",
@@ -260,5 +261,16 @@
     "title": "Pagina Niet Gevonden",
     "description": "De pagina die je zoekt bestaat niet of is mogelijk verplaatst. We brengen je terug op weg.",
     "cta": "Terug naar Home"
+  },
+  "journal": {
+    "eyebrow": "Journal",
+    "title": "Bagageopslag & Reisnotities over Heraklion",
+    "subtitle": "Praktische notities over het opslaan van je bagage, je verplaatsen in Heraklion en het benutten van de uren tussen uitchecken en vertrek.",
+    "readingTime": "{minutes} min leestijd",
+    "readMore": "Lees artikel",
+    "backToJournal": "Terug naar het journal",
+    "keepReading": "Verder lezen",
+    "ctaTitle": "Laat je bagage bij ons achter",
+    "ctaText": "Boek online in ongeveer 30 seconden en bespaar 10%. Geen account, geen e-mail, geen online betaling."
   }
 }

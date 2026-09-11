@@ -1,14 +1,18 @@
 'use client';
 
-import { useTranslations } from 'next-intl';
+import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Logo } from '@/components/ui/Logo';
 import { locales, localeNames } from '@/i18n/config';
 import { business, googleMapsUrl, telHref, whatsappHref } from '@/lib/site';
+// Types module, not the journal index — the index would drag every post into
+// the client bundle.
+import { isJournalLocale } from '@/content/journal/types';
 
 export function Footer() {
   const t = useTranslations('footer');
   const nav = useTranslations('nav');
+  const showJournal = isJournalLocale(useLocale());
 
   return (
     <footer className="bg-ink-900 text-white">
@@ -31,6 +35,9 @@ export function Footer() {
               <li><a href="#pricing" className="hover:text-white transition-colors">{nav('pricing')}</a></li>
               <li><a href="#location" className="hover:text-white transition-colors">{nav('location')}</a></li>
               <li><a href="#faq" className="hover:text-white transition-colors">{nav('faq')}</a></li>
+              {showJournal && (
+                <li><Link href="/journal" className="hover:text-white transition-colors">{nav('journal')}</Link></li>
+              )}
               <li><Link href="/book" className="hover:text-white transition-colors">{nav('bookNow')}</Link></li>
             </ul>
           </div>

@@ -10,7 +10,8 @@
     "howItWorks": "Come Funziona",
     "location": "Dove Siamo",
     "faq": "FAQ",
-    "bookNow": "Prenota Ora"
+    "bookNow": "Prenota Ora",
+    "journal": "Journal"
   },
   "hero": {
     "eyebrow": "Heraklion Centro",
@@ -260,5 +261,16 @@
     "title": "Pagina Non Trovata",
     "description": "La pagina che stai cercando non esiste o potrebbe essere stata spostata. Ti riportiamo sulla strada giusta.",
     "cta": "Torna alla Home"
+  },
+  "journal": {
+    "eyebrow": "Journal",
+    "title": "Deposito Bagagli e Note di Viaggio su Heraklion",
+    "subtitle": "Note pratiche su come lasciare i bagagli, muoversi a Heraklion e sfruttare al meglio le ore tra il check-out e la partenza.",
+    "readingTime": "{minutes} min di lettura",
+    "readMore": "Leggi l'articolo",
+    "backToJournal": "Torna al journal",
+    "keepReading": "Continua a leggere",
+    "ctaTitle": "Lascia i bagagli da noi",
+    "ctaText": "Prenota online in circa 30 secondi e risparmia il 10%. Nessun account, nessuna email, nessun pagamento online."
   }
 }

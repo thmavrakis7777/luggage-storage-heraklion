@@ -10,7 +10,8 @@
     "howItWorks": "So Funktioniert's",
     "location": "Standort",
     "faq": "FAQ",
-    "bookNow": "Jetzt Buchen"
+    "bookNow": "Jetzt Buchen",
+    "journal": "Journal"
   },
   "hero": {
     "eyebrow": "Heraklion Stadtzentrum",
@@ -260,5 +261,16 @@
     "title": "Seite Nicht Gefunden",
     "description": "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben. Wir bringen Sie zurück.",
     "cta": "Zurück zur Startseite"
+  },
+  "journal": {
+    "eyebrow": "Journal",
+    "title": "Gepäckaufbewahrung & Reisenotizen aus Heraklion",
+    "subtitle": "Praktische Hinweise zur Aufbewahrung Ihres Gepäcks, zur Fortbewegung in Heraklion und dazu, wie Sie die Stunden zwischen Check-out und Abreise optimal nutzen.",
+    "readingTime": "{minutes} Min. Lesezeit",
+    "readMore": "Artikel lesen",
+    "backToJournal": "Zurück zum Journal",
+    "keepReading": "Weiterlesen",
+    "ctaTitle": "Geben Sie Ihr Gepäck bei uns ab",
+    "ctaText": "Buchen Sie online in etwa 30 Sekunden und sparen Sie 10%. Kein Konto, keine E-Mail, keine Online-Zahlung."
   }
 }

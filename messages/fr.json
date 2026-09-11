@@ -10,7 +10,8 @@
     "howItWorks": "Comment Ça Marche",
     "location": "Emplacement",
     "faq": "FAQ",
-    "bookNow": "Réserver"
+    "bookNow": "Réserver",
+    "journal": "Journal"
   },
   "hero": {
     "eyebrow": "Héraklion Centre-Ville",
@@ -260,5 +261,16 @@
     "title": "Page Introuvable",
     "description": "La page que vous recherchez n'existe pas ou a peut-être été déplacée. Revenons sur le bon chemin.",
     "cta": "Retour à l'Accueil"
+  },
+  "journal": {
+    "eyebrow": "Journal",
+    "title": "Consigne à Bagages et Notes de Voyage sur Héraklion",
+    "subtitle": "Des notes pratiques pour déposer vos bagages, circuler dans Héraklion et profiter des heures entre le départ de l'hôtel et le vôtre.",
+    "readingTime": "{minutes} min de lecture",
+    "readMore": "Lire l'article",
+    "backToJournal": "Retour au journal",
+    "keepReading": "Continuer la lecture",
+    "ctaTitle": "Laissez vos bagages chez nous",
+    "ctaText": "Réservez en ligne en 30 secondes environ et économisez 10%. Sans compte, sans e-mail, sans paiement en ligne."
   }
 }

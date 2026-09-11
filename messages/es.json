@@ -10,7 +10,8 @@
     "howItWorks": "Cómo Funciona",
     "location": "Ubicación",
     "faq": "Preguntas Frecuentes",
-    "bookNow": "Reservar"
+    "bookNow": "Reservar",
+    "journal": "Blog"
   },
   "hero": {
     "eyebrow": "Heraklion Centro",
@@ -260,5 +261,16 @@
     "title": "Página No Encontrada",
     "description": "La página que buscas no existe o puede haberse movido. Te ayudamos a volver al camino correcto.",
     "cta": "Volver al Inicio"
+  },
+  "journal": {
+    "eyebrow": "Blog",
+    "title": "Consigna de Equipaje y Notas de Viaje sobre Heraclión",
+    "subtitle": "Notas prácticas sobre dónde dejar tu equipaje, cómo moverte por Heraclión y cómo aprovechar las horas entre la salida del hotel y tu partida.",
+    "readingTime": "{minutes} min de lectura",
+    "readMore": "Leer artículo",
+    "backToJournal": "Volver al blog",
+    "keepReading": "Sigue leyendo",
+    "ctaTitle": "Deja tu equipaje con nosotros",
+    "ctaText": "Reserva online en unos 30 segundos y ahorra un 10%. Sin cuenta, sin email, sin pago online."
   }
 }
