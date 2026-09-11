@@ -8,9 +8,6 @@ import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outli
 import { locales, localeNames, type Locale } from '@/i18n/config';
 import { useParams } from 'next/navigation';
 import { Logo } from '@/components/ui/Logo';
-// Imported from the types module, not the journal index — the index pulls in
-// every post in every language, which has no business in the client bundle.
-import { isJournalLocale } from '@/content/journal/types';
 
 export function Navigation() {
   const t = useTranslations('nav');
@@ -68,9 +65,6 @@ export function Navigation() {
     { href: '#faq', label: t('faq') },
   ];
 
-  // The journal only exists in the languages it is written in.
-  const showJournal = isJournalLocale(currentLocale);
-
   // The transparent header with white text only works over the homepage's
   // dark hero. Every other page (/book, /journal, booking confirmation) has a
   // near-white background, where white-on-white made the logo and links
@@ -123,16 +117,6 @@ export function Navigation() {
                 {link.label}
               </a>
             ))}
-            {showJournal && (
-              <Link
-                href="/journal"
-                className={`text-[13px] font-medium tracking-[0.15em] uppercase transition-colors duration-300 hover:opacity-70 ${
-                  solid ? 'text-ink-700' : 'text-white/90'
-                }`}
-              >
-                {t('journal')}
-              </Link>
-            )}
           </div>
 
           <div className="flex items-center gap-3 sm:gap-4 lg:gap-6">
@@ -221,15 +205,6 @@ export function Navigation() {
                     {link.label}
                   </a>
                 ))}
-                {showJournal && (
-                  <Link
-                    href="/journal"
-                    onClick={() => setIsOpen(false)}
-                    className="text-lg font-serif font-normal tracking-wide text-ink-800 py-1"
-                  >
-                    {t('journal')}
-                  </Link>
-                )}
                 <Link
                   href="/book"
                   onClick={() => setIsOpen(false)}
