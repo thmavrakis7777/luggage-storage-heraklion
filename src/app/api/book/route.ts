@@ -1,4 +1,4 @@
-import { NextRequest, NextResponse } from 'next/server';
+import { NextRequest, NextResponse, after } from 'next/server';
 import { bookingInputSchema } from '@/lib/booking-schema';
 import { calculatePrice, computeStorageDays, LUGGAGE_SIZES } from '@/lib/pricing';
 import { todayInHeraklion } from '@/lib/hours';
@@ -76,12 +76,13 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'booking_failed' }, { status: 500 });
   }
 
-  // The booking is already saved at this point — a failure below (e.g. the
-  // best-effort Telegram notification) must never turn into a false
-  // "booking_failed" response for a booking that actually succeeded.
+  // The booking is already saved at this point. The Telegram notification
+  // is best-effort and purely informational for us, not something the
+  // customer should wait on — after() runs it once the response below has
+  // already been sent, instead of adding its round-trip to theirs.
   const storageDays = computeStorageDays(input.dropoffDate, input.pickupDate);
   const price = calculatePrice(input.items, storageDays);
-  await notifyTelegram({ reference, input, price });
+  after(() => notifyTelegram({ reference, input, price }));
 
   return NextResponse.json({ reference }, { status: 201 });
 }
