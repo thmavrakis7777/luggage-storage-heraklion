@@ -9,6 +9,8 @@ import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { NoiseOverlay } from '@/components/ui/NoiseOverlay';
 import { MobileActionBar } from '@/components/layout/MobileActionBar';
+import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
+import { AnalyticsPageView } from '@/components/analytics/AnalyticsPageView';
 import '../globals.css';
 
 const cormorant = Cormorant_Garamond({
@@ -133,6 +135,8 @@ export default async function LocaleLayout({
         />
       </head>
       <body className="font-sans antialiased bg-paper-50 text-ink-800 pb-16 md:pb-0">
+        <GoogleAnalytics />
+        <AnalyticsPageView />
         <NextIntlClientProvider messages={messages}>
           <a
             href="#main-content"

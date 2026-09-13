@@ -18,6 +18,7 @@ import {
   type LuggageQuantities,
 } from '@/lib/pricing';
 import { isAdvanceBookingRequired, timeOptionsFor, todayInHeraklion } from '@/lib/hours';
+import { trackBookingStarted, trackBookingCompleted } from '@/lib/analytics';
 import type { Locale } from '@/i18n/config';
 
 const inputClass =
@@ -86,6 +87,8 @@ export function BookingForm() {
     }
     if (price.totalBags < 1) return setError(tErr('noItems'));
 
+    trackBookingStarted();
+
     setSubmitting(true);
     try {
       const res = await fetch('/api/book', {
@@ -114,6 +117,7 @@ export function BookingForm() {
       }
 
       const { reference } = await res.json();
+      trackBookingCompleted({ reference, valueEuros: price.finalPriceCents / 100 });
       router.push(`/book/success/${reference}`);
     } catch {
       setError(tErr('generic'));
