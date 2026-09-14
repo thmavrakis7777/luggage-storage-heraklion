@@ -1,11 +1,11 @@
 /**
- * GA4 client-side helpers. Pushes straight onto `window.dataLayer` rather
- * than calling `window.gtag(...)` — the array exists as soon as
- * GoogleAnalytics' inline init script runs, so this works correctly even
- * before the actual gtag.js library has finished loading (it drains the
- * queued array once it does). Every export is a no-op if the measurement ID
- * isn't configured or `window` isn't available, and none of them ever throw
- * — analytics must never break or delay the booking flow.
+ * GA4 client-side helpers. Commands go through the same queueing `gtag()`
+ * function as Google's own snippet, which only needs `window.dataLayer` —
+ * so this works correctly even before the actual gtag.js library has
+ * finished loading (it drains the queued array once it does). Every export
+ * is a no-op if the measurement ID isn't configured or `window` isn't
+ * available, and none of them ever throw — analytics must never break or
+ * delay the booking flow.
  */
 
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
@@ -13,14 +13,20 @@ export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 declare global {
   interface Window {
     dataLayer?: unknown[];
+    gtag?: (...args: unknown[]) => void;
   }
 }
 
-function pushToDataLayer(...args: unknown[]) {
+function gtag(...args: unknown[]) {
   if (typeof window === 'undefined' || !GA_MEASUREMENT_ID) return;
   try {
-    window.dataLayer = window.dataLayer || [];
-    window.dataLayer.push(args);
+    // gtag.js only processes commands pushed as an `arguments` object — a
+    // plain array is silently ignored, so nothing would ever be sent.
+    window.gtag ??= function () {
+      // eslint-disable-next-line prefer-rest-params
+      (window.dataLayer ??= []).push(arguments);
+    };
+    window.gtag(...args);
   } catch {
     // Never let a blocked/broken analytics call affect the app.
   }
@@ -30,14 +36,14 @@ function pushToDataLayer(...args: unknown[]) {
  * the single source of page views, covering both the first load and every
  * client-side route change. */
 export function sendPageView(path: string) {
-  pushToDataLayer('event', 'page_view', { page_path: path });
+  gtag('event', 'page_view', { page_path: path });
 }
 
 /** Fires once the booking form has passed client-side validation and the
  * customer is genuinely attempting to submit — not on page view (already
  * covered separately) and not on every keystroke. */
 export function trackBookingStarted() {
-  pushToDataLayer('event', 'booking_started');
+  gtag('event', 'booking_started');
 }
 
 /** Fires only after the booking has actually been created server-side.
@@ -50,7 +56,7 @@ export function trackBookingCompleted({
   reference: string;
   valueEuros: number;
 }) {
-  pushToDataLayer('event', 'booking_completed', {
+  gtag('event', 'booking_completed', {
     transaction_id: reference,
     value: valueEuros,
     currency: 'EUR',

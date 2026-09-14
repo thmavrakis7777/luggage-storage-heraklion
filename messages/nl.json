@@ -5,13 +5,17 @@
   },
   "nav": {
     "home": "Home",
-    "luggageStorage": "Bagageopslag",
     "pricing": "Prijzen",
     "howItWorks": "Hoe Het Werkt",
     "location": "Locatie",
     "faq": "Veelgestelde Vragen",
     "bookNow": "Nu Boeken",
-    "journal": "Journal"
+    "journal": "Journal",
+    "skipToContent": "Direct naar de hoofdinhoud",
+    "mainNavigation": "Hoofdnavigatie",
+    "changeLanguage": "Taal wijzigen",
+    "openMenu": "Menu openen",
+    "closeMenu": "Menu sluiten"
   },
   "hero": {
     "eyebrow": "Heraklion Centrum",
@@ -123,7 +127,8 @@
     },
     "openMaps": "Openen in Google Maps",
     "call": "Bellen",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "mapTitle": "Kaart van onze locatie in Heraklion"
   },
   "hours": {
     "weekdays": "Maandag–Vrijdag",
@@ -164,10 +169,6 @@
       "account": {
         "question": "Moet ik een account aanmaken om te boeken?",
         "answer": "Geen account, geen wachtwoord, geen e-mail nodig. Vul gewoon je naam, telefoonnummer en opslagdetails in — dit duurt ongeveer 30 seconden."
-      },
-      "walkIn": {
-        "question": "Kan ik gewoon binnenlopen zonder te boeken?",
-        "answer": "Ja — je bent van harte welkom zonder boeking tijdens onze reguliere openingstijden. Vooraf boeken is alleen verplicht op ma, wo & za na 15:00 uur, en de hele zondag, wanneer personeel alleen op afspraak aanwezig is."
       }
     }
   },
@@ -180,7 +181,6 @@
     "tagline": "Veilige, vriendelijke bagageopslag in het hart van Heraklion, Kreta.",
     "quickLinksTitle": "Snelle Links",
     "contactTitle": "Contact",
-    "languageTitle": "Taal",
     "rights": "Alle rechten voorbehouden."
   },
   "booking": {
@@ -203,6 +203,8 @@
       "backpack": "Rugzak",
       "cabin": "Handbagage / Middel",
       "large": "Groot",
+      "decrease": "Aantal verlagen: {item}",
+      "increase": "Aantal verhogen: {item}",
       "submit": "Boeking Bevestigen",
       "submitting": "Bezig met boeken..."
     },
@@ -255,7 +257,8 @@
     "book": "Boeken",
     "whatsapp": "WhatsApp",
     "call": "Bellen",
-    "map": "Kaart"
+    "map": "Kaart",
+    "label": "Snelle acties"
   },
   "notFound": {
     "title": "Pagina Niet Gevonden",

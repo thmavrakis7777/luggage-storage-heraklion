@@ -5,13 +5,17 @@
   },
   "nav": {
     "home": "Inicio",
-    "luggageStorage": "Consigna de Equipaje",
     "pricing": "Precios",
     "howItWorks": "Cómo Funciona",
     "location": "Ubicación",
     "faq": "Preguntas Frecuentes",
     "bookNow": "Reservar",
-    "journal": "Blog"
+    "journal": "Blog",
+    "skipToContent": "Saltar al contenido principal",
+    "mainNavigation": "Navegación principal",
+    "changeLanguage": "Cambiar idioma",
+    "openMenu": "Abrir menú",
+    "closeMenu": "Cerrar menú"
   },
   "hero": {
     "eyebrow": "Heraklion Centro",
@@ -123,7 +127,8 @@
     },
     "openMaps": "Abrir en Google Maps",
     "call": "Llamar",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "mapTitle": "Mapa de nuestra ubicación en Heraklion"
   },
   "hours": {
     "weekdays": "Lunes–Viernes",
@@ -164,10 +169,6 @@
       "account": {
         "question": "¿Necesito crear una cuenta para reservar?",
         "answer": "Sin cuenta, sin contraseña, sin necesidad de email. Solo indica tu nombre, tu teléfono y los detalles del almacenamiento: tarda unos 30 segundos."
-      },
-      "walkIn": {
-        "question": "¿Puedo venir directamente sin reservar?",
-        "answer": "Sí — aceptamos clientes sin reserva durante nuestro horario habitual. Solo se requiere reserva anticipada lun, mié y sáb después de las 15:00, y todo el domingo, cuando el personal está presente solo con cita previa."
       }
     }
   },
@@ -180,7 +181,6 @@
     "tagline": "Consigna de equipaje segura y cercana en el corazón de Heraklion, Creta.",
     "quickLinksTitle": "Enlaces Rápidos",
     "contactTitle": "Contacto",
-    "languageTitle": "Idioma",
     "rights": "Todos los derechos reservados."
   },
   "booking": {
@@ -203,6 +203,8 @@
       "backpack": "Mochila",
       "cabin": "Cabina / Mediana",
       "large": "Grande",
+      "decrease": "Reducir cantidad: {item}",
+      "increase": "Aumentar cantidad: {item}",
       "submit": "Confirmar Reserva",
       "submitting": "Reservando..."
     },
@@ -255,7 +257,8 @@
     "book": "Reservar",
     "whatsapp": "WhatsApp",
     "call": "Llamar",
-    "map": "Mapa"
+    "map": "Mapa",
+    "label": "Accesos rápidos"
   },
   "notFound": {
     "title": "Página No Encontrada",

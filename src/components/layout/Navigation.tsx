@@ -3,9 +3,9 @@
 import { useState, useEffect, useRef } from 'react';
 import { useTranslations } from 'next-intl';
 import { Link, usePathname, useRouter } from '@/i18n/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
 import { Bars3Icon, XMarkIcon, ChevronDownIcon } from '@heroicons/react/24/outline';
 import { locales, localeNames, type Locale } from '@/i18n/config';
+import { isJournalLocale } from '@/content/journal/types';
 import { useParams } from 'next/navigation';
 import { Logo } from '@/components/ui/Logo';
 
@@ -58,12 +58,20 @@ export function Navigation() {
     return () => document.removeEventListener('pointerdown', handleOutsideClick);
   }, [isOpen, showLanguages]);
 
+  // The section anchors only exist on the homepage, so they always point
+  // there — a bare #pricing did nothing on /book, /journal or an article.
   const navLinks = [
-    { href: '#how-it-works', label: t('howItWorks') },
-    { href: '#pricing', label: t('pricing') },
-    { href: '#location', label: t('location') },
-    { href: '#faq', label: t('faq') },
+    { hash: 'how-it-works', label: t('howItWorks') },
+    { hash: 'pricing', label: t('pricing') },
+    { hash: 'location', label: t('location') },
+    { hash: 'faq', label: t('faq') },
   ];
+
+  // The journal is EN/EL only, so switching a journal page to any other
+  // language lands on that language's homepage instead of a 404.
+  const isJournalPage = pathname === '/journal' || pathname.startsWith('/journal/');
+  const pathForLocale = (locale: Locale) =>
+    isJournalPage && !isJournalLocale(locale) ? '/' : pathname;
 
   // The transparent header with white text only works over the homepage's
   // dark hero. Every other page (/book, /journal, booking confirmation) has a
@@ -78,7 +86,7 @@ export function Navigation() {
         solid ? 'bg-white/95 shadow-sm' : 'bg-transparent'
       }`}
     >
-      <nav className="container-wide mx-auto px-4 sm:px-6 lg:px-8">
+      <nav aria-label={t('mainNavigation')} className="container-wide mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-18 lg:h-20">
           <Link
             href="/"
@@ -107,15 +115,15 @@ export function Navigation() {
 
           <div className="hidden lg:flex items-center gap-8">
             {navLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
+              <Link
+                key={link.hash}
+                href={{ pathname: '/', hash: link.hash }}
                 className={`text-[13px] font-medium tracking-[0.15em] uppercase transition-colors duration-300 hover:opacity-70 ${
                   solid ? 'text-ink-700' : 'text-white/90'
                 }`}
               >
                 {link.label}
-              </a>
+              </Link>
             ))}
           </div>
 
@@ -130,40 +138,38 @@ export function Navigation() {
                 className={`flex items-center gap-1 text-[13px] font-medium uppercase tracking-wide transition-colors ${
                   solid ? 'text-ink-700' : 'text-white/90'
                 }`}
-                aria-label="Change language"
+                aria-label={t('changeLanguage')}
                 aria-expanded={showLanguages}
               >
                 {currentLocale}
                 <ChevronDownIcon className="w-3.5 h-3.5" />
               </button>
-              <AnimatePresence>
-                {showLanguages && (
-                  <motion.div
-                    initial={{ opacity: 0, y: 8 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    exit={{ opacity: 0, y: 8 }}
-                    transition={{ duration: 0.15 }}
-                    className="absolute right-0 mt-3 flex flex-col gap-0.5 p-1.5 bg-white shadow-xl min-w-[140px] max-h-[70vh] overflow-y-auto"
+              {/* Always mounted so it can fade/slide out as well as in (150ms,
+                  8px); `invisible` keeps it out of the tab order and the
+                  accessibility tree while closed. */}
+              <div
+                className={`absolute right-0 mt-3 flex flex-col gap-0.5 p-1.5 bg-white shadow-xl min-w-[140px] max-h-[70vh] overflow-y-auto transition-[opacity,translate,visibility] duration-150 ease-[cubic-bezier(0.42,0,0.58,1)] ${
+                  showLanguages ? 'visible opacity-100 translate-y-0' : 'invisible opacity-0 translate-y-2'
+                }`}
+              >
+                {locales.map((locale) => (
+                  <button
+                    key={locale}
+                    lang={locale}
+                    onClick={() => {
+                      setShowLanguages(false);
+                      router.replace(pathForLocale(locale), { locale });
+                    }}
+                    className={`text-left text-sm px-3 py-2 transition-colors ${
+                      locale === currentLocale
+                        ? 'bg-brand-50 text-ink-900 font-medium'
+                        : 'text-ink-600 hover:bg-ink-50'
+                    }`}
                   >
-                    {locales.map((locale) => (
-                      <button
-                        key={locale}
-                        onClick={() => {
-                          setShowLanguages(false);
-                          router.replace(pathname, { locale });
-                        }}
-                        className={`text-left text-sm px-3 py-2 transition-colors ${
-                          locale === currentLocale
-                            ? 'bg-brand-50 text-ink-900 font-medium'
-                            : 'text-ink-600 hover:bg-ink-50'
-                        }`}
-                      >
-                        {localeNames[locale]}
-                      </button>
-                    ))}
-                  </motion.div>
-                )}
-              </AnimatePresence>
+                    {localeNames[locale]}
+                  </button>
+                ))}
+              </div>
             </div>
 
             <Link href="/book" className="hidden lg:inline-flex btn-primary text-sm px-6 py-3">
@@ -175,7 +181,7 @@ export function Navigation() {
                 setIsOpen(!isOpen);
                 setShowLanguages(false);
               }}
-              aria-label={isOpen ? 'Close menu' : 'Open menu'}
+              aria-label={isOpen ? t('closeMenu') : t('openMenu')}
               aria-expanded={isOpen}
               className={`lg:hidden p-2 -mr-2 transition-colors ${solid ? 'text-ink-900' : 'text-white'}`}
             >
@@ -185,54 +191,54 @@ export function Navigation() {
         </div>
       </nav>
 
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: 'auto' }}
-            exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-ink-100"
-          >
-            <div className="container-wide mx-auto px-4 py-6">
-              <div className="flex flex-col gap-4">
-                {navLinks.map((link) => (
-                  <a
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setIsOpen(false)}
-                    className="text-lg font-serif font-normal tracking-wide text-ink-800 py-1"
-                  >
-                    {link.label}
-                  </a>
-                ))}
+      {/* Mobile menu: animating grid rows 0fr → 1fr opens it to its natural
+          height (with the fade) in plain CSS, closing the same way. */}
+      <div
+        className={`lg:hidden grid transition-[grid-template-rows,opacity,visibility] duration-300 ease-[cubic-bezier(0.25,0.1,0.35,1)] ${
+          isOpen ? 'visible grid-rows-[1fr] opacity-100' : 'invisible grid-rows-[0fr] opacity-0'
+        }`}
+      >
+        <div className="min-h-0 overflow-hidden bg-white border-t border-ink-100">
+          <div className="container-wide mx-auto px-4 py-6">
+            <div className="flex flex-col gap-4">
+              {navLinks.map((link) => (
                 <Link
-                  href="/book"
+                  key={link.hash}
+                  href={{ pathname: '/', hash: link.hash }}
                   onClick={() => setIsOpen(false)}
-                  className="btn-primary mt-2"
+                  className="text-lg font-serif font-normal tracking-wide text-ink-800 py-1"
                 >
-                  {t('bookNow')}
+                  {link.label}
                 </Link>
-                <hr className="my-2 border-ink-100" />
-                <div className="flex flex-wrap gap-x-5 gap-y-2">
-                  {locales.map((locale) => (
-                    <Link
-                      key={locale}
-                      href={pathname}
-                      locale={locale}
-                      onClick={() => setIsOpen(false)}
-                      className={`text-sm font-medium ${
-                        currentLocale === locale ? 'text-ink-900' : 'text-ink-400'
-                      }`}
-                    >
-                      {localeNames[locale]}
-                    </Link>
-                  ))}
-                </div>
+              ))}
+              <Link
+                href="/book"
+                onClick={() => setIsOpen(false)}
+                className="btn-primary mt-2"
+              >
+                {t('bookNow')}
+              </Link>
+              <hr className="my-2 border-ink-100" />
+              <div className="flex flex-wrap gap-x-5 gap-y-2">
+                {locales.map((locale) => (
+                  <Link
+                    key={locale}
+                    href={pathForLocale(locale)}
+                    locale={locale}
+                    lang={locale}
+                    onClick={() => setIsOpen(false)}
+                    className={`text-sm font-medium ${
+                      currentLocale === locale ? 'text-ink-900' : 'text-ink-400'
+                    }`}
+                  >
+                    {localeNames[locale]}
+                  </Link>
+                ))}
               </div>
             </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+          </div>
+        </div>
+      </div>
     </header>
   );
 }

@@ -1,18 +1,14 @@
 import { setRequestLocale, getTranslations } from 'next-intl/server';
-import dynamic from 'next/dynamic';
 import { Hero } from '@/components/sections/Hero';
 import { WalkInNotice } from '@/components/sections/WalkInNotice';
 import { QuickBenefits } from '@/components/sections/QuickBenefits';
-
-const HowItWorks = dynamic(() => import('@/components/sections/HowItWorks').then((m) => m.HowItWorks));
-const Pricing = dynamic(() => import('@/components/sections/Pricing').then((m) => m.Pricing));
-const WhyChooseUs = dynamic(() => import('@/components/sections/WhyChooseUs').then((m) => m.WhyChooseUs));
-const Location = dynamic(() => import('@/components/sections/Location').then((m) => m.Location));
-const AirportTransfer = dynamic(() =>
-  import('@/components/sections/AirportTransfer').then((m) => m.AirportTransfer)
-);
-const FAQ = dynamic(() => import('@/components/sections/FAQ').then((m) => m.FAQ));
-const FinalCTA = dynamic(() => import('@/components/sections/FinalCTA').then((m) => m.FinalCTA));
+import { HowItWorks } from '@/components/sections/HowItWorks';
+import { Pricing } from '@/components/sections/Pricing';
+import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
+import { Location } from '@/components/sections/Location';
+import { AirportTransfer } from '@/components/sections/AirportTransfer';
+import { FAQ } from '@/components/sections/FAQ';
+import { FinalCTA } from '@/components/sections/FinalCTA';
 
 export default async function HomePage({
   params,

@@ -1,7 +1,4 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
-import { motion } from 'framer-motion';
 import { Link } from '@/i18n/navigation';
 
 export function Hero() {
@@ -29,12 +26,7 @@ export function Hero() {
       </div>
 
       <div className="relative container-wide mx-auto px-4 sm:px-6 lg:px-8 pt-24 pb-16">
-        <motion.div
-          initial={{ opacity: 0, y: 16 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          className="max-w-3xl"
-        >
+        <div className="max-w-3xl animate-hero-in">
           <span className="eyebrow text-brand-400">{t('eyebrow')}</span>
 
           <h1 className="mt-5 text-5xl sm:text-6xl md:text-7xl font-serif font-light leading-[1.05] tracking-tight text-white text-balance">
@@ -53,7 +45,7 @@ export function Hero() {
               {t('ctaSecondary')}
             </a>
           </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );

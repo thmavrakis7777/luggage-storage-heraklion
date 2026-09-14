@@ -5,13 +5,17 @@
   },
   "nav": {
     "home": "Home",
-    "luggageStorage": "Deposito Bagagli",
     "pricing": "Prezzi",
     "howItWorks": "Come Funziona",
     "location": "Dove Siamo",
     "faq": "FAQ",
     "bookNow": "Prenota Ora",
-    "journal": "Journal"
+    "journal": "Journal",
+    "skipToContent": "Vai al contenuto principale",
+    "mainNavigation": "Navigazione principale",
+    "changeLanguage": "Cambia lingua",
+    "openMenu": "Apri il menu",
+    "closeMenu": "Chiudi il menu"
   },
   "hero": {
     "eyebrow": "Heraklion Centro",
@@ -123,7 +127,8 @@
     },
     "openMaps": "Apri in Google Maps",
     "call": "Chiama",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "mapTitle": "Mappa della nostra sede a Heraklion"
   },
   "hours": {
     "weekdays": "Lunedì–Venerdì",
@@ -164,10 +169,6 @@
       "account": {
         "question": "Devo creare un account per prenotare?",
         "answer": "Nessun account, nessuna password, nessuna email richiesta. Basta inserire nome, numero di telefono e dettagli del deposito — richiede circa 30 secondi."
-      },
-      "walkIn": {
-        "question": "Posso venire direttamente senza prenotare?",
-        "answer": "Sì — accettiamo clienti senza prenotazione durante i nostri orari regolari. La prenotazione anticipata è richiesta solo lun, mer e sab dopo le 15:00, e tutta la domenica, quando il personale è in sede solo su appuntamento."
       }
     }
   },
@@ -180,7 +181,6 @@
     "tagline": "Deposito bagagli sicuro e cordiale nel cuore di Heraklion, Creta.",
     "quickLinksTitle": "Link Rapidi",
     "contactTitle": "Contatti",
-    "languageTitle": "Lingua",
     "rights": "Tutti i diritti riservati."
   },
   "booking": {
@@ -203,6 +203,8 @@
       "backpack": "Zaino",
       "cabin": "Bagaglio a Mano / Medio",
       "large": "Grande",
+      "decrease": "Diminuisci quantità: {item}",
+      "increase": "Aumenta quantità: {item}",
       "submit": "Conferma Prenotazione",
       "submitting": "Prenotazione in corso..."
     },
@@ -255,7 +257,8 @@
     "book": "Prenota",
     "whatsapp": "WhatsApp",
     "call": "Chiama",
-    "map": "Mappa"
+    "map": "Mappa",
+    "label": "Azioni rapide"
   },
   "notFound": {
     "title": "Pagina Non Trovata",

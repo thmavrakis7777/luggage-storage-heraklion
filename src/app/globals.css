@@ -21,7 +21,7 @@
   --color-ink-100: #e7e4e1;
   --color-ink-200: #cac5bf;
   --color-ink-300: #a8a19a;
-  --color-ink-400: #7c766f;
+  --color-ink-400: #77716a; /* was #7c766f — nudged just enough for 4.5:1 small text on paper-100 */
   --color-ink-500: #58524c;
   --color-ink-600: #3f3a35;
   --color-ink-700: #2c2824;
@@ -34,6 +34,18 @@
   --color-paper-100: #faf8f4;
   --color-paper-200: #f3efe7;
   --color-paper-300: #e9e3d6;
+
+  /* Hero entrance: fade + 16px rise. CSS rather than JS so the headline (the
+     LCP element) animates from the first paint instead of staying hidden
+     until hydration. The reduced-motion rule below makes it instant. */
+  --animate-hero-in: hero-in 0.6s ease-in-out both;
+
+  @keyframes hero-in {
+    from {
+      opacity: 0;
+      transform: translateY(16px);
+    }
+  }
 }
 
 @layer base {

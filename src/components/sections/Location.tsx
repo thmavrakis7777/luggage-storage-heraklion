@@ -1,5 +1,3 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
 import { MapPinIcon, PhoneIcon, ChatBubbleLeftRightIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { business, googleMapsUrl, telHref, whatsappHref } from '@/lib/site';
@@ -82,7 +80,7 @@ export function Location() {
 
           <div className="aspect-[4/3] w-full overflow-hidden border border-ink-100">
             <iframe
-              title="Map"
+              title={t('mapTitle')}
               src={`https://maps.google.com/maps?q=${encodeURIComponent(
                 `${business.streetAddress}, ${business.postalCode} ${business.addressLocality}, Greece`
               )}&z=16&output=embed`}

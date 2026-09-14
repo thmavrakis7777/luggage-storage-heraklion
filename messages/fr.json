@@ -5,13 +5,17 @@
   },
   "nav": {
     "home": "Accueil",
-    "luggageStorage": "Consigne à Bagages",
     "pricing": "Tarifs",
     "howItWorks": "Comment Ça Marche",
     "location": "Emplacement",
     "faq": "FAQ",
     "bookNow": "Réserver",
-    "journal": "Journal"
+    "journal": "Journal",
+    "skipToContent": "Aller au contenu principal",
+    "mainNavigation": "Navigation principale",
+    "changeLanguage": "Changer de langue",
+    "openMenu": "Ouvrir le menu",
+    "closeMenu": "Fermer le menu"
   },
   "hero": {
     "eyebrow": "Héraklion Centre-Ville",
@@ -123,7 +127,8 @@
     },
     "openMaps": "Ouvrir dans Google Maps",
     "call": "Appeler",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "mapTitle": "Carte de notre emplacement à Héraklion"
   },
   "hours": {
     "weekdays": "Lundi–Vendredi",
@@ -164,10 +169,6 @@
       "account": {
         "question": "Dois-je créer un compte pour réserver ?",
         "answer": "Aucun compte, aucun mot de passe, aucun email requis. Indiquez simplement votre nom, votre téléphone et les détails du stockage — cela prend environ 30 secondes."
-      },
-      "walkIn": {
-        "question": "Puis-je venir directement sans réserver ?",
-        "answer": "Oui — les visites sans réservation sont les bienvenues pendant nos horaires habituels. Une réservation à l'avance n'est requise que lun, mer et sam après 15h00, et le dimanche toute la journée, lorsque le personnel n'est présent que sur rendez-vous."
       }
     }
   },
@@ -180,7 +181,6 @@
     "tagline": "Consigne à bagages sécurisée et accueillante au cœur d'Héraklion, en Crète.",
     "quickLinksTitle": "Liens Rapides",
     "contactTitle": "Contact",
-    "languageTitle": "Langue",
     "rights": "Tous droits réservés."
   },
   "booking": {
@@ -203,6 +203,8 @@
       "backpack": "Sac à Dos",
       "cabin": "Cabine / Moyen",
       "large": "Grand",
+      "decrease": "Diminuer la quantité : {item}",
+      "increase": "Augmenter la quantité : {item}",
       "submit": "Confirmer la Réservation",
       "submitting": "Réservation en cours..."
     },
@@ -255,7 +257,8 @@
     "book": "Réserver",
     "whatsapp": "WhatsApp",
     "call": "Appeler",
-    "map": "Carte"
+    "map": "Carte",
+    "label": "Actions rapides"
   },
   "notFound": {
     "title": "Page Introuvable",

@@ -5,13 +5,17 @@
   },
   "nav": {
     "home": "Home",
-    "luggageStorage": "Luggage Storage",
     "pricing": "Pricing",
     "howItWorks": "How It Works",
     "location": "Location",
     "faq": "FAQ",
     "bookNow": "Book Now",
-    "journal": "Journal"
+    "journal": "Journal",
+    "skipToContent": "Skip to main content",
+    "mainNavigation": "Main navigation",
+    "changeLanguage": "Change language",
+    "openMenu": "Open menu",
+    "closeMenu": "Close menu"
   },
   "hero": {
     "eyebrow": "Heraklion City Center",
@@ -123,7 +127,8 @@
     },
     "openMaps": "Open in Google Maps",
     "call": "Call",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "mapTitle": "Map of our location in Heraklion"
   },
   "hours": {
     "weekdays": "Monday–Friday",
@@ -164,10 +169,6 @@
       "account": {
         "question": "Do I need to create an account to book?",
         "answer": "No account, no password, no email required. Just fill in your name, phone number and storage details — it takes about 30 seconds."
-      },
-      "walkIn": {
-        "question": "Can I just walk in without booking?",
-        "answer": "Yes — walk-ins are welcome during our regular hours. Advance booking is only required Mon, Wed & Sat after 15:00, and all day Sunday, when staff is on-site by appointment."
       }
     }
   },
@@ -180,7 +181,6 @@
     "tagline": "Secure, friendly luggage storage in the heart of Heraklion, Crete.",
     "quickLinksTitle": "Quick Links",
     "contactTitle": "Contact",
-    "languageTitle": "Language",
     "rights": "All rights reserved."
   },
   "booking": {
@@ -203,6 +203,8 @@
       "backpack": "Backpack",
       "cabin": "Cabin / Medium",
       "large": "Large",
+      "decrease": "Decrease quantity: {item}",
+      "increase": "Increase quantity: {item}",
       "submit": "Confirm Booking",
       "submitting": "Booking..."
     },
@@ -255,7 +257,8 @@
     "book": "Book",
     "whatsapp": "WhatsApp",
     "call": "Call",
-    "map": "Map"
+    "map": "Map",
+    "label": "Quick actions"
   },
   "notFound": {
     "title": "Page Not Found",

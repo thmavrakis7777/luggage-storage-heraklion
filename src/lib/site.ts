@@ -3,7 +3,6 @@ export const siteUrl =
 
 export const business = {
   name: 'Luggage Storage Heraklion City Center',
-  legalName: 'Luggage Storage Heraklion City Center',
   streetAddress: 'Sfakianaki 4',
   postalCode: '71201',
   addressLocality: 'Heraklion',

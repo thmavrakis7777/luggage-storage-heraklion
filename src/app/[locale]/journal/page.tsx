@@ -1,8 +1,8 @@
-import type { Metadata } from 'next';
+import type { Metadata, ResolvingMetadata } from 'next';
 import { notFound } from 'next/navigation';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { Link } from '@/i18n/navigation';
-import { siteUrl } from '@/lib/site';
+import { siteUrl, business } from '@/lib/site';
 import {
   getAllPosts,
   isJournalLocale,
@@ -10,11 +10,14 @@ import {
   readingMinutes,
 } from '@/content/journal';
 
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ locale: string }>;
-}): Promise<Metadata> {
+export async function generateMetadata(
+  {
+    params,
+  }: {
+    params: Promise<{ locale: string }>;
+  },
+  parent: ResolvingMetadata
+): Promise<Metadata> {
   const { locale } = await params;
   if (!isJournalLocale(locale)) return {};
 
@@ -28,12 +31,16 @@ export async function generateMetadata({
       canonical: url,
       languages: journalLanguageAlternates('/journal'),
     },
+    // Setting openGraph replaces the layout's whole object, so the site name
+    // and the per-locale share image are carried over explicitly.
     openGraph: {
       title: t('title'),
       description: t('subtitle'),
       url,
+      siteName: business.name,
       type: 'website',
       locale,
+      images: (await parent).openGraph?.images,
     },
   };
 }

@@ -5,13 +5,17 @@
   },
   "nav": {
     "home": "Startseite",
-    "luggageStorage": "Gepäckaufbewahrung",
     "pricing": "Preise",
     "howItWorks": "So Funktioniert's",
     "location": "Standort",
     "faq": "FAQ",
     "bookNow": "Jetzt Buchen",
-    "journal": "Journal"
+    "journal": "Journal",
+    "skipToContent": "Zum Hauptinhalt springen",
+    "mainNavigation": "Hauptnavigation",
+    "changeLanguage": "Sprache ändern",
+    "openMenu": "Menü öffnen",
+    "closeMenu": "Menü schließen"
   },
   "hero": {
     "eyebrow": "Heraklion Stadtzentrum",
@@ -123,7 +127,8 @@
     },
     "openMaps": "In Google Maps Öffnen",
     "call": "Anrufen",
-    "whatsapp": "WhatsApp"
+    "whatsapp": "WhatsApp",
+    "mapTitle": "Karte unseres Standorts in Heraklion"
   },
   "hours": {
     "weekdays": "Montag–Freitag",
@@ -164,10 +169,6 @@
       "account": {
         "question": "Muss ich ein Konto erstellen, um zu buchen?",
         "answer": "Kein Konto, kein Passwort, keine E-Mail nötig. Geben Sie einfach Ihren Namen, Ihre Telefonnummer und die Aufbewahrungsdetails ein — das dauert etwa 30 Sekunden."
-      },
-      "walkIn": {
-        "question": "Kann ich einfach ohne Buchung vorbeikommen?",
-        "answer": "Ja — Spontanbesuche sind während unserer regulären Öffnungszeiten willkommen. Eine Vorausbuchung ist nur Mo, Mi & Sa nach 15:00 Uhr sowie sonntags ganztägig erforderlich, wenn Personal nur nach Vereinbarung vor Ort ist."
       }
     }
   },
@@ -180,7 +181,6 @@
     "tagline": "Sichere, freundliche Gepäckaufbewahrung im Herzen von Heraklion, Kreta.",
     "quickLinksTitle": "Schnellzugriff",
     "contactTitle": "Kontakt",
-    "languageTitle": "Sprache",
     "rights": "Alle Rechte vorbehalten."
   },
   "booking": {
@@ -203,6 +203,8 @@
       "backpack": "Rucksack",
       "cabin": "Kabinengröße / Mittel",
       "large": "Groß",
+      "decrease": "Anzahl verringern: {item}",
+      "increase": "Anzahl erhöhen: {item}",
       "submit": "Buchung Bestätigen",
       "submitting": "Wird gebucht..."
     },
@@ -255,7 +257,8 @@
     "book": "Buchen",
     "whatsapp": "WhatsApp",
     "call": "Anrufen",
-    "map": "Karte"
+    "map": "Karte",
+    "label": "Schnellzugriff"
   },
   "notFound": {
     "title": "Seite Nicht Gefunden",

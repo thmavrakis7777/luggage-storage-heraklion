@@ -1,12 +1,8 @@
-'use client';
-
 import { useLocale, useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import { Logo } from '@/components/ui/Logo';
 import { locales, localeNames } from '@/i18n/config';
 import { business, googleMapsUrl, telHref, whatsappHref } from '@/lib/site';
-// Types module, not the journal index — the index would drag every post into
-// the client bundle.
 import { isJournalLocale } from '@/content/journal/types';
 
 export function Footer() {
@@ -31,10 +27,10 @@ export function Footer() {
               {t('quickLinksTitle')}
             </h3>
             <ul className="space-y-3 text-white/70">
-              <li><a href="#how-it-works" className="hover:text-white transition-colors">{nav('howItWorks')}</a></li>
-              <li><a href="#pricing" className="hover:text-white transition-colors">{nav('pricing')}</a></li>
-              <li><a href="#location" className="hover:text-white transition-colors">{nav('location')}</a></li>
-              <li><a href="#faq" className="hover:text-white transition-colors">{nav('faq')}</a></li>
+              <li><Link href={{ pathname: '/', hash: 'how-it-works' }} className="hover:text-white transition-colors">{nav('howItWorks')}</Link></li>
+              <li><Link href={{ pathname: '/', hash: 'pricing' }} className="hover:text-white transition-colors">{nav('pricing')}</Link></li>
+              <li><Link href={{ pathname: '/', hash: 'location' }} className="hover:text-white transition-colors">{nav('location')}</Link></li>
+              <li><Link href={{ pathname: '/', hash: 'faq' }} className="hover:text-white transition-colors">{nav('faq')}</Link></li>
               {showJournal && (
                 <li><Link href="/journal" className="hover:text-white transition-colors">{nav('journal')}</Link></li>
               )}
@@ -65,7 +61,7 @@ export function Footer() {
         </div>
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-white/40">
+          <p className="text-sm text-white/45">
             © {new Date().getFullYear()} {business.name}. {t('rights')}
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-1">
@@ -74,7 +70,8 @@ export function Footer() {
                 key={locale}
                 href="/"
                 locale={locale}
-                className="text-xs text-white/40 hover:text-white/80 transition-colors"
+                lang={locale}
+                className="text-xs text-white/45 hover:text-white/80 transition-colors"
               >
                 {localeNames[locale]}
               </Link>

@@ -22,7 +22,7 @@ import { trackBookingStarted, trackBookingCompleted } from '@/lib/analytics';
 import type { Locale } from '@/i18n/config';
 
 const inputClass =
-  'w-full pl-12 pr-4 py-4 bg-paper-50 border border-ink-200 focus:border-ink-500 focus:outline-none transition-colors text-ink-900';
+  'w-full pl-12 pr-4 py-4 bg-paper-50 border border-ink-200 focus:border-ink-500 focus:outline-none transition-colors text-ink-900 placeholder:text-ink-400';
 
 const EMPTY_ITEMS: LuggageQuantities = { backpack: 0, cabin: 0, large: 0 };
 
@@ -299,7 +299,7 @@ export function BookingForm() {
                 <button
                   type="button"
                   onClick={() => setQuantity(size, -1)}
-                  aria-label={`Decrease ${size}`}
+                  aria-label={t('form.decrease', { item: t(`form.${size}`) })}
                   className="w-10 h-10 flex items-center justify-center border border-ink-200 hover:border-ink-400 transition-colors text-lg"
                 >
                   −
@@ -310,7 +310,7 @@ export function BookingForm() {
                 <button
                   type="button"
                   onClick={() => setQuantity(size, 1)}
-                  aria-label={`Increase ${size}`}
+                  aria-label={t('form.increase', { item: t(`form.${size}`) })}
                   className="w-10 h-10 flex items-center justify-center border border-ink-200 hover:border-ink-400 transition-colors text-lg"
                 >
                   +

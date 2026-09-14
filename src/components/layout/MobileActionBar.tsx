@@ -1,5 +1,3 @@
-'use client';
-
 import { useTranslations } from 'next-intl';
 import { Link } from '@/i18n/navigation';
 import {
@@ -23,7 +21,7 @@ export function MobileActionBar() {
   return (
     <nav
       className="fixed bottom-0 inset-x-0 z-40 grid grid-cols-4 border-t border-ink-100 bg-white md:hidden [padding-bottom:env(safe-area-inset-bottom)]"
-      aria-label="Quick actions"
+      aria-label={t('label')}
     >
       {items.map(({ href, label, Icon, primary, external }) =>
         external ? (

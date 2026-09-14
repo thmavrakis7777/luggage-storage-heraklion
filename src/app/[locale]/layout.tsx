@@ -66,10 +66,11 @@ export async function generateMetadata({
       locale,
       type: 'website',
     },
+    // Card type only: X falls back to each page's own og:title and
+    // og:description. A title/description here was inherited verbatim by
+    // every page that doesn't set `twitter` itself — i.e. all of them.
     twitter: {
       card: 'summary_large_image',
-      title: t('title'),
-      description: t('description'),
     },
   };
 }
@@ -85,6 +86,7 @@ export default async function LocaleLayout({
   setRequestLocale(locale);
   const messages = await getMessages();
   const t = await getTranslations({ locale: locale as Locale, namespace: 'meta' });
+  const tNav = await getTranslations({ locale: locale as Locale, namespace: 'nav' });
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -137,12 +139,15 @@ export default async function LocaleLayout({
       <body className="font-sans antialiased bg-paper-50 text-ink-800 pb-16 md:pb-0">
         <GoogleAnalytics />
         <AnalyticsPageView />
-        <NextIntlClientProvider messages={messages}>
+        {/* Navigation is the only client component here that reads
+            translations (BookingForm gets its own namespace on /book), so
+            the rest of the message file never has to ship to the browser. */}
+        <NextIntlClientProvider messages={{ nav: messages.nav }}>
           <a
             href="#main-content"
             className="sr-only focus:not-sr-only focus:absolute focus:z-[10000] focus:top-4 focus:left-4 focus:px-4 focus:py-2 focus:bg-white focus:text-ink-900 focus:shadow-lg"
           >
-            Skip to main content
+            {tNav('skipToContent')}
           </a>
           <Navigation />
           <main id="main-content" className="relative">

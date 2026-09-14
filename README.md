@@ -1,6 +1,6 @@
 # Luggage Storage Heraklion City Center
 
-Marketing site and booking system for **Luggage Storage Heraklion City Center**, a luggage storage business at Sfakianaki 4, Heraklion, Crete. Built with Next.js (App Router), React, Tailwind CSS, Framer Motion, next-intl, and Supabase.
+Marketing site and booking system for **Luggage Storage Heraklion City Center**, a luggage storage business at Sfakianaki 4, Heraklion, Crete. Built with Next.js (App Router), React, Tailwind CSS, next-intl, and Supabase.
 
 ## Features
 
@@ -37,10 +37,10 @@ The `bookings`/`booking_items` tables and their `SECURITY DEFINER` RPC functions
 ## Tech Stack
 
 - **Framework:** Next.js 16 (App Router, Turbopack)
-- **UI:** React 19, Tailwind CSS 4, Framer Motion
+- **UI:** React 19, Tailwind CSS 4
 - **i18n:** next-intl
 - **Backend:** Supabase (Postgres + RLS + RPC)
-- **Deployment:** Docker, Vercel, or any Node.js host
+- **Deployment:** Vercel, or any Node.js host (`npm run build && npm start`)
 
 ## License
 
