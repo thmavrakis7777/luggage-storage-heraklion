@@ -8,6 +8,7 @@ import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { Location } from '@/components/sections/Location';
 import { AirportTransfer } from '@/components/sections/AirportTransfer';
 import { FAQ } from '@/components/sections/FAQ';
+import { JournalLinks } from '@/components/sections/JournalLinks';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 
 export default async function HomePage({
@@ -48,6 +49,7 @@ export default async function HomePage({
       <Location />
       <AirportTransfer />
       <FAQ />
+      <JournalLinks />
       <FinalCTA />
     </>
   );
