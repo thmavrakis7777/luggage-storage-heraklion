@@ -63,7 +63,7 @@ export function Location() {
               <a href={googleMapsUrl} target="_blank" rel="noopener noreferrer" className="btn-primary">
                 {t('openMaps')}
               </a>
-              <a href={telHref} className="btn-secondary inline-flex items-center gap-2">
+              <a href={telHref} className="btn-secondary gap-2">
                 <PhoneIcon className="w-4 h-4" />
                 {t('call')}
               </a>
@@ -71,7 +71,7 @@ export function Location() {
                 href={whatsappHref}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="btn-secondary inline-flex items-center gap-2"
+                className="btn-secondary gap-2"
               >
                 <ChatBubbleLeftRightIcon className="w-4 h-4" />
                 {t('whatsapp')}

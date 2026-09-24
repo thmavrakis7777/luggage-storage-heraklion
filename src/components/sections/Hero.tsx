@@ -29,7 +29,7 @@ export function Hero() {
         <div className="max-w-3xl animate-hero-in">
           <span className="eyebrow text-brand-400">{t('eyebrow')}</span>
 
-          <h1 className="mt-5 text-5xl sm:text-6xl md:text-7xl font-serif font-light leading-[1.05] tracking-tight text-white text-balance">
+          <h1 className="mt-5 text-5xl sm:text-6xl md:text-7xl font-serif font-light leading-[1.05] tracking-tight text-white">
             {t('title')}
           </h1>
 

@@ -20,20 +20,16 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'invalid_json' }, { status: 400 });
   }
 
+  // A filled honeypot (`website`) fails here too: the schema only accepts it empty.
   const parsed = bookingInputSchema.safeParse(body);
   if (!parsed.success) {
-    return NextResponse.json(
-      { error: 'validation_failed', issues: parsed.error.issues },
-      { status: 400 }
-    );
+    // Field and message only: the raw issues also carry validator internals
+    // (regex sources, limits) the form never reads.
+    const issues = parsed.error.issues.map(({ path, message }) => ({ path, message }));
+    return NextResponse.json({ error: 'validation_failed', issues }, { status: 400 });
   }
 
   const input = parsed.data;
-
-  // Honeypot: a real browser never fills this hidden field.
-  if (input.website) {
-    return NextResponse.json({ error: 'validation_failed' }, { status: 400 });
-  }
 
   const today = todayInHeraklion();
   if (input.dropoffDate < today) {

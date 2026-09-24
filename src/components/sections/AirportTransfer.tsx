@@ -9,7 +9,7 @@ export function AirportTransfer() {
     <section className="section-padding bg-ink-900">
       <div className="container-wide mx-auto">
         <div className="max-w-2xl mx-auto text-center">
-          <div className="inline-flex w-14 h-14 items-center justify-center bg-brand-500/15 mb-6">
+          <div className="flex w-14 h-14 mx-auto items-center justify-center bg-brand-500/15 mb-6">
             <TruckIcon className="w-7 h-7 text-brand-400" />
           </div>
           <span className="eyebrow text-brand-400">{t('eyebrow')}</span>

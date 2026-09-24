@@ -264,11 +264,6 @@
     "map": "Kaart",
     "label": "Snelle acties"
   },
-  "notFound": {
-    "title": "Pagina Niet Gevonden",
-    "description": "De pagina die je zoekt bestaat niet of is mogelijk verplaatst. We brengen je terug op weg.",
-    "cta": "Terug naar Home"
-  },
   "journal": {
     "eyebrow": "Journal",
     "title": "Bagageopslag & Reisnotities over Heraklion",

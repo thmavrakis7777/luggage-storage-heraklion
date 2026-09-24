@@ -141,7 +141,7 @@ export default async function LocaleLayout({
       lang={locale}
       dir="ltr"
       data-scroll-behavior="smooth"
-      className={`${cormorant.variable} ${inter.variable} ${ebGaramond.variable} scroll-smooth`}
+      className={`${cormorant.variable} ${inter.variable} ${ebGaramond.variable}`}
     >
       <head>
         <meta name="theme-color" content="#ffd600" />
@@ -150,7 +150,7 @@ export default async function LocaleLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="font-sans antialiased bg-paper-50 text-ink-800 pb-16 md:pb-0">
+      <body className="font-sans antialiased pb-16 md:pb-0">
         <GoogleAnalytics />
         <AnalyticsPageView />
         {/* Navigation is the only client component here that reads

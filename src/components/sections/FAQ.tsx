@@ -1,9 +1,11 @@
 import { useTranslations } from 'next-intl';
 import { PlusIcon } from '@heroicons/react/24/outline';
 
+/** Also drives the FAQPage structured data on the homepage. */
+export const FAQ_KEYS = ['size', 'security', 'payment', 'discount', 'groups', 'account'] as const;
+
 export function FAQ() {
   const t = useTranslations('faq');
-  const keys = ['size', 'security', 'payment', 'discount', 'groups', 'account'] as const;
 
   return (
     <section id="faq" className="section-padding bg-paper-50">
@@ -14,7 +16,7 @@ export function FAQ() {
         </div>
 
         <div className="divide-y divide-ink-100 border-t border-b border-ink-100">
-          {keys.map((key) => (
+          {FAQ_KEYS.map((key) => (
             <details key={key} className="group py-5">
               <summary className="flex items-center justify-between gap-4 cursor-pointer list-none font-medium text-ink-900">
                 {t(`items.${key}.question`)}

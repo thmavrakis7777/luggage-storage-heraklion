@@ -264,11 +264,6 @@
     "map": "Karte",
     "label": "Schnellzugriff"
   },
-  "notFound": {
-    "title": "Seite Nicht Gefunden",
-    "description": "Die gesuchte Seite existiert nicht oder wurde möglicherweise verschoben. Wir bringen Sie zurück.",
-    "cta": "Zurück zur Startseite"
-  },
   "journal": {
     "eyebrow": "Journal",
     "title": "Gepäckaufbewahrung & Reisenotizen aus Heraklion",

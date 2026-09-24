@@ -4,21 +4,10 @@ import { useRef, useCallback, useState, useEffect } from 'react';
 
 interface TiltCardProps {
   children: React.ReactNode;
-  className?: string;
   intensity?: number;
-  perspective?: number;
-  glare?: boolean;
-  style?: React.CSSProperties;
 }
 
-export function TiltCard({
-  children,
-  className = '',
-  intensity = 0.4,
-  perspective = 1200,
-  glare = true,
-  style: userStyle = {},
-}: TiltCardProps) {
+export function TiltCard({ children, intensity = 0.4 }: TiltCardProps) {
   const ref = useRef<HTMLDivElement>(null);
   const current = useRef({ x: 0, y: 0 });
   const target = useRef({ x: 0, y: 0 });
@@ -44,10 +33,10 @@ export function TiltCard({
     const rX = -y * 6 * intensity;
 
     if (ref.current) {
-      ref.current.style.transform = `perspective(${perspective}px) rotateX(${rX}deg) rotateY(${rY}deg)`;
+      ref.current.style.transform = `perspective(1200px) rotateX(${rX}deg) rotateY(${rY}deg)`;
     }
 
-    if (glare && glareRef.current) {
+    if (glareRef.current) {
       const angle = Math.atan2(y, x) * (180 / Math.PI) + 90;
       glareRef.current.style.opacity = hovering ? '0.15' : '0';
       glareRef.current.style.background = `linear-gradient(${angle}deg, rgba(255,255,255,0.25) 0%, transparent 80%)`;
@@ -58,7 +47,7 @@ export function TiltCard({
       return;
     }
     rafId.current = requestAnimationFrame(() => updateRef.current());
-  }, [hovering, intensity, perspective, glare]);
+  }, [hovering, intensity]);
 
   useEffect(() => {
     updateRef.current = update;
@@ -104,9 +93,7 @@ export function TiltCard({
   return (
     <div
       ref={ref}
-      className={className}
       style={{
-        ...userStyle,
         position: 'relative',
         transformStyle: 'preserve-3d',
         willChange: hovering ? 'transform' : undefined,
@@ -116,20 +103,18 @@ export function TiltCard({
       onPointerLeave={onPointerLeave}
     >
       {children}
-      {glare && (
-        <div
-          ref={glareRef}
-          style={{
-            position: 'absolute',
-            inset: 0,
-            borderRadius: 'inherit',
-            pointerEvents: 'none',
-            opacity: 0,
-            transition: 'opacity 0.3s',
-            zIndex: 10,
-          }}
-        />
-      )}
+      <div
+        ref={glareRef}
+        style={{
+          position: 'absolute',
+          inset: 0,
+          borderRadius: 'inherit',
+          pointerEvents: 'none',
+          opacity: 0,
+          transition: 'opacity 0.3s',
+          zIndex: 10,
+        }}
+      />
     </div>
   );
 }

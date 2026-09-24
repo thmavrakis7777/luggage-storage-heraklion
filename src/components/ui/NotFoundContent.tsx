@@ -5,15 +5,13 @@ import Link from 'next/link';
 import { locales, defaultLocale, type Locale } from '@/i18n/config';
 
 /**
- * Kept in sync with the `notFound` key in each messages/*.json file. Not
- * read from those files directly: this component renders on a Next.js
- * not-found boundary, which Next.js only ever resolves at the true app
- * root (there's no root layout, and next-intl's server-side locale
- * detection there would force the whole site out of static generation —
- * see the dynamicParams comment in [locale]/layout.tsx). A tiny local copy
- * of just these three short strings per language keeps this 404 page
- * lightweight instead of shipping all 7 full translation files to the
- * client just to read one of them.
+ * The 404 copy lives here rather than in messages/*.json: this component
+ * renders on a Next.js not-found boundary, which Next.js only ever resolves
+ * at the true app root (there's no root layout, and next-intl's server-side
+ * locale detection there would force the whole site out of static
+ * generation — see the dynamicParams comment in [locale]/layout.tsx). Three
+ * short strings per language keep this page lightweight instead of shipping
+ * all 7 full translation files to the client just to read one of them.
  */
 const COPY: Record<Locale, { title: string; description: string; cta: string }> = {
   en: {

@@ -264,11 +264,6 @@
     "map": "Carte",
     "label": "Actions rapides"
   },
-  "notFound": {
-    "title": "Page Introuvable",
-    "description": "La page que vous recherchez n'existe pas ou a peut-être été déplacée. Revenons sur le bon chemin.",
-    "cta": "Retour à l'Accueil"
-  },
   "journal": {
     "eyebrow": "Journal",
     "title": "Consigne à Bagages et Notes de Voyage sur Héraklion",

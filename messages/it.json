@@ -264,11 +264,6 @@
     "map": "Mappa",
     "label": "Azioni rapide"
   },
-  "notFound": {
-    "title": "Pagina Non Trovata",
-    "description": "La pagina che stai cercando non esiste o potrebbe essere stata spostata. Ti riportiamo sulla strada giusta.",
-    "cta": "Torna alla Home"
-  },
   "journal": {
     "eyebrow": "Journal",
     "title": "Deposito Bagagli e Note di Viaggio su Heraklion",

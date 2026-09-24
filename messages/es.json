@@ -264,11 +264,6 @@
     "map": "Mapa",
     "label": "Accesos rápidos"
   },
-  "notFound": {
-    "title": "Página No Encontrada",
-    "description": "La página que buscas no existe o puede haberse movido. Te ayudamos a volver al camino correcto.",
-    "cta": "Volver al Inicio"
-  },
   "journal": {
     "eyebrow": "Blog",
     "title": "Consigna de Equipaje y Notas de Viaje sobre Heraclión",

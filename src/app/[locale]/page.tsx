@@ -7,7 +7,7 @@ import { Pricing } from '@/components/sections/Pricing';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { Location } from '@/components/sections/Location';
 import { AirportTransfer } from '@/components/sections/AirportTransfer';
-import { FAQ } from '@/components/sections/FAQ';
+import { FAQ, FAQ_KEYS } from '@/components/sections/FAQ';
 import { JournalLinks } from '@/components/sections/JournalLinks';
 import { FinalCTA } from '@/components/sections/FinalCTA';
 
@@ -20,11 +20,10 @@ export default async function HomePage({
   setRequestLocale(locale);
   const t = await getTranslations({ locale, namespace: 'faq.items' });
 
-  const faqKeys = ['size', 'security', 'payment', 'discount', 'groups', 'account'] as const;
   const faqJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: faqKeys.map((key) => ({
+    mainEntity: FAQ_KEYS.map((key) => ({
       '@type': 'Question',
       name: t(`${key}.question`),
       acceptedAnswer: {

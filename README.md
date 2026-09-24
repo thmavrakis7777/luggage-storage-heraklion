@@ -34,6 +34,30 @@ See [.env.example](.env.example). At minimum for local development you need:
 
 The `bookings`/`booking_items` tables and their `SECURITY DEFINER` RPC functions (`create_booking`, `get_booking_by_reference`, `mark_telegram_notified`) live in the `luggage-storage-heraklion` Supabase project. Price fields are always recalculated inside `create_booking` from `luggage_size` and `quantity` — client-submitted prices are never trusted, and that same function re-validates opening hours, past dates, and a per-phone booking rate limit, since it's directly callable with the public anon key. RLS is enabled with no policies on either table, so the anon key has no direct table access at all (no SELECT/INSERT/UPDATE/DELETE) — every write and read goes through the RPC functions, which are the only exposed surface.
 
+## Changing Prices or Opening Hours
+
+Prices and hours are enforced in the database **and** repeated in the code and the copy. Change every place below, or the site will show one number and charge another.
+
+### Prices and discounts
+
+- [ ] **Database — what customers are actually charged.** In the Supabase SQL editor, edit `create_booking`: the `v_price_per_day` case (`backpack` 3.00, `cabin` 4.00, `large` 5.00) and the discount line `case when v_storage_days >= 3 then 25 else 10 end`.
+- [ ] **`src/lib/pricing.ts`** — `PRICE_PER_DAY_CENTS` (in cents), `STANDARD_DISCOUNT_PERCENTAGE`, `LONG_STAY_DISCOUNT_PERCENTAGE`, `LONG_STAY_MIN_DAYS`. Drives the booking form's price summary and the Telegram message.
+- [ ] **`src/app/[locale]/layout.tsx`** — `priceRange: '€3–€5'` in the structured data.
+- [ ] **`messages/*.json`, all 7 languages** — the `pricing.*.price` amounts, `benefits.price`, and every mention of the 10% / 25% / 3-day discount (`meta.title`, `meta.description`, `hero.ctaPrimary`, `walkIn.subtitle`, `benefits.discount`, `benefits.longStay`, `pricing.discountNote`, `pricing.cta`, `faq.items.discount.answer`, `finalCta.subtitle`, `journal.ctaText`). Find them with `grep -n "€\|%" messages/*.json`.
+- [ ] **`src/content/journal/posts/*.ts`** — the articles quote prices and discounts in EN and EL. Find them with `grep -rln "€\|%" src/content/journal/posts`.
+
+### Opening hours
+
+- [ ] **Database.** In the Supabase SQL editor, edit `is_within_opening_hours` (the per-weekday `case`). `create_booking` calls it and has a comment repeating the hours.
+- [ ] **`src/lib/hours.ts`** — `OPENING_HOURS` (booking time slots), `OPENING_HOURS_DISPLAY` (Location section), `OPENING_HOURS_SCHEMA` (structured data) and the comment at the top. For the by-appointment rule: `ADVANCE_BOOKING_CUTOFF` and `ADVANCE_BOOKING_AFTERNOON_DAYS`.
+- [ ] **`messages/*.json`, all 7 languages** — `walkIn.subtitle` and `hours.advanceBookingNote` spell out the by-appointment times (French writes `15h00`).
+- [ ] **`src/content/journal/posts/*.ts`** — most articles quote the hours. Find them with `grep -rln "21:00\|20:00" src/content/journal/posts`.
+
+### After either change
+
+- [ ] Bump `HOME_UPDATED` / `HOME_WITH_JOURNAL_UPDATED` / `BOOK_UPDATED` in `src/app/sitemap.ts` for the pages whose copy changed.
+- [ ] Make a test booking and check that the confirmation page and the Telegram message show the new price.
+
 ## Tech Stack
 
 - **Framework:** Next.js 16 (App Router, Turbopack)
