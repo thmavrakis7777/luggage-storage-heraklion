@@ -223,7 +223,8 @@
     "tagline": "Consigna de equipaje segura y cercana en el corazón de Heraklion, Creta.",
     "quickLinksTitle": "Enlaces Rápidos",
     "contactTitle": "Contacto",
-    "rights": "Todos los derechos reservados."
+    "rights": "Todos los derechos reservados.",
+    "privacy": "Política de Privacidad"
   },
   "booking": {
     "eyebrow": "Reservar",
@@ -248,6 +249,7 @@
       "large": "Grande",
       "decrease": "Reducir cantidad: {item}",
       "increase": "Aumentar cantidad: {item}",
+      "privacyNote": "Usamos tu nombre y tu teléfono solo para gestionar tu reserva. Consulta nuestra <link>política de privacidad</link> (en inglés).",
       "submit": "Confirmar Reserva",
       "submitting": "Reservando..."
     },

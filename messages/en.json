@@ -223,7 +223,8 @@
     "tagline": "Secure, friendly luggage storage in the heart of Heraklion, Crete.",
     "quickLinksTitle": "Quick Links",
     "contactTitle": "Contact",
-    "rights": "All rights reserved."
+    "rights": "All rights reserved.",
+    "privacy": "Privacy Policy"
   },
   "booking": {
     "eyebrow": "Book Now",
@@ -248,6 +249,7 @@
       "large": "Large",
       "decrease": "Decrease quantity: {item}",
       "increase": "Increase quantity: {item}",
+      "privacyNote": "We use your name and phone number only to manage your booking. See our <link>privacy policy</link>.",
       "submit": "Confirm Booking",
       "submitting": "Booking..."
     },

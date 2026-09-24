@@ -8,7 +8,8 @@ import { isJournalLocale } from '@/content/journal/types';
 export function Footer() {
   const t = useTranslations('footer');
   const nav = useTranslations('nav');
-  const showJournal = isJournalLocale(useLocale());
+  const locale = useLocale();
+  const showJournal = isJournalLocale(locale);
 
   return (
     <footer className="bg-ink-900 text-white">
@@ -62,7 +63,15 @@ export function Footer() {
 
         <div className="mt-12 pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="text-sm text-white/45">
-            © {new Date().getFullYear()} {business.name}. {t('rights')}
+            © {new Date().getFullYear()} {business.name}. {t('rights')}{' '}
+            {/* The policy is written in EN/EL; the other languages get English. */}
+            <Link
+              href="/privacy"
+              locale={showJournal ? locale : 'en'}
+              className="underline underline-offset-2 hover:text-white/80 transition-colors"
+            >
+              {t('privacy')}
+            </Link>
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-1">
             {locales.map((locale) => (

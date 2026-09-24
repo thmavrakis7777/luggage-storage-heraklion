@@ -223,7 +223,8 @@
     "tagline": "Deposito bagagli sicuro e cordiale nel cuore di Heraklion, Creta.",
     "quickLinksTitle": "Link Rapidi",
     "contactTitle": "Contatti",
-    "rights": "Tutti i diritti riservati."
+    "rights": "Tutti i diritti riservati.",
+    "privacy": "Informativa sulla Privacy"
   },
   "booking": {
     "eyebrow": "Prenota Ora",
@@ -248,6 +249,7 @@
       "large": "Grande",
       "decrease": "Diminuisci quantità: {item}",
       "increase": "Aumenta quantità: {item}",
+      "privacyNote": "Usiamo il tuo nome e il tuo numero di telefono solo per gestire la prenotazione. Leggi la nostra <link>informativa sulla privacy</link> (in inglese).",
       "submit": "Conferma Prenotazione",
       "submitting": "Prenotazione in corso..."
     },

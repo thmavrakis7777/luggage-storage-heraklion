@@ -223,7 +223,8 @@
     "tagline": "Veilige, vriendelijke bagageopslag in het hart van Heraklion, Kreta.",
     "quickLinksTitle": "Snelle Links",
     "contactTitle": "Contact",
-    "rights": "Alle rechten voorbehouden."
+    "rights": "Alle rechten voorbehouden.",
+    "privacy": "Privacybeleid"
   },
   "booking": {
     "eyebrow": "Nu Boeken",
@@ -248,6 +249,7 @@
       "large": "Groot",
       "decrease": "Aantal verlagen: {item}",
       "increase": "Aantal verhogen: {item}",
+      "privacyNote": "We gebruiken je naam en telefoonnummer alleen om je boeking te regelen. Lees ons <link>privacybeleid</link> (in het Engels).",
       "submit": "Boeking Bevestigen",
       "submitting": "Bezig met boeken..."
     },

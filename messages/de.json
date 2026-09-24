@@ -223,7 +223,8 @@
     "tagline": "Sichere, freundliche Gepäckaufbewahrung im Herzen von Heraklion, Kreta.",
     "quickLinksTitle": "Schnellzugriff",
     "contactTitle": "Kontakt",
-    "rights": "Alle Rechte vorbehalten."
+    "rights": "Alle Rechte vorbehalten.",
+    "privacy": "Datenschutzerklärung"
   },
   "booking": {
     "eyebrow": "Jetzt Buchen",
@@ -248,6 +249,7 @@
       "large": "Groß",
       "decrease": "Anzahl verringern: {item}",
       "increase": "Anzahl erhöhen: {item}",
+      "privacyNote": "Wir verwenden Ihren Namen und Ihre Telefonnummer nur zur Abwicklung Ihrer Buchung. Siehe unsere <link>Datenschutzerklärung</link> (auf Englisch).",
       "submit": "Buchung Bestätigen",
       "submitting": "Wird gebucht..."
     },

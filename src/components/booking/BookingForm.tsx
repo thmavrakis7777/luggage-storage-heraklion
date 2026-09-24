@@ -2,7 +2,7 @@
 
 import { useMemo, useState, useSyncExternalStore } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
-import { useRouter } from '@/i18n/navigation';
+import { Link, useRouter } from '@/i18n/navigation';
 import {
   CalendarDaysIcon,
   ClockIcon,
@@ -26,6 +26,7 @@ import {
 import { normalizePhone, PHONE_PATTERN } from '@/lib/phone';
 import { trackBookingStarted, trackBookingCompleted } from '@/lib/analytics';
 import type { Locale } from '@/i18n/config';
+import { isJournalLocale } from '@/content/journal/types';
 
 const inputClass =
   'w-full pl-12 pr-4 py-4 bg-paper-50 border border-ink-200 focus:border-ink-500 focus:outline-none transition-colors text-ink-900 placeholder:text-ink-400';
@@ -419,6 +420,21 @@ export function BookingForm() {
           {error}
         </p>
       )}
+
+      <p className="text-xs text-ink-500 leading-relaxed">
+        {t.rich('form.privacyNote', {
+          link: (chunks) => (
+            // The policy is written in EN/EL; the other languages get English.
+            <Link
+              href="/privacy"
+              locale={isJournalLocale(locale) ? locale : 'en'}
+              className="underline underline-offset-2 hover:text-ink-900"
+            >
+              {chunks}
+            </Link>
+          ),
+        })}
+      </p>
 
       <button type="submit" disabled={submitting} className="btn-primary w-full disabled:opacity-60">
         {submitting ? t('form.submitting') : t('form.submit')}

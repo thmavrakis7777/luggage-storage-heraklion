@@ -8,6 +8,7 @@ import {
   JOURNAL_LOCALES,
   lastModified,
 } from '@/content/journal';
+import { PRIVACY_UPDATED } from '@/content/privacy';
 
 // lastmod must only move when a page's content actually changes — Google
 // ignores lastmod on sites where it changes on every deploy. Bump these by
@@ -58,6 +59,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.6,
       alternates: { languages: journalLanguageAlternates('/journal') },
+    });
+  }
+
+  for (const locale of JOURNAL_LOCALES) {
+    entries.push({
+      url: `${siteUrl}/${locale}/privacy`,
+      lastModified: new Date(`${PRIVACY_UPDATED}T00:00:00Z`),
+      changeFrequency: 'yearly',
+      priority: 0.2,
+      alternates: { languages: journalLanguageAlternates('/privacy') },
     });
   }
 

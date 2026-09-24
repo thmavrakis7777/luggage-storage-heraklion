@@ -67,11 +67,13 @@ export function Navigation() {
     { hash: 'faq', label: t('faq') },
   ];
 
-  // The journal is EN/EL only, so switching a journal page to any other
-  // language lands on that language's homepage instead of a 404.
-  const isJournalPage = pathname === '/journal' || pathname.startsWith('/journal/');
+  // The journal and the privacy policy are EN/EL only, so switching one of
+  // them to any other language lands on that language's homepage instead of
+  // a 404.
+  const isEnElOnlyPage =
+    pathname === '/journal' || pathname.startsWith('/journal/') || pathname === '/privacy';
   const pathForLocale = (locale: Locale) =>
-    isJournalPage && !isJournalLocale(locale) ? '/' : pathname;
+    isEnElOnlyPage && !isJournalLocale(locale) ? '/' : pathname;
 
   // The transparent header with white text only works over the homepage's
   // dark hero. Every other page (/book, /journal, booking confirmation) has a

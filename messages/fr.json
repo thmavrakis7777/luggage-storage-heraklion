@@ -223,7 +223,8 @@
     "tagline": "Consigne à bagages sécurisée et accueillante au cœur d'Héraklion, en Crète.",
     "quickLinksTitle": "Liens Rapides",
     "contactTitle": "Contact",
-    "rights": "Tous droits réservés."
+    "rights": "Tous droits réservés.",
+    "privacy": "Politique de Confidentialité"
   },
   "booking": {
     "eyebrow": "Réserver",
@@ -248,6 +249,7 @@
       "large": "Grand",
       "decrease": "Diminuer la quantité : {item}",
       "increase": "Augmenter la quantité : {item}",
+      "privacyNote": "Nous utilisons votre nom et votre numéro de téléphone uniquement pour gérer votre réservation. Consultez notre <link>politique de confidentialité</link> (en anglais).",
       "submit": "Confirmer la Réservation",
       "submitting": "Réservation en cours..."
     },
