@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Cormorant_Garamond, Inter } from 'next/font/google';
+import { Cormorant_Garamond, EB_Garamond, Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { locales, type Locale } from '@/i18n/config';
@@ -13,9 +13,13 @@ import { GoogleAnalytics } from '@/components/analytics/GoogleAnalytics';
 import { AnalyticsPageView } from '@/components/analytics/AnalyticsPageView';
 import '../globals.css';
 
+// `subsets` only decides what is preloaded — every subset stays available
+// through unicode-range and downloads if a page actually uses it. Preloading
+// latin-ext too cost ~117 KB of high-priority font downloads on every page
+// for characters the copy barely uses.
 const cormorant = Cormorant_Garamond({
   variable: '--font-cormorant',
-  subsets: ['latin', 'latin-ext'],
+  subsets: ['latin'],
   weight: ['300', '400', '600', '700'],
   display: 'swap',
   preload: true,
@@ -23,10 +27,20 @@ const cormorant = Cormorant_Garamond({
 
 const inter = Inter({
   variable: '--font-inter',
-  subsets: ['latin', 'latin-ext'],
+  subsets: ['latin'],
   weight: ['400', '500', '600'],
   display: 'swap',
   preload: true,
+});
+
+// Cormorant has no Greek glyphs. EB Garamond supplies them on Greek pages only
+// (see html:lang(el) in globals.css). Variable font, so one file per subset
+// covers every weight; not preloaded, so other languages never download it.
+const ebGaramond = EB_Garamond({
+  variable: '--font-eb-garamond',
+  subsets: ['greek'],
+  display: 'swap',
+  preload: false,
 });
 
 export function generateStaticParams() {
@@ -127,7 +141,7 @@ export default async function LocaleLayout({
       lang={locale}
       dir="ltr"
       data-scroll-behavior="smooth"
-      className={`${cormorant.variable} ${inter.variable} scroll-smooth`}
+      className={`${cormorant.variable} ${inter.variable} ${ebGaramond.variable} scroll-smooth`}
     >
       <head>
         <meta name="theme-color" content="#ffd600" />

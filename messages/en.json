@@ -128,7 +128,8 @@
     "openMaps": "Open in Google Maps",
     "call": "Call",
     "whatsapp": "WhatsApp",
-    "mapTitle": "Map of our location in Heraklion"
+    "mapTitle": "Map of our location in Heraklion",
+    "showMap": "Show Map"
   },
   "hours": {
     "weekdays": "Monday–Friday",

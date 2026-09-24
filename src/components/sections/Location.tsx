@@ -2,6 +2,7 @@ import { useTranslations } from 'next-intl';
 import { MapPinIcon, PhoneIcon, ChatBubbleLeftRightIcon, ClockIcon } from '@heroicons/react/24/outline';
 import { business, googleMapsUrl, telHref, whatsappHref } from '@/lib/site';
 import { OPENING_HOURS_DISPLAY } from '@/lib/hours';
+import { MapEmbed } from '@/components/ui/MapEmbed';
 
 export function Location() {
   const t = useTranslations('location');
@@ -79,15 +80,25 @@ export function Location() {
           </div>
 
           <div className="aspect-[4/3] w-full overflow-hidden border border-ink-100">
-            <iframe
+            <MapEmbed
               title={t('mapTitle')}
               src={`https://maps.google.com/maps?q=${encodeURIComponent(
                 `${business.streetAddress}, ${business.postalCode} ${business.addressLocality}, Greece`
               )}&z=16&output=embed`}
-              className="w-full h-full grayscale-[20%]"
-              loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-            />
+            >
+              {/* Faint grid drawn in CSS: reads as a map without loading one. */}
+              <span className="flex h-full w-full flex-col items-center justify-center gap-4 p-6 text-center bg-paper-100 bg-[linear-gradient(to_right,rgb(16_14_12/0.05)_1px,transparent_1px),linear-gradient(to_bottom,rgb(16_14_12/0.05)_1px,transparent_1px)] bg-[size:32px_32px]">
+                <span className="flex h-12 w-12 items-center justify-center bg-white border border-ink-100">
+                  <MapPinIcon className="h-6 w-6 text-brand-800" />
+                </span>
+                <span className="font-serif text-xl text-ink-900">
+                  {business.streetAddress}, {business.addressLocality}
+                </span>
+                <span className="inline-flex items-center justify-center px-6 py-3 border border-ink-900 text-sm font-medium tracking-wide text-ink-900 transition-colors duration-200 group-hover:bg-ink-900 group-hover:text-white">
+                  {t('showMap')}
+                </span>
+              </span>
+            </MapEmbed>
           </div>
         </div>
       </div>

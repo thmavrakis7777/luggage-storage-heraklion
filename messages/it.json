@@ -128,7 +128,8 @@
     "openMaps": "Apri in Google Maps",
     "call": "Chiama",
     "whatsapp": "WhatsApp",
-    "mapTitle": "Mappa della nostra sede a Heraklion"
+    "mapTitle": "Mappa della nostra sede a Heraklion",
+    "showMap": "Mostra la Mappa"
   },
   "hours": {
     "weekdays": "Lunedì–Venerdì",

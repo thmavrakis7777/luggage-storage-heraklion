@@ -53,6 +53,15 @@
     scroll-behavior: smooth;
   }
 
+  /* Greek pages only: Cormorant has no Greek glyphs, and its metric fallback
+     (Times New Roman) covers Greek, so Greek headings rendered in Times.
+     Here Latin still comes from Cormorant and Greek falls through to EB
+     Garamond. 'Cormorant Garamond Fallback' is left out on purpose — it
+     would claim the Greek glyphs before EB Garamond could. */
+  html:lang(el) {
+    --font-serif: 'Cormorant Garamond', var(--font-eb-garamond), ui-serif, Georgia, serif;
+  }
+
   body {
     @apply bg-paper-50 text-ink-800;
     font-feature-settings: 'liga' 1, 'calt' 1;

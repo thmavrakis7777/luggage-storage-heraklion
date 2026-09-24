@@ -128,7 +128,8 @@
     "openMaps": "Openen in Google Maps",
     "call": "Bellen",
     "whatsapp": "WhatsApp",
-    "mapTitle": "Kaart van onze locatie in Heraklion"
+    "mapTitle": "Kaart van onze locatie in Heraklion",
+    "showMap": "Kaart Tonen"
   },
   "hours": {
     "weekdays": "Maandag–Vrijdag",
