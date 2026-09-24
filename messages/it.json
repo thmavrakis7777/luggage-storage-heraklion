@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "In Breve",
     "title": "Informazioni Chiave",
-    "summary": "{name} è un deposito bagagli a gestione familiare, con personale, nel centro di Heraklion, a Creta. È aperto tutti i giorni e costa {min}–{max} per bagaglio al giorno.",
+    "summary": "{name} è il primo deposito bagagli di Heraklion, a Creta: a gestione familiare, con personale, nel centro città. È aperto tutti i giorni e costa {min}–{max} per bagaglio al giorno.",
     "labels": {
       "prices": "Prezzi",
       "discounts": "Sconti online",
       "payment": "Pagamento",
       "booking": "Prenotazione",
+      "security": "Sicurezza",
       "luggage": "Bagagli",
       "nearby": "Nelle vicinanze",
       "extras": "Inoltre"
@@ -159,6 +160,8 @@
     "prices": "{items} — per bagaglio, al giorno. Contano sia il giorno di consegna sia quello di ritiro.",
     "payment": "Contanti o carta, in negozio. Nessun pagamento online.",
     "booking": "Online in circa 30 secondi, con solo nome e numero di telefono — nessun account, nessuna email. Accettiamo anche clienti senza prenotazione.",
+    "security": "Niente armadietti: ogni bagaglio riceve un'etichetta, tu una ricevuta, e il nostro personale lo custodisce in un locale chiuso a chiave e videosorvegliato.",
+    "luggage": "Qualsiasi misura, dagli zaini alle valigie grandi — oltre a passeggini, biciclette, tavole da surf, strumenti musicali e scatoloni. Niente cibo.",
     "extras": "Un bagno gratuito per i clienti e transfer da e per l'aeroporto su richiesta."
   },
   "faq": {
@@ -169,9 +172,17 @@
         "question": "C'è un limite alla misura del bagaglio?",
         "answer": "No — accettiamo qualsiasi misura di bagaglio, da piccoli zaini a valigie grandi, e puoi combinare misure diverse nella stessa prenotazione."
       },
+      "specialItems": {
+        "question": "Posso lasciare un passeggino, una bici o una tavola da surf?",
+        "answer": "Sì. Oltre a valigie e zaini, custodiamo passeggini, biciclette, tavole da surf, strumenti musicali e scatoloni. Non accettiamo cibo, e ti consigliamo di tenere con te passaporti, medicinali e oggetti di valore."
+      },
       "security": {
         "question": "I miei bagagli sono al sicuro con voi?",
-        "answer": "Sì. I tuoi bagagli vengono custoditi in sicurezza presso la nostra sede centrale a Heraklion per tutto il tempo di cui hai bisogno."
+        "answer": "Sì. Ogni bagaglio riceve un'etichetta e tu ricevi una ricevuta. Il nostro personale custodisce i tuoi bagagli in un locale chiuso a chiave e videosorvegliato, per tutto il tempo di cui hai bisogno."
+      },
+      "lockers": {
+        "question": "Avete armadietti per i bagagli?",
+        "answer": "No — ogni bagaglio viene consegnato a una persona, non lasciato in un armadietto self-service. Lo etichettiamo, ti diamo una ricevuta e lo custodiamo in un locale chiuso a chiave e videosorvegliato. Non ci sono scomparti di misura fissa, quindi valigie grandi, più bagagli o una bici non sono un problema."
       },
       "payment": {
         "question": "Come si paga?",
@@ -181,9 +192,21 @@
         "question": "Come funzionano gli sconti online?",
         "answer": "Prenota online e ricevi automaticamente il 10% di sconto — nessun codice promozionale necessario. Resta 3 giorni o più e riceverai il 25% di sconto invece."
       },
+      "longStay": {
+        "question": "Posso lasciare i bagagli per una notte o per una settimana?",
+        "answer": "Sì. Una notte, una settimana o più funzionano allo stesso modo: paghi per bagaglio al giorno, e dai 3 giorni in su hai il 25% di sconto prenotando online. Consegna e ritiro avvengono negli orari di apertura."
+      },
+      "transport": {
+        "question": "Quanto distate dal porto, dal bus per l'aeroporto e dall'aeroporto?",
+        "answer": "La fermata del bus per l'aeroporto è a circa 1 minuto a piedi e il Porto di Heraklion a circa 15 minuti. L'Aeroporto di Heraklion dista circa 6,5 km, e possiamo organizzarti un transfer."
+      },
       "groups": {
         "question": "Offrite tariffe per gruppi numerosi?",
         "answer": "Contattaci direttamente e saremo lieti di parlarti delle tariffe speciali per gruppi numerosi."
+      },
+      "cancel": {
+        "question": "E se i miei piani cambiano?",
+        "answer": "Online non si paga nulla, quindi non c'è niente da annullare né da rimborsare: paghi solo in negozio. Se i tuoi piani cambiano, avvisaci su WhatsApp o per telefono."
       },
       "account": {
         "question": "Devo creare un account per prenotare?",

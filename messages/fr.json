@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "En Bref",
     "title": "L'Essentiel",
-    "summary": "{name} est une consigne à bagages familiale, tenue par du personnel, dans le centre d'Héraklion, en Crète. Elle est ouverte tous les jours et coûte {min}–{max} par bagage et par jour.",
+    "summary": "{name} est la première consigne à bagages d'Héraklion, en Crète — familiale, tenue par du personnel et en plein centre. Elle est ouverte tous les jours et coûte {min}–{max} par bagage et par jour.",
     "labels": {
       "prices": "Tarifs",
       "discounts": "Réductions en ligne",
       "payment": "Paiement",
       "booking": "Réservation",
+      "security": "Sécurité",
       "luggage": "Bagages",
       "nearby": "À proximité",
       "extras": "Aussi"
@@ -159,6 +160,8 @@
     "prices": "{items} — par bagage et par jour. Les jours de dépôt et de retrait comptent tous les deux.",
     "payment": "Espèces ou carte, sur place. Pas de paiement en ligne.",
     "booking": "En ligne en 30 secondes environ, avec juste un nom et un numéro de téléphone — sans compte ni email. Sans rendez-vous bienvenus.",
+    "security": "Pas de casiers : chaque bagage reçoit une étiquette, vous recevez un reçu, et notre personnel le garde dans une pièce fermée à clé et sous vidéosurveillance.",
+    "luggage": "Toutes tailles, du sac à dos à la grande valise — ainsi que poussettes, vélos, planches de surf, instruments de musique et cartons. Pas de nourriture.",
     "extras": "Des toilettes gratuites pour les clients, et des transferts vers l'aéroport sur demande."
   },
   "faq": {
@@ -169,9 +172,17 @@
         "question": "Y a-t-il une limite de taille pour les bagages ?",
         "answer": "Non — nous acceptons toutes tailles de bagages, des petits sacs à dos aux grandes valises, et vous pouvez combiner différentes tailles dans une même réservation."
       },
+      "specialItems": {
+        "question": "Puis-je laisser une poussette, un vélo ou une planche de surf ?",
+        "answer": "Oui. En plus des valises et des sacs à dos, nous gardons poussettes, vélos, planches de surf, instruments de musique et cartons. Nous n'acceptons pas la nourriture, et nous vous conseillons de garder sur vous passeports, médicaments et objets de valeur."
+      },
       "security": {
         "question": "Mes bagages sont-ils en sécurité chez vous ?",
-        "answer": "Oui. Vos bagages sont conservés en sécurité à notre emplacement central à Héraklion aussi longtemps que nécessaire."
+        "answer": "Oui. Chaque bagage reçoit une étiquette et vous recevez un reçu. Notre personnel garde vos bagages dans une pièce fermée à clé et sous vidéosurveillance, aussi longtemps que nécessaire."
+      },
+      "lockers": {
+        "question": "Avez-vous des casiers à bagages ?",
+        "answer": "Non — chaque bagage est remis à une personne, pas laissé dans un casier en libre-service. Nous l'étiquetons, vous remettons un reçu et le gardons dans une pièce fermée à clé et sous vidéosurveillance. Il n'y a pas de compartiments de taille fixe, donc les grandes valises, plusieurs bagages ou un vélo ne posent aucun problème."
       },
       "payment": {
         "question": "Comment puis-je payer ?",
@@ -181,9 +192,21 @@
         "question": "Comment fonctionnent les réductions en ligne ?",
         "answer": "Réservez en ligne et bénéficiez automatiquement de 10% de réduction — aucun code promo nécessaire. Restez 3 jours ou plus et vous bénéficierez de 25% de réduction à la place."
       },
+      "longStay": {
+        "question": "Puis-je laisser mes bagages une nuit ou une semaine ?",
+        "answer": "Oui. Une nuit, une semaine ou plus, c'est le même principe : vous payez par bagage et par jour, et à partir de 3 jours vous avez 25% de réduction en réservant en ligne. Le dépôt et le retrait se font pendant les horaires d'ouverture."
+      },
+      "transport": {
+        "question": "À quelle distance êtes-vous du port, du bus pour l'aéroport et de l'aéroport ?",
+        "answer": "L'arrêt du bus pour l'aéroport est à environ 1 minute à pied et le Port d'Héraklion à environ 15 minutes. L'aéroport d'Héraklion est à environ 6,5 km, et nous pouvons organiser votre transfert."
+      },
       "groups": {
         "question": "Proposez-vous des tarifs pour les grands groupes ?",
         "answer": "Contactez-nous directement et nous serons ravis de discuter de tarifs spéciaux pour les grands groupes."
+      },
+      "cancel": {
+        "question": "Et si mes plans changent ?",
+        "answer": "Rien n'est payé en ligne, il n'y a donc rien à annuler ni à rembourser — vous payez uniquement sur place. Si vos plans changent, prévenez-nous simplement par WhatsApp ou par téléphone."
       },
       "account": {
         "question": "Dois-je créer un compte pour réserver ?",

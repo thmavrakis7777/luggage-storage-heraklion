@@ -32,7 +32,8 @@ export function KeyFacts() {
     { label: t('labels.discounts'), value: tPricing('discountNote') },
     { label: t('labels.payment'), value: t('payment') },
     { label: t('labels.booking'), value: t('booking') },
-    { label: t('labels.luggage'), value: tPricing('anySize') },
+    { label: t('labels.security'), value: t('security') },
+    { label: t('labels.luggage'), value: t('luggage') },
     { label: t('labels.nearby'), value: distanceKeys.map((key) => tLocation(`distances.${key}`)).join('; ') },
     { label: t('labels.extras'), value: t('extras') },
   ];

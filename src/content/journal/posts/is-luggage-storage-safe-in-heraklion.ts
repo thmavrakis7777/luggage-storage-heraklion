@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'is-luggage-storage-safe-in-heraklion',
   publishedAt: '2026-09-11',
+  updatedAt: '2026-09-24',
   content: {
     en: {
       title: 'Is Luggage Storage in Heraklion Safe? Here Is Exactly How It Works',
@@ -17,6 +18,10 @@ export const post: JournalPost = {
         {
           type: 'p',
           text: 'We are a small family business in the centre of Heraklion, not a wall of automated lockers in a corridor. Your luggage is handed over in person to someone who works here, kept indoors on our premises, and handed back to you in person. During opening hours there is always someone on site with the bags.',
+        },
+        {
+          type: 'p',
+          text: 'Every bag gets a tag, you get a receipt, and the bags are kept in a locked room with CCTV until you come back for them.',
         },
         { type: 'h2', text: 'Every booking gets its own reference' },
         {
@@ -66,6 +71,10 @@ export const post: JournalPost = {
         {
           type: 'p',
           text: 'Είμαστε μια μικρή οικογενειακή επιχείρηση στο κέντρο του Ηρακλείου, όχι ένας τοίχος με αυτόματες θυρίδες σε κάποιον διάδρομο. Οι αποσκευές σας παραδίδονται από χέρι σε χέρι σε άνθρωπο που δουλεύει εδώ, φυλάσσονται σε εσωτερικό χώρο και σας επιστρέφονται ξανά προσωπικά. Τις ώρες λειτουργίας υπάρχει πάντα κάποιος στον χώρο μαζί με τις αποσκευές.',
+        },
+        {
+          type: 'p',
+          text: 'Κάθε αποσκευή παίρνει ετικέτα, εσείς παίρνετε απόδειξη, και οι αποσκευές φυλάσσονται σε κλειδωμένο χώρο με κάμερες ασφαλείας μέχρι να επιστρέψετε να τις πάρετε.',
         },
         { type: 'h2', text: 'Κάθε κράτηση έχει τον δικό της κωδικό' },
         {

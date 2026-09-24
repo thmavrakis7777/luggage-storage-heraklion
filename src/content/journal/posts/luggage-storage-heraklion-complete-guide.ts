@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-storage-heraklion-complete-guide',
   publishedAt: '2026-09-14',
+  updatedAt: '2026-09-24',
   content: {
     en: {
       title: 'Luggage Storage in Heraklion: The Complete Guide',
@@ -79,7 +80,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Lockers or staffed storage?' },
         {
           type: 'p',
-          text: 'Many people start by searching for luggage lockers in Heraklion. A locker can be fine for one small bag, but compartments come in fixed sizes and are usually self-service. We work differently: your luggage is handed to a person, kept indoors on our premises and handed back to you by a person. Large suitcases, several bags at once or an awkward shape are not a problem.',
+          text: 'Many people start by searching for luggage lockers in Heraklion. A locker can be fine for one small bag, but compartments come in fixed sizes and are usually self-service. We work differently: your luggage is handed to a person, kept indoors on our premises and handed back to you by a person. Large suitcases, several bags at once or an awkward shape are not a problem. There is a fuller comparison in [luggage lockers vs staffed storage in Heraklion](/journal/luggage-lockers-vs-staffed-storage-heraklion).',
         },
         { type: 'h2', text: 'Is it safe?' },
         {
@@ -194,7 +195,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Θυρίδες ή φύλαξη με προσωπικό;' },
         {
           type: 'p',
-          text: 'Πολλοί ξεκινούν αναζητώντας θυρίδες αποσκευών στο Ηράκλειο. Μια θυρίδα μπορεί να αρκεί για μία μικρή τσάντα, όμως οι θυρίδες έχουν συγκεκριμένα μεγέθη και συνήθως λειτουργούν με αυτοεξυπηρέτηση. Εμείς δουλεύουμε διαφορετικά: οι αποσκευές σας παραδίδονται σε άνθρωπο, φυλάσσονται σε εσωτερικό χώρο και σας επιστρέφονται ξανά από άνθρωπο. Μεγάλες βαλίτσες, πολλές αποσκευές μαζί ή κάτι με ασυνήθιστο σχήμα δεν αποτελούν πρόβλημα.',
+          text: 'Πολλοί ξεκινούν αναζητώντας θυρίδες αποσκευών στο Ηράκλειο. Μια θυρίδα μπορεί να αρκεί για μία μικρή τσάντα, όμως οι θυρίδες έχουν συγκεκριμένα μεγέθη και συνήθως λειτουργούν με αυτοεξυπηρέτηση. Εμείς δουλεύουμε διαφορετικά: οι αποσκευές σας παραδίδονται σε άνθρωπο, φυλάσσονται σε εσωτερικό χώρο και σας επιστρέφονται ξανά από άνθρωπο. Μεγάλες βαλίτσες, πολλές αποσκευές μαζί ή κάτι με ασυνήθιστο σχήμα δεν αποτελούν πρόβλημα. Αναλυτική σύγκριση θα βρείτε στο [θυρίδες αποσκευών ή φύλαξη με προσωπικό στο Ηράκλειο](/journal/luggage-lockers-vs-staffed-storage-heraklion).',
         },
         { type: 'h2', text: 'Είναι ασφαλές;' },
         {

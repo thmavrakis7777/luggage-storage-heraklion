@@ -2,7 +2,19 @@ import { useTranslations } from 'next-intl';
 import { PlusIcon } from '@heroicons/react/24/outline';
 
 /** Also drives the FAQPage structured data on the homepage. */
-export const FAQ_KEYS = ['size', 'security', 'payment', 'discount', 'groups', 'account'] as const;
+export const FAQ_KEYS = [
+  'size',
+  'specialItems',
+  'security',
+  'lockers',
+  'payment',
+  'discount',
+  'longStay',
+  'transport',
+  'groups',
+  'cancel',
+  'account',
+] as const;
 
 export function FAQ() {
   const t = useTranslations('faq');

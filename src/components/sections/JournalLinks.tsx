@@ -6,6 +6,7 @@ import { getPost, isJournalLocale, type JournalPost } from '@/content/journal';
  * actually search for, so crawlers reach them one click from the root. */
 const FEATURED_SLUGS = [
   'luggage-storage-heraklion-complete-guide',
+  'luggage-lockers-vs-staffed-storage-heraklion',
   'luggage-storage-prices-heraklion',
   'luggage-storage-near-heraklion-port',
   'luggage-storage-near-heraklion-airport-bus',

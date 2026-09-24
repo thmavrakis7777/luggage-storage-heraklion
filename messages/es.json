@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "De un Vistazo",
     "title": "Datos Clave",
-    "summary": "{name} es una consigna de equipaje familiar, atendida por personal, en el centro de Heraklion, Creta. Abre todos los días y cuesta {min}–{max} por maleta y día.",
+    "summary": "{name} es la primera consigna de equipaje de Heraklion, Creta: familiar, atendida por personal y en pleno centro. Abre todos los días y cuesta {min}–{max} por maleta y día.",
     "labels": {
       "prices": "Precios",
       "discounts": "Descuentos online",
       "payment": "Pago",
       "booking": "Reserva",
+      "security": "Seguridad",
       "luggage": "Equipaje",
       "nearby": "Cerca",
       "extras": "Además"
@@ -159,6 +160,8 @@
     "prices": "{items} — por maleta y día. Cuentan tanto el día de entrega como el de recogida.",
     "payment": "Efectivo o tarjeta, en la tienda. Sin pago online.",
     "booking": "Online en unos 30 segundos, solo con nombre y teléfono — sin cuenta ni email. También aceptamos clientes sin reserva.",
+    "security": "Sin taquillas: cada maleta lleva una etiqueta, tú recibes un recibo y nuestro personal la guarda en un cuarto cerrado con llave y con cámaras de vigilancia.",
+    "luggage": "Cualquier tamaño, de mochilas a maletas grandes, además de carritos de bebé, bicicletas, tablas de surf, instrumentos musicales y cajas. Sin comida.",
     "extras": "Un aseo gratuito para clientes y traslados al aeropuerto bajo petición."
   },
   "faq": {
@@ -169,9 +172,17 @@
         "question": "¿Hay un límite de tamaño para el equipaje?",
         "answer": "No: aceptamos cualquier tamaño de equipaje, desde pequeñas mochilas hasta maletas grandes, y puedes combinar distintos tamaños en una misma reserva."
       },
+      "specialItems": {
+        "question": "¿Puedo dejar un carrito de bebé, una bici o una tabla de surf?",
+        "answer": "Sí. Además de maletas y mochilas, guardamos carritos de bebé, bicicletas, tablas de surf, instrumentos musicales y cajas. No aceptamos comida, y te recomendamos llevar contigo pasaportes, medicamentos y objetos de valor."
+      },
       "security": {
         "question": "¿Está seguro mi equipaje con vosotros?",
-        "answer": "Sí. Tu equipaje se guarda de forma segura en nuestra ubicación central en Heraklion durante el tiempo que necesites."
+        "answer": "Sí. Cada maleta lleva una etiqueta y tú recibes un recibo. Nuestro personal guarda tu equipaje en un cuarto cerrado con llave y con cámaras de vigilancia, durante el tiempo que necesites."
+      },
+      "lockers": {
+        "question": "¿Tenéis taquillas para equipaje?",
+        "answer": "No: cada maleta se entrega a una persona, no se deja en una taquilla de autoservicio. La etiquetamos, te damos un recibo y la guardamos en un cuarto cerrado con llave y con cámaras de vigilancia. No hay compartimentos de tamaño fijo, así que las maletas grandes, varios bultos o una bici no son problema."
       },
       "payment": {
         "question": "¿Cómo pago?",
@@ -181,9 +192,21 @@
         "question": "¿Cómo funcionan los descuentos online?",
         "answer": "Reserva online y obtén un 10% de descuento automáticamente, sin necesidad de código promocional. Quédate 3 días o más y obtendrás un 25% de descuento en su lugar."
       },
+      "longStay": {
+        "question": "¿Puedo dejar el equipaje una noche o una semana?",
+        "answer": "Sí. Una noche, una semana o más funcionan igual: pagas por maleta y día, y a partir de 3 días tienes un 25% de descuento reservando online. La entrega y la recogida se hacen en horario de apertura."
+      },
+      "transport": {
+        "question": "¿A qué distancia estáis del puerto, del autobús al aeropuerto y del aeropuerto?",
+        "answer": "La parada del autobús al aeropuerto está a 1 minuto a pie y el Puerto de Heraklion a unos 15 minutos. El Aeropuerto de Heraklion está a unos 6,5 km, y podemos organizarte un traslado."
+      },
       "groups": {
         "question": "¿Ofrecéis tarifas para grupos grandes?",
         "answer": "Contáctanos directamente y estaremos encantados de hablar de tarifas especiales para grupos grandes."
+      },
+      "cancel": {
+        "question": "¿Y si cambian mis planes?",
+        "answer": "No se paga nada online, así que no hay nada que cancelar ni reembolsar: solo pagas en la tienda. Si cambian tus planes, avísanos por WhatsApp o por teléfono."
       },
       "account": {
         "question": "¿Necesito crear una cuenta para reservar?",

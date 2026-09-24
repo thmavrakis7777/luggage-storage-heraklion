@@ -7,6 +7,9 @@
 export const JOURNAL_LOCALES = ['en', 'el'] as const;
 export type JournalLocale = (typeof JOURNAL_LOCALES)[number];
 
+/** Named in each article's byline and structured data. */
+export const JOURNAL_AUTHOR: Record<JournalLocale, string> = { en: 'Charis', el: 'Χάρης' };
+
 export function isJournalLocale(locale: string): locale is JournalLocale {
   return (JOURNAL_LOCALES as readonly string[]).includes(locale);
 }

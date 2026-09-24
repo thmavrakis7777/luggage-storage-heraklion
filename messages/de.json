@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "Auf einen Blick",
     "title": "Die Wichtigsten Fakten",
-    "summary": "{name} ist eine familiengeführte Gepäckaufbewahrung mit Personal im Zentrum von Heraklion, Kreta. Sie ist täglich geöffnet und kostet {min}–{max} pro Gepäckstück und Tag.",
+    "summary": "{name} ist die erste Gepäckaufbewahrung in Heraklion, Kreta — familiengeführt, mit Personal und mitten im Zentrum. Sie ist täglich geöffnet und kostet {min}–{max} pro Gepäckstück und Tag.",
     "labels": {
       "prices": "Preise",
       "discounts": "Online-Rabatte",
       "payment": "Bezahlung",
       "booking": "Buchung",
+      "security": "Sicherheit",
       "luggage": "Gepäck",
       "nearby": "In der Nähe",
       "extras": "Außerdem"
@@ -159,6 +160,8 @@
     "prices": "{items} — pro Gepäckstück und Tag. Abgabe- und Abholtag zählen beide.",
     "payment": "Bar oder mit Karte, vor Ort bezahlt. Keine Online-Zahlung.",
     "booking": "Online in etwa 30 Sekunden, nur mit Name und Telefonnummer — kein Konto, keine E-Mail. Spontanbesuche willkommen.",
+    "security": "Keine Schließfächer: Jedes Gepäckstück bekommt ein Etikett, Sie erhalten eine Quittung, und unser Personal verwahrt es in einem abgeschlossenen, videoüberwachten Raum.",
+    "luggage": "Jede Größe, vom Rucksack bis zum großen Koffer — dazu Kinderwagen, Fahrräder, Surfbretter, Musikinstrumente und Kartons. Keine Lebensmittel.",
     "extras": "Eine kostenlose Toilette für Kunden und Flughafentransfers auf Anfrage."
   },
   "faq": {
@@ -169,9 +172,17 @@
         "question": "Gibt es ein Limit für die Gepäckgröße?",
         "answer": "Nein — wir nehmen jede Gepäckgröße an, von kleinen Rucksäcken bis zu großen Koffern, und Sie können verschiedene Größen in einer Buchung kombinieren."
       },
+      "specialItems": {
+        "question": "Kann ich einen Kinderwagen, ein Fahrrad oder ein Surfbrett abgeben?",
+        "answer": "Ja. Neben Koffern und Rucksäcken bewahren wir auch Kinderwagen, Fahrräder, Surfbretter, Musikinstrumente und Kartons auf. Lebensmittel nehmen wir nicht an, und Reisepässe, Medikamente und Wertsachen behalten Sie am besten bei sich."
+      },
       "security": {
         "question": "Ist mein Gepäck bei Ihnen sicher?",
-        "answer": "Ja. Ihr Gepäck wird an unserem zentralen Standort in Heraklion sicher aufbewahrt, so lange Sie möchten."
+        "answer": "Ja. Jedes Gepäckstück bekommt ein Etikett und Sie erhalten eine Quittung. Unser Personal verwahrt Ihr Gepäck in einem abgeschlossenen, videoüberwachten Raum — so lange Sie möchten."
+      },
+      "lockers": {
+        "question": "Haben Sie Gepäckschließfächer?",
+        "answer": "Nein — jedes Gepäckstück wird persönlich übergeben, nicht in ein Selbstbedienungs-Schließfach gelegt. Wir versehen es mit einem Etikett, geben Ihnen eine Quittung und bewahren es in einem abgeschlossenen, videoüberwachten Raum auf. Es gibt keine festen Fachgrößen, daher sind große Koffer, mehrere Gepäckstücke oder ein Fahrrad kein Problem."
       },
       "payment": {
         "question": "Wie bezahle ich?",
@@ -181,9 +192,21 @@
         "question": "Wie funktionieren die Online-Rabatte?",
         "answer": "Buchen Sie online und erhalten Sie automatisch 10% Rabatt — kein Gutscheincode nötig. Bleiben Sie 3 Tage oder länger, erhalten Sie stattdessen 25% Rabatt."
       },
+      "longStay": {
+        "question": "Kann ich Gepäck über Nacht oder eine Woche lang abgeben?",
+        "answer": "Ja. Eine Nacht, eine Woche oder länger — es funktioniert immer gleich: Sie zahlen pro Gepäckstück und Tag, und ab 3 Tagen gibt es bei Online-Buchung 25% Rabatt. Abgabe und Abholung erfolgen während der Öffnungszeiten."
+      },
+      "transport": {
+        "question": "Wie weit ist es zum Hafen, zum Flughafenbus und zum Flughafen?",
+        "answer": "Die Flughafenbus-Haltestelle ist etwa 1 Gehminute entfernt, der Hafen von Heraklion etwa 15 Minuten zu Fuß. Der Flughafen Heraklion liegt rund 6,5 km entfernt, und wir können Ihnen einen Flughafentransfer organisieren."
+      },
       "groups": {
         "question": "Bieten Sie Tarife für große Gruppen an?",
         "answer": "Kontaktieren Sie uns direkt, wir besprechen gerne Sonderkonditionen für große Gruppen."
+      },
+      "cancel": {
+        "question": "Was ist, wenn sich meine Pläne ändern?",
+        "answer": "Online wird nichts bezahlt, es gibt also nichts zu stornieren und nichts zu erstatten — Sie zahlen nur vor Ort. Wenn sich Ihre Pläne ändern, geben Sie uns einfach per WhatsApp oder Telefon Bescheid."
       },
       "account": {
         "question": "Muss ich ein Konto erstellen, um zu buchen?",

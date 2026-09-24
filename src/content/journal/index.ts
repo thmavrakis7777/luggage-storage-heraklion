@@ -15,9 +15,11 @@ import { post as port } from './posts/luggage-storage-near-heraklion-port';
 import { post as cruise } from './posts/heraklion-cruise-passengers-luggage-storage';
 import { post as lionsSquare } from './posts/luggage-storage-near-lions-square-heraklion';
 import { post as cathedral } from './posts/luggage-storage-near-saint-minas-cathedral-heraklion';
+import { post as lockers } from './posts/luggage-lockers-vs-staffed-storage-heraklion';
 
 /** Newest first — this is the order the listing page renders. */
 const posts: JournalPost[] = [
+  lockers,
   completeGuide,
   fewHours,
   port,

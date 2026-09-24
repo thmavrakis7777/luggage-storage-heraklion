@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "At a Glance",
     "title": "Key Facts",
-    "summary": "{name} is a staffed, family-run luggage storage in the centre of Heraklion, Crete. It is open every day and charges {min}–{max} per bag per day.",
+    "summary": "{name} is the first luggage storage in Heraklion, Crete — staffed, family-run and in the city centre. It is open every day and charges {min}–{max} per bag per day.",
     "labels": {
       "prices": "Prices",
       "discounts": "Online discounts",
       "payment": "Payment",
       "booking": "Booking",
+      "security": "Security",
       "luggage": "Luggage",
       "nearby": "Nearby",
       "extras": "Also"
@@ -159,6 +160,8 @@
     "prices": "{items} — per bag, per day. The drop-off and pick-up days both count.",
     "payment": "Cash or card, paid at the store. No online payment.",
     "booking": "Online in about 30 seconds with just a name and phone number — no account, no email. Walk-ins welcome.",
+    "security": "No lockers: every bag is tagged, you get a receipt, and our staff keep it in a locked room with CCTV.",
+    "luggage": "Any size, from backpacks to large suitcases — plus prams, bikes, surfboards, musical instruments and boxes. No food.",
     "extras": "A free toilet for customers, and airport transfers arranged on request."
   },
   "faq": {
@@ -169,9 +172,17 @@
         "question": "Is there a limit on luggage size?",
         "answer": "No — we accept any luggage size, from small backpacks to large suitcases, and you can mix different sizes in one booking."
       },
+      "specialItems": {
+        "question": "Can I leave a pram, bike or surfboard?",
+        "answer": "Yes. As well as suitcases and backpacks, we store prams, bikes, surfboards, musical instruments and boxes. We don't accept food, and we recommend keeping passports, medication and valuables with you."
+      },
       "security": {
         "question": "Is my luggage safe with you?",
-        "answer": "Yes. Your bags are stored securely at our central Heraklion location for as long as you need."
+        "answer": "Yes. Every bag is tagged and you get a receipt. Our staff keep your bags in a locked storage room with CCTV, for as long as you need."
+      },
+      "lockers": {
+        "question": "Do you have luggage lockers?",
+        "answer": "No — every bag is handed to a person, not left in a self-service locker. We tag it, give you a receipt and keep it in a locked room with CCTV. There is no fixed compartment size, so large suitcases, several bags or a bike are no problem."
       },
       "payment": {
         "question": "How do I pay?",
@@ -181,9 +192,21 @@
         "question": "How do the online discounts work?",
         "answer": "Book online and get 10% off automatically — no coupon code required. Stay 3 or more days and you'll get 25% off instead."
       },
+      "longStay": {
+        "question": "Can I leave luggage overnight or for a week?",
+        "answer": "Yes. Overnight, a week or longer all work the same way: you pay per bag per day, and stays of 3 days or more get 25% off when you book online. Drop-off and pick-up are during opening hours."
+      },
+      "transport": {
+        "question": "How far are you from the port, the airport bus and the airport?",
+        "answer": "The airport bus stop is about a 1-minute walk away and Heraklion Port about 15 minutes on foot. Heraklion Airport is around 6.5 km away, and we can arrange an airport transfer for you."
+      },
       "groups": {
         "question": "Do you offer rates for large groups?",
         "answer": "Contact us directly and we'll be happy to discuss special rates for large groups."
+      },
+      "cancel": {
+        "question": "What if my plans change?",
+        "answer": "Nothing is paid online, so there is nothing to cancel and nothing to refund — you only pay at the store. If your plans change, just let us know on WhatsApp or by phone."
       },
       "account": {
         "question": "Do I need to create an account to book?",
@@ -286,6 +309,7 @@
     "eyebrow": "Journal",
     "title": "Luggage Storage & Heraklion Travel Notes",
     "subtitle": "Practical notes on storing your bags, getting around Heraklion, and making the most of the hours between a checkout and a departure.",
+    "byline": "By {name}",
     "readingTime": "{minutes} min read",
     "updated": "Updated {date}",
     "readMore": "Read article",

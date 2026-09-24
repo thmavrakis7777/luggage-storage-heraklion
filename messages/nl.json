@@ -122,7 +122,7 @@
       "cathedral": "1 min van de Agios Minas Kathedraal",
       "lions": "5 min van het Leeuwenplein",
       "port": "15 min van de Haven van Heraklion",
-      "busStation": "1 min van het bushalte naar de luchthaven",
+      "busStation": "1 min van de bushalte naar de luchthaven",
       "airport": "6,5 km van Luchthaven Heraklion"
     },
     "openMaps": "Openen in Google Maps",
@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "In het Kort",
     "title": "Belangrijkste Feiten",
-    "summary": "{name} is een bemande bagageopslag, gerund door een familie, in het centrum van Heraklion, Kreta. Elke dag open, voor {min}–{max} per stuk bagage per dag.",
+    "summary": "{name} is de eerste bagageopslag van Heraklion, Kreta — bemand, gerund door een familie en midden in het centrum. Elke dag open, voor {min}–{max} per stuk bagage per dag.",
     "labels": {
       "prices": "Prijzen",
       "discounts": "Online kortingen",
       "payment": "Betaling",
       "booking": "Boeken",
+      "security": "Veiligheid",
       "luggage": "Bagage",
       "nearby": "In de buurt",
       "extras": "Verder"
@@ -159,6 +160,8 @@
     "prices": "{items} — per stuk bagage, per dag. De dag van afgifte en de dag van ophalen tellen allebei.",
     "payment": "Contant of met kaart, in de winkel. Geen online betaling.",
     "booking": "Online in ongeveer 30 seconden, met alleen naam en telefoonnummer — geen account, geen e-mail. Binnenlopen zonder reservering kan ook.",
+    "security": "Geen kluisjes: elk stuk bagage krijgt een label, jij krijgt een bon, en ons personeel bewaart het in een afgesloten ruimte met camerabewaking.",
+    "luggage": "Elke maat, van rugzakken tot grote koffers — plus kinderwagens, fietsen, surfplanken, muziekinstrumenten en dozen. Geen eten.",
     "extras": "Een gratis toilet voor klanten, en luchthaventransfers op aanvraag."
   },
   "faq": {
@@ -169,9 +172,17 @@
         "question": "Is er een limiet aan de koffergrootte?",
         "answer": "Nee — wij accepteren elke koffergrootte, van kleine rugzakken tot grote koffers, en je kunt verschillende maten combineren in één boeking."
       },
+      "specialItems": {
+        "question": "Kan ik een kinderwagen, fiets of surfplank achterlaten?",
+        "answer": "Ja. Naast koffers en rugzakken bewaren we ook kinderwagens, fietsen, surfplanken, muziekinstrumenten en dozen. Eten nemen we niet aan, en we raden aan paspoorten, medicijnen en waardevolle spullen bij je te houden."
+      },
       "security": {
         "question": "Is mijn bagage veilig bij jullie?",
-        "answer": "Ja. Je bagage wordt veilig bewaard op onze centrale locatie in Heraklion, zo lang als je nodig hebt."
+        "answer": "Ja. Elk stuk bagage krijgt een label en jij krijgt een bon. Ons personeel bewaart je bagage in een afgesloten ruimte met camerabewaking, zo lang als je nodig hebt."
+      },
+      "lockers": {
+        "question": "Hebben jullie bagagekluisjes?",
+        "answer": "Nee — elk stuk bagage wordt aan een persoon overhandigd, niet in een zelfbedieningskluisje achtergelaten. We voorzien het van een label, geven je een bon en bewaren het in een afgesloten ruimte met camerabewaking. Er zijn geen vakken met een vaste maat, dus grote koffers, meerdere tassen of een fiets zijn geen probleem."
       },
       "payment": {
         "question": "Hoe betaal ik?",
@@ -181,9 +192,21 @@
         "question": "Hoe werken de online kortingen?",
         "answer": "Boek online en krijg automatisch 10% korting — geen kortingscode nodig. Blijf 3 dagen of langer en krijg in plaats daarvan 25% korting."
       },
+      "longStay": {
+        "question": "Kan ik bagage een nacht of een week achterlaten?",
+        "answer": "Ja. Een nacht, een week of langer werkt allemaal hetzelfde: je betaalt per stuk bagage per dag, en vanaf 3 dagen krijg je 25% korting als je online boekt. Afgeven en ophalen kan tijdens de openingstijden."
+      },
+      "transport": {
+        "question": "Hoe ver zijn jullie van de haven, de luchthavenbus en de luchthaven?",
+        "answer": "De bushalte naar de luchthaven is ongeveer 1 minuut lopen en de Haven van Heraklion ongeveer 15 minuten. Luchthaven Heraklion ligt zo'n 6,5 km verderop, en we kunnen een luchthaventransfer voor je regelen."
+      },
       "groups": {
         "question": "Bieden jullie tarieven voor grote groepen?",
         "answer": "Neem rechtstreeks contact met ons op, dan bespreken we graag speciale tarieven voor grote groepen."
+      },
+      "cancel": {
+        "question": "Wat als mijn plannen veranderen?",
+        "answer": "Online betaal je niets, dus er valt niets te annuleren of terug te betalen — je betaalt alleen in de winkel. Veranderen je plannen, laat het ons dan even weten via WhatsApp of telefoon."
       },
       "account": {
         "question": "Moet ik een account aanmaken om te boeken?",

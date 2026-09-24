@@ -12,6 +12,7 @@ import {
   lastModified,
   readingMinutes,
   splitLinks,
+  JOURNAL_AUTHOR,
   JOURNAL_LOCALES,
   type Block,
 } from '@/content/journal';
@@ -148,7 +149,11 @@ export default async function JournalPostPage({
         inLanguage: locale,
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
         url,
-        author: { '@type': 'Organization', name: business.name, url: `${siteUrl}/${locale}` },
+        author: {
+          '@type': 'Person',
+          name: JOURNAL_AUTHOR[locale],
+          worksFor: { '@type': 'Organization', name: business.name, url: `${siteUrl}/${locale}` },
+        },
         publisher: {
           '@type': 'Organization',
           name: business.name,
@@ -191,6 +196,8 @@ export default async function JournalPostPage({
         <article>
           <header>
             <p className="text-xs font-medium tracking-wider text-ink-400 uppercase">
+              {t('byline', { name: JOURNAL_AUTHOR[locale] })}
+              {' · '}
               <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
               {post.updatedAt && (
                 <>
