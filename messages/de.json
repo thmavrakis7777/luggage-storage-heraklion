@@ -198,6 +198,7 @@
       "dropoffTime": "Abgabezeit",
       "pickupTime": "Abholzeit",
       "selectTime": "Uhrzeit Auswählen",
+      "noTimesToday": "Heute sind keine Abgabezeiten mehr verfügbar — bitte wählen Sie ein anderes Datum.",
       "advanceBookingWarning": "Für diese Zeit ist eine Vorausbuchung erforderlich. Personal ist nur nach Vereinbarung vor Ort verfügbar.",
       "luggageSize": "Gepäck",
       "backpack": "Rucksack",
@@ -223,11 +224,13 @@
       "dropoffDate": "Bitte wählen Sie ein Abgabedatum.",
       "pickupDate": "Bitte wählen Sie ein Abholdatum.",
       "dateInPast": "Bitte wählen Sie heute oder ein zukünftiges Datum.",
+      "timePassed": "Diese Abgabezeit ist bereits vorbei — bitte wählen Sie eine spätere Zeit.",
       "dropoffTime": "Bitte wählen Sie eine Abgabezeit.",
       "pickupTime": "Bitte wählen Sie eine Abholzeit.",
       "pickupBeforeDropoffDate": "Das Abholdatum darf nicht vor dem Abgabedatum liegen.",
       "pickupBeforeDropoffTime": "Bei einer Buchung am selben Tag muss die Abholzeit nach der Abgabezeit liegen.",
       "noItems": "Bitte wählen Sie mindestens 1 Gepäckstück.",
+      "tooManyBags": "Online-Buchungen sind auf 50 Gepäckstücke begrenzt — für mehr kontaktieren Sie uns bitte per WhatsApp.",
       "generic": "Etwas ist schiefgelaufen. Bitte versuchen Sie es erneut oder kontaktieren Sie uns per WhatsApp.",
       "rateLimited": "Zu viele Versuche. Bitte warten Sie einen Moment und versuchen Sie es erneut."
     }

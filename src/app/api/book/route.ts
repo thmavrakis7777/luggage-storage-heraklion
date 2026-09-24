@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse, after } from 'next/server';
 import { bookingInputSchema } from '@/lib/booking-schema';
 import { calculatePrice, computeStorageDays, LUGGAGE_SIZES } from '@/lib/pricing';
-import { todayInHeraklion } from '@/lib/hours';
+import { currentSlotInHeraklion, todayInHeraklion } from '@/lib/hours';
 import { getSupabaseClient } from '@/lib/supabase';
 import { notifyTelegram } from '@/lib/telegram';
 import { isRateLimited } from '@/lib/rate-limit';
@@ -35,9 +35,19 @@ export async function POST(req: NextRequest) {
     return NextResponse.json({ error: 'validation_failed' }, { status: 400 });
   }
 
-  if (input.dropoffDate < todayInHeraklion()) {
+  const today = todayInHeraklion();
+  if (input.dropoffDate < today) {
     return NextResponse.json(
       { error: 'validation_failed', issues: [{ path: ['dropoffDate'], message: 'date_in_past' }] },
+      { status: 400 }
+    );
+  }
+
+  // Same-day drop-off at a slot that has already passed (e.g. a form left
+  // open for hours). Pick-up is always after drop-off, so it's covered too.
+  if (input.dropoffDate === today && input.dropoffTime < currentSlotInHeraklion()) {
+    return NextResponse.json(
+      { error: 'validation_failed', issues: [{ path: ['dropoffTime'], message: 'time_in_past' }] },
       { status: 400 }
     );
   }

@@ -198,6 +198,7 @@
       "dropoffTime": "Heure de Dépôt",
       "pickupTime": "Heure de Retrait",
       "selectTime": "Sélectionner l'Heure",
+      "noTimesToday": "Plus aucune heure de dépôt n'est disponible aujourd'hui — veuillez sélectionner une autre date.",
       "advanceBookingWarning": "Réservation à l'avance requise pour cet horaire. Le personnel n'est disponible sur place que sur rendez-vous.",
       "luggageSize": "Bagages",
       "backpack": "Sac à Dos",
@@ -223,11 +224,13 @@
       "dropoffDate": "Veuillez sélectionner une date de dépôt.",
       "pickupDate": "Veuillez sélectionner une date de retrait.",
       "dateInPast": "Veuillez sélectionner aujourd'hui ou une date future.",
+      "timePassed": "Cette heure de dépôt est déjà passée — veuillez sélectionner une heure plus tardive.",
       "dropoffTime": "Veuillez sélectionner une heure de dépôt.",
       "pickupTime": "Veuillez sélectionner une heure de retrait.",
       "pickupBeforeDropoffDate": "La date de retrait ne peut pas être antérieure à la date de dépôt.",
       "pickupBeforeDropoffTime": "Pour une réservation le même jour, l'heure de retrait doit être postérieure à l'heure de dépôt.",
       "noItems": "Veuillez sélectionner au moins 1 bagage.",
+      "tooManyBags": "Les réservations en ligne sont limitées à 50 bagages — pour plus, veuillez nous contacter sur WhatsApp.",
       "generic": "Une erreur s'est produite. Veuillez réessayer ou nous contacter sur WhatsApp.",
       "rateLimited": "Trop de tentatives. Veuillez patienter un instant et réessayer."
     }

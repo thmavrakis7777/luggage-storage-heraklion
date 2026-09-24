@@ -198,6 +198,7 @@
       "dropoffTime": "Hora de Entrega",
       "pickupTime": "Hora de Recogida",
       "selectTime": "Selecciona Hora",
+      "noTimesToday": "Ya no quedan horas de entrega disponibles hoy — por favor, selecciona otra fecha.",
       "advanceBookingWarning": "Se requiere reserva anticipada para este horario. El personal está disponible en tienda solo con cita previa.",
       "luggageSize": "Equipaje",
       "backpack": "Mochila",
@@ -223,11 +224,13 @@
       "dropoffDate": "Por favor, selecciona una fecha de entrega.",
       "pickupDate": "Por favor, selecciona una fecha de recogida.",
       "dateInPast": "Por favor, selecciona hoy o una fecha futura.",
+      "timePassed": "Esa hora de entrega ya ha pasado — por favor, selecciona una hora posterior.",
       "dropoffTime": "Por favor, selecciona una hora de entrega.",
       "pickupTime": "Por favor, selecciona una hora de recogida.",
       "pickupBeforeDropoffDate": "La fecha de recogida no puede ser anterior a la fecha de entrega.",
       "pickupBeforeDropoffTime": "Para una reserva el mismo día, la hora de recogida debe ser posterior a la hora de entrega.",
       "noItems": "Por favor, selecciona al menos 1 maleta.",
+      "tooManyBags": "Las reservas online tienen un límite de 50 maletas — para más, contáctanos por WhatsApp.",
       "generic": "Algo salió mal. Inténtalo de nuevo o contáctanos por WhatsApp.",
       "rateLimited": "Demasiados intentos. Espera un momento e inténtalo de nuevo."
     }

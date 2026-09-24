@@ -1,3 +1,4 @@
+import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import { CheckCircleIcon, MapPinIcon, PhoneIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
 import { Link } from '@/i18n/navigation';
@@ -15,6 +16,30 @@ interface BookingItem {
 /** Postgres `time` comes back as HH:MM:SS — trim to HH:MM for display. */
 function formatTime(time: string): string {
   return time.slice(0, 5);
+}
+
+/** A YYYY-MM-DD date in the visitor's language, e.g. "24 September 2026".
+ * Read as UTC so the calendar date can never shift with the server's timezone. */
+function formatDate(date: string, locale: string): string {
+  return new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(
+    new Date(`${date}T00:00:00Z`)
+  );
+}
+
+// A personal confirmation, never a search result — and without this the page
+// inherited the homepage's canonical and hreflang from the layout.
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: 'success' });
+  return {
+    title: t('details'),
+    robots: { index: false, follow: false },
+    alternates: {},
+  };
 }
 
 export default async function BookingSuccessPage({
@@ -53,8 +78,8 @@ export default async function BookingSuccessPage({
     .join(', ');
   const dateLabel =
     booking.dropoff_date === booking.pickup_date
-      ? booking.dropoff_date
-      : `${booking.dropoff_date} → ${booking.pickup_date}`;
+      ? formatDate(booking.dropoff_date, locale)
+      : `${formatDate(booking.dropoff_date, locale)} → ${formatDate(booking.pickup_date, locale)}`;
 
   return (
     <section className="section-padding pt-28 md:pt-32 bg-paper-50 min-h-screen">

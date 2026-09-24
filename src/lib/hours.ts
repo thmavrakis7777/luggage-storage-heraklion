@@ -110,6 +110,22 @@ export function timeOptionsFor(dateStr: string): string[] {
   return options;
 }
 
+/** The half-hour slot Heraklion is currently in, e.g. 10:17 → "10:00".
+ * Slots before it have already passed today; the current one still counts,
+ * so someone standing at the door can book it. */
+export function currentSlotInHeraklion(): string {
+  const parts = new Intl.DateTimeFormat('en-GB', {
+    timeZone: 'Europe/Athens',
+    hour: '2-digit',
+    minute: '2-digit',
+    hourCycle: 'h23',
+  }).formatToParts(new Date());
+  const now = minutesOf(
+    `${parts.find((p) => p.type === 'hour')?.value}:${parts.find((p) => p.type === 'minute')?.value}`
+  );
+  return toHHMM(now - (now % TIME_SLOT_INTERVAL_MINUTES));
+}
+
 /** Server-authoritative check: is this time one of the valid in-hours slots for this date? */
 export function isValidTimeSlot(dateStr: string, time: string): boolean {
   return timeOptionsFor(dateStr).includes(time);

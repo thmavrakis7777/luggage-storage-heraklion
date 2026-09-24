@@ -198,6 +198,7 @@
       "dropoffTime": "Orario di Consegna",
       "pickupTime": "Orario di Ritiro",
       "selectTime": "Seleziona Orario",
+      "noTimesToday": "Non ci sono più orari di consegna disponibili oggi — seleziona un'altra data.",
       "advanceBookingWarning": "Prenotazione anticipata richiesta per questo orario. Il personale è disponibile in sede solo su appuntamento.",
       "luggageSize": "Bagagli",
       "backpack": "Zaino",
@@ -223,11 +224,13 @@
       "dropoffDate": "Seleziona una data di consegna.",
       "pickupDate": "Seleziona una data di ritiro.",
       "dateInPast": "Seleziona la data odierna o una data futura.",
+      "timePassed": "Questo orario di consegna è già passato — seleziona un orario successivo.",
       "dropoffTime": "Seleziona un orario di consegna.",
       "pickupTime": "Seleziona un orario di ritiro.",
       "pickupBeforeDropoffDate": "La data di ritiro non può essere precedente alla data di consegna.",
       "pickupBeforeDropoffTime": "Per una prenotazione nello stesso giorno, l'orario di ritiro deve essere successivo all'orario di consegna.",
       "noItems": "Seleziona almeno 1 bagaglio.",
+      "tooManyBags": "Le prenotazioni online sono limitate a 50 bagagli — per più bagagli contattaci su WhatsApp.",
       "generic": "Qualcosa è andato storto. Riprova o contattaci su WhatsApp.",
       "rateLimited": "Troppi tentativi. Attendi un momento e riprova."
     }

@@ -198,6 +198,7 @@
       "dropoffTime": "Drop-off Time",
       "pickupTime": "Pick-up Time",
       "selectTime": "Select Time",
+      "noTimesToday": "No more drop-off times are available today — please choose another date.",
       "advanceBookingWarning": "Advance booking required for this time. Staff is available on-site by appointment.",
       "luggageSize": "Luggage",
       "backpack": "Backpack",
@@ -223,11 +224,13 @@
       "dropoffDate": "Please select a drop-off date.",
       "pickupDate": "Please select a pick-up date.",
       "dateInPast": "Please select today or a future date.",
+      "timePassed": "That drop-off time has already passed — please choose a later time.",
       "dropoffTime": "Please select a drop-off time.",
       "pickupTime": "Please select a pick-up time.",
       "pickupBeforeDropoffDate": "Pick-up date cannot be before the drop-off date.",
       "pickupBeforeDropoffTime": "For a same-day booking, pick-up time must be after drop-off time.",
       "noItems": "Please select at least one bag.",
+      "tooManyBags": "Online bookings are limited to 50 bags — for more, please contact us on WhatsApp.",
       "generic": "Something went wrong. Please try again or contact us on WhatsApp.",
       "rateLimited": "Too many attempts. Please wait a moment and try again."
     }

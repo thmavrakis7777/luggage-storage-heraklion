@@ -198,6 +198,7 @@
       "dropoffTime": "Inlevertijd",
       "pickupTime": "Ophaaltijd",
       "selectTime": "Selecteer Tijd",
+      "noTimesToday": "Er zijn vandaag geen inlevertijden meer beschikbaar — selecteer een andere datum.",
       "advanceBookingWarning": "Voor dit tijdstip is vooraf boeken verplicht. Personeel is alleen op afspraak aanwezig.",
       "luggageSize": "Bagage",
       "backpack": "Rugzak",
@@ -223,11 +224,13 @@
       "dropoffDate": "Selecteer een inleverdatum.",
       "pickupDate": "Selecteer een ophaaldatum.",
       "dateInPast": "Selecteer vandaag of een datum in de toekomst.",
+      "timePassed": "Deze inlevertijd is al verstreken — selecteer een latere tijd.",
       "dropoffTime": "Selecteer een inlevertijd.",
       "pickupTime": "Selecteer een ophaaltijd.",
       "pickupBeforeDropoffDate": "De ophaaldatum kan niet vóór de inleverdatum liggen.",
       "pickupBeforeDropoffTime": "Bij een boeking op dezelfde dag moet de ophaaltijd na de inlevertijd liggen.",
       "noItems": "Selecteer ten minste 1 tas.",
+      "tooManyBags": "Online boekingen zijn beperkt tot 50 tassen — neem voor meer contact op via WhatsApp.",
       "generic": "Er ging iets mis. Probeer het opnieuw of neem contact op via WhatsApp.",
       "rateLimited": "Te veel pogingen. Wacht even en probeer het opnieuw."
     }

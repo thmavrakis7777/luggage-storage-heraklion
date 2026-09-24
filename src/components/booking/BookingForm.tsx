@@ -1,6 +1,6 @@
 'use client';
 
-import { useMemo, useState } from 'react';
+import { useMemo, useState, useSyncExternalStore } from 'react';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter } from '@/i18n/navigation';
 import {
@@ -17,7 +17,13 @@ import {
   LUGGAGE_SIZES,
   type LuggageQuantities,
 } from '@/lib/pricing';
-import { isAdvanceBookingRequired, timeOptionsFor, todayInHeraklion } from '@/lib/hours';
+import {
+  currentSlotInHeraklion,
+  isAdvanceBookingRequired,
+  timeOptionsFor,
+  todayInHeraklion,
+} from '@/lib/hours';
+import { normalizePhone, PHONE_PATTERN } from '@/lib/phone';
 import { trackBookingStarted, trackBookingCompleted } from '@/lib/analytics';
 import type { Locale } from '@/i18n/config';
 
@@ -25,6 +31,48 @@ const inputClass =
   'w-full pl-12 pr-4 py-4 bg-paper-50 border border-ink-200 focus:border-ink-500 focus:outline-none transition-colors text-ink-900 placeholder:text-ink-400';
 
 const EMPTY_ITEMS: LuggageQuantities = { backpack: 0, cabin: 0, large: 0 };
+
+// "Today" has to come from the visitor's browser, not the build: this page is
+// pre-rendered, and a date baked in at build time left past days selectable
+// until the next deploy. The server render uses '' (no limit) so hydration
+// matches, then React re-renders with the real date straight away.
+const subscribeToNothing = () => () => {};
+const noDateOnServer = () => '';
+
+/** /api/book validation codes → the customer-facing error to show. The
+ * code is more specific than the field, so it wins when both are known. */
+const ISSUE_MESSAGE_KEYS: Record<string, string> = {
+  date_in_past: 'dateInPast',
+  time_in_past: 'timePassed',
+  pickup_before_dropoff_date: 'pickupBeforeDropoffDate',
+  pickup_before_dropoff_time: 'pickupBeforeDropoffTime',
+  no_items: 'noItems',
+  too_many_items: 'tooManyBags',
+};
+const ISSUE_FIELD_KEYS: Record<string, string> = {
+  customerName: 'name',
+  customerPhone: 'phone',
+  dropoffDate: 'dropoffDate',
+  pickupDate: 'pickupDate',
+  dropoffTime: 'dropoffTime',
+  pickupTime: 'pickupTime',
+  items: 'tooManyBags',
+};
+
+interface ServerIssue {
+  path?: unknown[];
+  message?: string;
+}
+
+function errorKeyFor(issues: ServerIssue[] | undefined): string {
+  const issue = issues?.[0];
+  const field = issue?.path?.[0];
+  return (
+    (issue?.message && ISSUE_MESSAGE_KEYS[issue.message]) ||
+    (typeof field === 'string' && ISSUE_FIELD_KEYS[field]) ||
+    'generic'
+  );
+}
 
 export function BookingForm() {
   const t = useTranslations('booking');
@@ -43,7 +91,7 @@ export function BookingForm() {
   const [submitting, setSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const today = useMemo(() => todayInHeraklion(), []);
+  const today = useSyncExternalStore(subscribeToNothing, todayInHeraklion, noDateOnServer);
 
   const storageDays = useMemo(
     () => (dropoffDate && pickupDate ? computeStorageDays(dropoffDate, pickupDate) : 1),
@@ -51,10 +99,14 @@ export function BookingForm() {
   );
   const price = useMemo(() => calculatePrice(items, storageDays), [items, storageDays]);
 
-  const dropoffTimeOptions = useMemo(
-    () => (dropoffDate ? timeOptionsFor(dropoffDate) : []),
-    [dropoffDate]
-  );
+  // For a same-day drop-off, only slots from the current half hour onwards.
+  const dropoffTimeOptions = useMemo(() => {
+    if (!dropoffDate) return [];
+    const options = timeOptionsFor(dropoffDate);
+    if (dropoffDate !== today) return options;
+    const earliest = currentSlotInHeraklion();
+    return options.filter((time) => time >= earliest);
+  }, [dropoffDate, today]);
   const pickupTimeOptions = useMemo(() => {
     if (!pickupDate) return [];
     const options = timeOptionsFor(pickupDate);
@@ -74,18 +126,26 @@ export function BookingForm() {
     e.preventDefault();
     setError(null);
 
-    if (!name.trim()) return setError(tErr('name'));
-    if (!phone.trim()) return setError(tErr('phone'));
+    // Mirrors the server's rules (booking-schema.ts), so a customer sees the
+    // real reason here instead of a generic failure after submitting.
+    const customerName = name.trim();
+    const customerPhone = normalizePhone(phone);
+    if (customerName.length < 2) return setError(tErr('name'));
+    if (!PHONE_PATTERN.test(customerPhone)) return setError(tErr('phone'));
     if (!dropoffDate) return setError(tErr('dropoffDate'));
     if (dropoffDate < today) return setError(tErr('dateInPast'));
     if (!pickupDate) return setError(tErr('pickupDate'));
     if (pickupDate < dropoffDate) return setError(tErr('pickupBeforeDropoffDate'));
     if (!dropoffTime) return setError(tErr('dropoffTime'));
     if (!pickupTime) return setError(tErr('pickupTime'));
+    if (dropoffDate === today && dropoffTime < currentSlotInHeraklion()) {
+      return setError(tErr('timePassed'));
+    }
     if (pickupDate === dropoffDate && pickupTime <= dropoffTime) {
       return setError(tErr('pickupBeforeDropoffTime'));
     }
     if (price.totalBags < 1) return setError(tErr('noItems'));
+    if (price.totalBags > 50) return setError(tErr('tooManyBags'));
 
     trackBookingStarted();
 
@@ -95,8 +155,8 @@ export function BookingForm() {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
-          customerName: name.trim(),
-          customerPhone: phone.trim(),
+          customerName,
+          customerPhone,
           dropoffDate,
           pickupDate,
           dropoffTime,
@@ -112,7 +172,8 @@ export function BookingForm() {
         return;
       }
       if (!res.ok) {
-        setError(tErr('generic'));
+        const body = res.status === 400 ? await res.json().catch(() => null) : null;
+        setError(tErr(errorKeyFor(body?.issues)));
         return;
       }
 
@@ -153,6 +214,7 @@ export function BookingForm() {
               onChange={(e) => setName(e.target.value)}
               placeholder={t('form.namePlaceholder')}
               autoComplete="name"
+              maxLength={100}
               className={inputClass}
             />
           </div>
@@ -276,6 +338,10 @@ export function BookingForm() {
           </div>
         </div>
       </div>
+
+      {dropoffDate && dropoffDate === today && dropoffTimeOptions.length === 0 && (
+        <p className="text-sm text-ink-500">{t('form.noTimesToday')}</p>
+      )}
 
       {needsAdvanceBooking && (
         <div className="flex gap-3 bg-brand-50 border border-brand-500/40 p-4" role="status">

@@ -1,6 +1,7 @@
 import { z } from 'zod';
 import { LUGGAGE_SIZES } from './pricing';
 import { isValidTimeSlot } from './hours';
+import { PHONE_PATTERN } from './phone';
 import { locales } from '@/i18n/config';
 
 const dateSchema = z.string().regex(/^\d{4}-\d{2}-\d{2}$/, 'invalid_date');
@@ -28,7 +29,7 @@ export const bookingInputSchema = z
       .trim()
       .min(6)
       .max(20)
-      .regex(/^[+\d][\d\s()-]{5,19}$/, 'invalid_phone'),
+      .regex(PHONE_PATTERN, 'invalid_phone'),
     dropoffDate: dateSchema,
     pickupDate: dateSchema,
     dropoffTime: timeSchema,
