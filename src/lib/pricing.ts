@@ -79,3 +79,12 @@ export function calculatePrice(items: LuggageQuantities, storageDays: number): P
 export function formatCents(cents: number): string {
   return `€${(cents / 100).toFixed(2)}`;
 }
+
+/** Headline price style: "€3", or "€3.50" when there are cents. */
+export function formatEuros(cents: number): string {
+  return new Intl.NumberFormat('en', {
+    style: 'currency',
+    currency: 'EUR',
+    trailingZeroDisplay: 'stripIfInteger',
+  }).format(cents / 100);
+}

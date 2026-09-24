@@ -143,6 +143,24 @@
     "description": "Podemos organizar traslados al aeropuerto para nuestros clientes. Contáctanos y nos encargamos de los detalles.",
     "cta": "Preguntar por el Traslado al Aeropuerto"
   },
+  "facts": {
+    "eyebrow": "De un Vistazo",
+    "title": "Datos Clave",
+    "summary": "{name} es una consigna de equipaje familiar, atendida por personal, en el centro de Heraklion, Creta. Abre todos los días y cuesta {min}–{max} por maleta y día.",
+    "labels": {
+      "prices": "Precios",
+      "discounts": "Descuentos online",
+      "payment": "Pago",
+      "booking": "Reserva",
+      "luggage": "Equipaje",
+      "nearby": "Cerca",
+      "extras": "Además"
+    },
+    "prices": "{items} — por maleta y día. Cuentan tanto el día de entrega como el de recogida.",
+    "payment": "Efectivo o tarjeta, en la tienda. Sin pago online.",
+    "booking": "Online en unos 30 segundos, solo con nombre y teléfono — sin cuenta ni email. También aceptamos clientes sin reserva.",
+    "extras": "Un aseo gratuito para clientes y traslados al aeropuerto bajo petición."
+  },
   "faq": {
     "eyebrow": "Preguntas Frecuentes",
     "title": "Preguntas Frecuentes",

@@ -7,6 +7,7 @@ import {
   getAllPosts,
   isJournalLocale,
   journalLanguageAlternates,
+  lastModified,
   readingMinutes,
 } from '@/content/journal';
 
@@ -70,6 +71,7 @@ export default async function JournalPage({
       headline: post.content[locale].title,
       description: post.content[locale].description,
       datePublished: post.publishedAt,
+      dateModified: lastModified(post),
       url: `${siteUrl}/${locale}/journal/${post.slug}`,
     })),
   };

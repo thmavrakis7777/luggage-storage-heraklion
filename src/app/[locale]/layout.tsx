@@ -3,8 +3,9 @@ import { Cormorant_Garamond, EB_Garamond, Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { locales, type Locale } from '@/i18n/config';
-import { siteUrl, business, geo } from '@/lib/site';
+import { siteUrl, business, geo, googleMapsUrl, profileUrls } from '@/lib/site';
 import { OPENING_HOURS_SCHEMA } from '@/lib/hours';
+import { formatEuros, LUGGAGE_SIZES, PRICE_PER_DAY_CENTS } from '@/lib/pricing';
 import { Navigation } from '@/components/layout/Navigation';
 import { Footer } from '@/components/layout/Footer';
 import { NoiseOverlay } from '@/components/ui/NoiseOverlay';
@@ -101,6 +102,8 @@ export default async function LocaleLayout({
   const messages = await getMessages();
   const t = await getTranslations({ locale: locale as Locale, namespace: 'meta' });
   const tNav = await getTranslations({ locale: locale as Locale, namespace: 'nav' });
+  const tPricing = await getTranslations({ locale: locale as Locale, namespace: 'pricing' });
+  const prices = Object.values(PRICE_PER_DAY_CENTS);
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -110,7 +113,21 @@ export default async function LocaleLayout({
     url: `${siteUrl}/${locale}`,
     image: `${siteUrl}/logo.jpg`,
     telephone: business.phone,
-    priceRange: '€3–€5',
+    priceRange: `${formatEuros(Math.min(...prices))}–${formatEuros(Math.max(...prices))}`,
+    currenciesAccepted: 'EUR',
+    paymentAccepted: 'Cash, Card',
+    makesOffer: LUGGAGE_SIZES.map((size) => ({
+      '@type': 'Offer',
+      name: tPricing(`${size}.name`),
+      priceSpecification: {
+        '@type': 'UnitPriceSpecification',
+        price: PRICE_PER_DAY_CENTS[size] / 100,
+        priceCurrency: 'EUR',
+        unitCode: 'DAY',
+      },
+    })),
+    hasMap: googleMapsUrl,
+    ...(profileUrls.length > 0 && { sameAs: profileUrls }),
     address: {
       '@type': 'PostalAddress',
       streetAddress: business.streetAddress,

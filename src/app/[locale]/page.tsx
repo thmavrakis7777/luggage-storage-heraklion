@@ -7,6 +7,7 @@ import { Pricing } from '@/components/sections/Pricing';
 import { WhyChooseUs } from '@/components/sections/WhyChooseUs';
 import { Location } from '@/components/sections/Location';
 import { AirportTransfer } from '@/components/sections/AirportTransfer';
+import { KeyFacts } from '@/components/sections/KeyFacts';
 import { FAQ, FAQ_KEYS } from '@/components/sections/FAQ';
 import { JournalLinks } from '@/components/sections/JournalLinks';
 import { FinalCTA } from '@/components/sections/FinalCTA';
@@ -47,6 +48,7 @@ export default async function HomePage({
       <WhyChooseUs />
       <Location />
       <AirportTransfer />
+      <KeyFacts />
       <FAQ />
       <JournalLinks />
       <FinalCTA />

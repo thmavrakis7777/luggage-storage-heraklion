@@ -6,6 +6,7 @@ import {
   isJournalLocale,
   journalLanguageAlternates,
   JOURNAL_LOCALES,
+  lastModified,
 } from '@/content/journal';
 
 // lastmod must only move when a page's content actually changes — Google
@@ -48,10 +49,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // two — advertising hreflang for locales that 404 would be worse than
   // omitting them.
   const posts = getAllPosts();
-  const newestPost = posts.reduce(
-    (latest, post) => (post.publishedAt > latest ? post.publishedAt : latest),
-    posts[0].publishedAt
-  );
+  const newestPost = posts.map(lastModified).reduce((latest, date) => (date > latest ? date : latest));
 
   for (const locale of JOURNAL_LOCALES) {
     entries.push({
@@ -67,7 +65,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     for (const locale of JOURNAL_LOCALES) {
       entries.push({
         url: `${siteUrl}/${locale}/journal/${post.slug}`,
-        lastModified: new Date(`${post.publishedAt}T00:00:00Z`),
+        lastModified: new Date(`${lastModified(post)}T00:00:00Z`),
         changeFrequency: 'monthly',
         priority: 0.6,
         alternates: { languages: journalLanguageAlternates(`/journal/${post.slug}`) },

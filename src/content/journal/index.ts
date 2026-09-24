@@ -1,5 +1,5 @@
 import type { JournalPost } from './types';
-import { JOURNAL_LOCALES } from './types';
+import { blockTexts, JOURNAL_LOCALES, splitLinks } from './types';
 import { siteUrl } from '@/lib/site';
 import { post as safety } from './posts/is-luggage-storage-safe-in-heraklion';
 import { post as speed } from './posts/drop-off-your-bags-in-under-a-minute';
@@ -33,6 +33,18 @@ const posts: JournalPost[] = [
   groups,
   heraklion,
 ];
+
+// A link to a page that doesn't exist fails the build instead of shipping.
+const SITE_PATHS = ['/', '/book', '/journal', ...posts.map((post) => `/journal/${post.slug}`)];
+for (const post of posts) {
+  for (const locale of JOURNAL_LOCALES) {
+    for (const part of post.content[locale].body.flatMap(blockTexts).flatMap(splitLinks)) {
+      if (typeof part === 'string') continue;
+      const ok = part.href.startsWith('/') ? SITE_PATHS.includes(part.href) : part.href.startsWith('https://');
+      if (!ok) throw new Error(`Journal post "${post.slug}" (${locale}) links to ${part.href}`);
+    }
+  }
+}
 
 export function getAllPosts(): JournalPost[] {
   return posts;

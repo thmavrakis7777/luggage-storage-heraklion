@@ -143,6 +143,24 @@
     "description": "Nous pouvons organiser des transferts aéroport pour nos clients. Contactez-nous et nous nous occuperons des détails.",
     "cta": "Demander un Transfert Aéroport"
   },
+  "facts": {
+    "eyebrow": "En Bref",
+    "title": "L'Essentiel",
+    "summary": "{name} est une consigne à bagages familiale, tenue par du personnel, dans le centre d'Héraklion, en Crète. Elle est ouverte tous les jours et coûte {min}–{max} par bagage et par jour.",
+    "labels": {
+      "prices": "Tarifs",
+      "discounts": "Réductions en ligne",
+      "payment": "Paiement",
+      "booking": "Réservation",
+      "luggage": "Bagages",
+      "nearby": "À proximité",
+      "extras": "Aussi"
+    },
+    "prices": "{items} — par bagage et par jour. Les jours de dépôt et de retrait comptent tous les deux.",
+    "payment": "Espèces ou carte, sur place. Pas de paiement en ligne.",
+    "booking": "En ligne en 30 secondes environ, avec juste un nom et un numéro de téléphone — sans compte ni email. Sans rendez-vous bienvenus.",
+    "extras": "Des toilettes gratuites pour les clients, et des transferts vers l'aéroport sur demande."
+  },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Questions Fréquentes",

@@ -143,6 +143,24 @@
     "description": "We can organize airport transfers for our customers. Get in touch and we'll take care of the details.",
     "cta": "Ask About Airport Transfer"
   },
+  "facts": {
+    "eyebrow": "At a Glance",
+    "title": "Key Facts",
+    "summary": "{name} is a staffed, family-run luggage storage in the centre of Heraklion, Crete. It is open every day and charges {min}–{max} per bag per day.",
+    "labels": {
+      "prices": "Prices",
+      "discounts": "Online discounts",
+      "payment": "Payment",
+      "booking": "Booking",
+      "luggage": "Luggage",
+      "nearby": "Nearby",
+      "extras": "Also"
+    },
+    "prices": "{items} — per bag, per day. The drop-off and pick-up days both count.",
+    "payment": "Cash or card, paid at the store. No online payment.",
+    "booking": "Online in about 30 seconds with just a name and phone number — no account, no email. Walk-ins welcome.",
+    "extras": "A free toilet for customers, and airport transfers arranged on request."
+  },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Frequently Asked Questions",
@@ -269,6 +287,7 @@
     "title": "Luggage Storage & Heraklion Travel Notes",
     "subtitle": "Practical notes on storing your bags, getting around Heraklion, and making the most of the hours between a checkout and a departure.",
     "readingTime": "{minutes} min read",
+    "updated": "Updated {date}",
     "readMore": "Read article",
     "viewAll": "All articles",
     "backToJournal": "Back to the journal",

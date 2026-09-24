@@ -23,5 +23,10 @@ export const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${
   `${business.name}, ${business.streetAddress}, ${business.postalCode} ${business.addressLocality}, ${business.addressRegion}, Greece`
 )}`;
 
+/** Official profiles elsewhere (Google Business Profile, TripAdvisor,
+ * social media). Listed as `sameAs` in the structured data so search
+ * engines and AI assistants can tie them to this site. */
+export const profileUrls: string[] = [];
+
 export const telHref = `tel:${business.phone}`;
 export const whatsappHref = `https://wa.me/${business.whatsapp.replace(/\+/g, '')}`;

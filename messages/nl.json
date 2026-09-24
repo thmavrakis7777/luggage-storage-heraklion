@@ -143,6 +143,24 @@
     "description": "Wij kunnen luchthaventransfers voor onze klanten regelen. Neem contact op en wij regelen de details.",
     "cta": "Vraag naar Luchthaventransfer"
   },
+  "facts": {
+    "eyebrow": "In het Kort",
+    "title": "Belangrijkste Feiten",
+    "summary": "{name} is een bemande bagageopslag, gerund door een familie, in het centrum van Heraklion, Kreta. Elke dag open, voor {min}–{max} per stuk bagage per dag.",
+    "labels": {
+      "prices": "Prijzen",
+      "discounts": "Online kortingen",
+      "payment": "Betaling",
+      "booking": "Boeken",
+      "luggage": "Bagage",
+      "nearby": "In de buurt",
+      "extras": "Verder"
+    },
+    "prices": "{items} — per stuk bagage, per dag. De dag van afgifte en de dag van ophalen tellen allebei.",
+    "payment": "Contant of met kaart, in de winkel. Geen online betaling.",
+    "booking": "Online in ongeveer 30 seconden, met alleen naam en telefoonnummer — geen account, geen e-mail. Binnenlopen zonder reservering kan ook.",
+    "extras": "Een gratis toilet voor klanten, en luchthaventransfers op aanvraag."
+  },
   "faq": {
     "eyebrow": "Veelgestelde Vragen",
     "title": "Veelgestelde Vragen",

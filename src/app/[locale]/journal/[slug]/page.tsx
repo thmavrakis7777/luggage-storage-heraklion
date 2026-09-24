@@ -9,7 +9,9 @@ import {
   getRelatedPosts,
   isJournalLocale,
   journalLanguageAlternates,
+  lastModified,
   readingMinutes,
+  splitLinks,
   JOURNAL_LOCALES,
   type Block,
 } from '@/content/journal';
@@ -57,9 +59,28 @@ export async function generateMetadata(
       type: 'article',
       locale,
       publishedTime: post.publishedAt,
+      modifiedTime: lastModified(post),
       images: (await parent).openGraph?.images,
     },
   };
+}
+
+const linkClass =
+  'text-ink-900 underline decoration-brand-500 decoration-2 underline-offset-4 hover:text-brand-900 transition-colors';
+
+function renderText(text: string) {
+  return splitLinks(text).map((part, i) => {
+    if (typeof part === 'string') return part;
+    return part.href.startsWith('/') ? (
+      <Link key={i} href={part.href} className={linkClass}>
+        {part.text}
+      </Link>
+    ) : (
+      <a key={i} href={part.href} target="_blank" rel="noopener noreferrer" className={linkClass}>
+        {part.text}
+      </a>
+    );
+  });
 }
 
 function renderBlock(block: Block, index: number) {
@@ -77,7 +98,7 @@ function renderBlock(block: Block, index: number) {
         {block.items.map((item) => (
           <li key={item} className="flex gap-3 text-ink-600 leading-relaxed">
             <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-brand-500 flex-shrink-0" />
-            <span>{item}</span>
+            <span>{renderText(item)}</span>
           </li>
         ))}
       </ul>
@@ -86,7 +107,7 @@ function renderBlock(block: Block, index: number) {
 
   return (
     <p key={index} className="mt-4 text-ink-600 leading-relaxed">
-      {block.text}
+      {renderText(block.text)}
     </p>
   );
 }
@@ -110,10 +131,10 @@ export default async function JournalPostPage({
   const url = `${siteUrl}/${locale}/journal/${slug}`;
   const related = getRelatedPosts(slug);
 
-  const publishedLabel = new Intl.DateTimeFormat(locale, {
-    dateStyle: 'long',
-    timeZone: 'UTC',
-  }).format(new Date(`${post.publishedAt}T00:00:00Z`));
+  const formatDate = (date: string) =>
+    new Intl.DateTimeFormat(locale, { dateStyle: 'long', timeZone: 'UTC' }).format(
+      new Date(`${date}T00:00:00Z`)
+    );
 
   const jsonLd = {
     '@context': 'https://schema.org',
@@ -123,7 +144,7 @@ export default async function JournalPostPage({
         headline: content.title,
         description: content.description,
         datePublished: post.publishedAt,
-        dateModified: post.publishedAt,
+        dateModified: lastModified(post),
         inLanguage: locale,
         mainEntityOfPage: { '@type': 'WebPage', '@id': url },
         url,
@@ -170,7 +191,13 @@ export default async function JournalPostPage({
         <article>
           <header>
             <p className="text-xs font-medium tracking-wider text-ink-400 uppercase">
-              <time dateTime={post.publishedAt}>{publishedLabel}</time>
+              <time dateTime={post.publishedAt}>{formatDate(post.publishedAt)}</time>
+              {post.updatedAt && (
+                <>
+                  {' · '}
+                  <time dateTime={post.updatedAt}>{t('updated', { date: formatDate(post.updatedAt) })}</time>
+                </>
+              )}
               {' · '}
               {t('readingTime', { minutes: readingMinutes(content.body) })}
             </p>

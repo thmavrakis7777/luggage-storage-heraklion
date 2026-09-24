@@ -143,6 +143,24 @@
     "description": "Wir können Flughafentransfers für unsere Kunden organisieren. Kontaktieren Sie uns und wir kümmern uns um die Details.",
     "cta": "Nach Flughafentransfer Fragen"
   },
+  "facts": {
+    "eyebrow": "Auf einen Blick",
+    "title": "Die Wichtigsten Fakten",
+    "summary": "{name} ist eine familiengeführte Gepäckaufbewahrung mit Personal im Zentrum von Heraklion, Kreta. Sie ist täglich geöffnet und kostet {min}–{max} pro Gepäckstück und Tag.",
+    "labels": {
+      "prices": "Preise",
+      "discounts": "Online-Rabatte",
+      "payment": "Bezahlung",
+      "booking": "Buchung",
+      "luggage": "Gepäck",
+      "nearby": "In der Nähe",
+      "extras": "Außerdem"
+    },
+    "prices": "{items} — pro Gepäckstück und Tag. Abgabe- und Abholtag zählen beide.",
+    "payment": "Bar oder mit Karte, vor Ort bezahlt. Keine Online-Zahlung.",
+    "booking": "Online in etwa 30 Sekunden, nur mit Name und Telefonnummer — kein Konto, keine E-Mail. Spontanbesuche willkommen.",
+    "extras": "Eine kostenlose Toilette für Kunden und Flughafentransfers auf Anfrage."
+  },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Häufig Gestellte Fragen",

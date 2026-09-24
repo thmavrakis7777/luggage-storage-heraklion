@@ -41,8 +41,7 @@ Prices and hours are enforced in the database **and** repeated in the code and t
 ### Prices and discounts
 
 - [ ] **Database — what customers are actually charged.** In the Supabase SQL editor, edit `create_booking`: the `v_price_per_day` case (`backpack` 3.00, `cabin` 4.00, `large` 5.00) and the discount line `case when v_storage_days >= 3 then 25 else 10 end`.
-- [ ] **`src/lib/pricing.ts`** — `PRICE_PER_DAY_CENTS` (in cents), `STANDARD_DISCOUNT_PERCENTAGE`, `LONG_STAY_DISCOUNT_PERCENTAGE`, `LONG_STAY_MIN_DAYS`. Drives the booking form's price summary and the Telegram message.
-- [ ] **`src/app/[locale]/layout.tsx`** — `priceRange: '€3–€5'` in the structured data.
+- [ ] **`src/lib/pricing.ts`** — `PRICE_PER_DAY_CENTS` (in cents), `STANDARD_DISCOUNT_PERCENTAGE`, `LONG_STAY_DISCOUNT_PERCENTAGE`, `LONG_STAY_MIN_DAYS`. Drives the booking form's price summary, the Telegram message and the prices in the structured data.
 - [ ] **`messages/*.json`, all 7 languages** — the `pricing.*.price` amounts, `benefits.price`, and every mention of the 10% / 25% / 3-day discount (`meta.title`, `meta.description`, `hero.ctaPrimary`, `walkIn.subtitle`, `benefits.discount`, `benefits.longStay`, `pricing.discountNote`, `pricing.cta`, `faq.items.discount.answer`, `finalCta.subtitle`, `journal.ctaText`). Find them with `grep -n "€\|%" messages/*.json`.
 - [ ] **`src/content/journal/posts/*.ts`** — the articles quote prices and discounts in EN and EL. Find them with `grep -rln "€\|%" src/content/journal/posts`.
 

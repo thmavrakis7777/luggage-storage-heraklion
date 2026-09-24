@@ -143,6 +143,24 @@
     "description": "Possiamo organizzare transfer da e per l'aeroporto per i nostri clienti. Contattaci e ci occuperemo dei dettagli.",
     "cta": "Chiedi Info sul Transfer Aeroportuale"
   },
+  "facts": {
+    "eyebrow": "In Breve",
+    "title": "Informazioni Chiave",
+    "summary": "{name} è un deposito bagagli a gestione familiare, con personale, nel centro di Heraklion, a Creta. È aperto tutti i giorni e costa {min}–{max} per bagaglio al giorno.",
+    "labels": {
+      "prices": "Prezzi",
+      "discounts": "Sconti online",
+      "payment": "Pagamento",
+      "booking": "Prenotazione",
+      "luggage": "Bagagli",
+      "nearby": "Nelle vicinanze",
+      "extras": "Inoltre"
+    },
+    "prices": "{items} — per bagaglio, al giorno. Contano sia il giorno di consegna sia quello di ritiro.",
+    "payment": "Contanti o carta, in negozio. Nessun pagamento online.",
+    "booking": "Online in circa 30 secondi, con solo nome e numero di telefono — nessun account, nessuna email. Accettiamo anche clienti senza prenotazione.",
+    "extras": "Un bagno gratuito per i clienti e transfer da e per l'aeroporto su richiesta."
+  },
   "faq": {
     "eyebrow": "FAQ",
     "title": "Domande Frequenti",
