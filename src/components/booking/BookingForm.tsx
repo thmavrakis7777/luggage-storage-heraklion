@@ -29,7 +29,7 @@ import type { Locale } from '@/i18n/config';
 import { isJournalLocale } from '@/content/journal/types';
 
 const inputClass =
-  'w-full pl-12 pr-4 py-4 bg-paper-50 border border-ink-200 focus:border-ink-500 focus:outline-none transition-colors text-ink-900 placeholder:text-ink-400';
+  'w-full h-14.5 pl-12 pr-4 py-4 bg-paper-50 border border-ink-200 focus:border-ink-500 focus:outline-none transition-colors text-ink-900 placeholder:text-ink-400';
 
 const EMPTY_ITEMS: LuggageQuantities = { backpack: 0, cabin: 0, large: 0 };
 
