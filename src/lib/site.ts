@@ -26,7 +26,9 @@ export const googleMapsUrl = `https://www.google.com/maps/search/?api=1&query=${
 /** Official profiles elsewhere (Google Business Profile, TripAdvisor,
  * social media). Listed as `sameAs` in the structured data so search
  * engines and AI assistants can tie them to this site. */
-export const profileUrls: string[] = [];
+export const profileUrls: string[] = [
+  'https://share.google/nVFDyNh1VDy7mi2za', // Google Business Profile
+];
 
 export const telHref = `tel:${business.phone}`;
 export const whatsappHref = `https://wa.me/${business.whatsapp.replace(/\+/g, '')}`;
