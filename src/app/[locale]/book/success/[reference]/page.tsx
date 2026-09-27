@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
-import { CheckCircleIcon, MapPinIcon, PhoneIcon, ChatBubbleLeftRightIcon } from '@heroicons/react/24/outline';
+import { CheckCircleIcon, MapPinIcon, PhoneIcon, ChatBubbleLeftRightIcon, StarIcon } from '@heroicons/react/24/outline';
 import { Link } from '@/i18n/navigation';
 import { getSupabaseClient } from '@/lib/supabase';
-import { business, googleMapsUrl, telHref, whatsappHref } from '@/lib/site';
+import { business, googleMapsUrl, googleReviewsUrl, telHref, whatsappHref } from '@/lib/site';
 import type { LuggageSize } from '@/lib/pricing';
 
 const sizeLabelKey = { backpack: 'backpack', cabin: 'cabin', large: 'large' } as const;
@@ -153,6 +153,16 @@ export default async function BookingSuccessPage({
               </a>
             </div>
           </div>
+        </div>
+
+        {/* Read, not write: at this point the customer hasn't used the service
+            yet, so we only point to existing reviews. */}
+        <div className="text-center mt-10">
+          <a href={googleReviewsUrl} target="_blank" rel="noopener noreferrer" className="btn-secondary inline-flex items-center gap-2">
+            <StarIcon className="w-4 h-4" />
+            {t('readReviews')}
+          </a>
+          <p className="mt-3 text-sm text-ink-500">{t('reviewsNote')}</p>
         </div>
 
         <div className="text-center mt-8">
