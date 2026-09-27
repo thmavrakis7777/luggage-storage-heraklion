@@ -39,7 +39,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Between two ferries' },
         {
           type: 'p',
-          text: 'If you are changing boats in Heraklion — arriving from one island and leaving for another later in the day — the same approach works. Store what you are carrying for the day. And if you are heading off to the islands for a few days with a lighter bag, leave the big suitcase with us; from three days the 25% long-stay rate applies automatically.',
+          text: 'If you are changing boats in Heraklion — arriving from one island and leaving for another later in the day — the same approach works. Store what you are carrying for the day. And if you are heading off to the islands for a few days with a lighter bag, leave the big suitcase with us; from three days, the 25% discount applies automatically.',
         },
         { type: 'h2', text: 'What it costs' },
         {

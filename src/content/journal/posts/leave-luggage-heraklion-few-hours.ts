@@ -23,7 +23,7 @@ export const post: JournalPost = {
             'A free morning in the centre between two parts of a trip',
           ],
         },
-        { type: 'h2', text: 'A short stay is charged as one day' },
+        { type: 'h2', text: 'A short drop-off is charged as one day' },
         {
           type: 'p',
           text: 'We do not charge by the hour. A drop-off and collection on the same day counts as one day, whether you leave your bags for two hours or ten. With the 10% online discount, that works out as:',

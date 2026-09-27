@@ -22,7 +22,7 @@ export const post: JournalPost = {
           type: 'ul',
           items: [
             'Compartments come in fixed sizes, so a large suitcase, several bags at once or a bike may simply not fit.',
-            'Many lockers charge by the hour or for a fixed period, so check how a longer stay is priced before you commit.',
+            'Many lockers charge by the hour or for a fixed period, so check how leaving your bags longer is priced before you commit.',
             'If a code, key or payment fails, there may be no one on site to help.',
             'Lockers inside a station or shopping centre are usually only reachable while that building is open.',
           ],
@@ -44,7 +44,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'What it costs' },
         {
           type: 'p',
-          text: 'Our prices are per bag, per day: €3 for a backpack, €4 for a cabin or medium suitcase and €5 for a large suitcase. Booking online takes 10% off, and stays of 3 days or more get 25% off instead. The drop-off and pick-up days both count. There is a full breakdown with worked examples in [our guide to luggage storage prices in Heraklion](/journal/luggage-storage-prices-heraklion).',
+          text: 'Our prices are per bag, per day: €3 for a backpack, €4 for a cabin or medium suitcase and €5 for a large suitcase. Booking online takes 10% off, and leaving your luggage for 3 days or more gets 25% off instead. The drop-off and pick-up days both count. There is a full breakdown with worked examples in [our guide to luggage storage prices in Heraklion](/journal/luggage-storage-prices-heraklion).',
         },
         { type: 'h2', text: 'When you can drop off and collect' },
         {

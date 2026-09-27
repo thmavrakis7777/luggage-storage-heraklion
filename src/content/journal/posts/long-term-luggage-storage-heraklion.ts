@@ -7,7 +7,7 @@ export const post: JournalPost = {
     en: {
       title: 'Long-Term Luggage Storage in Heraklion: 25% Off From Three Days',
       description:
-        'Leaving Heraklion for a few days of island hopping or hiking? Store the luggage you do not need with us from €2.25 a day, with 25% off any stay of three days or more.',
+        'Leaving Heraklion for a few days of island hopping or hiking? Store the luggage you do not need with us from €2.25 a day, with 25% off when you leave it for three days or more.',
       body: [
         {
           type: 'p',
@@ -24,10 +24,10 @@ export const post: JournalPost = {
             'Long-haul travellers with winter clothes they will not need again until the flight home',
           ],
         },
-        { type: 'h2', text: 'How the long-stay rate works' },
+        { type: 'h2', text: 'How the 3+ day discount works' },
         {
           type: 'p',
-          text: 'Storage of three days or more gets 25% off instead of the standard 10% online discount. It applies automatically when you book — you do not need to ask for it, and there is no code to enter. The two discounts do not stack; the longer stay simply replaces the smaller discount with the bigger one.',
+          text: 'Storage of three days or more gets 25% off instead of the standard 10% online discount. It applies automatically when you book — you do not need to ask for it, and there is no code to enter. The two discounts do not stack; leaving your luggage longer simply replaces the smaller discount with the bigger one.',
         },
         {
           type: 'p',
@@ -44,7 +44,7 @@ export const post: JournalPost = {
         },
         {
           type: 'p',
-          text: 'A large suitcase on the long-stay rate works out at €3.75 a day. For comparison, that is less than most people spend on the coffee they drink while worrying about where to leave it.',
+          text: 'A large suitcase left for 3+ days works out at €3.75 a day. For comparison, that is less than most people spend on the coffee they drink while worrying about where to leave it.',
         },
         { type: 'h2', text: 'Practical notes' },
         {
@@ -56,7 +56,7 @@ export const post: JournalPost = {
     el: {
       title: 'Μακροχρόνια Φύλαξη Αποσκευών στο Ηράκλειο: 25% Έκπτωση από Τρεις Ημέρες',
       description:
-        'Φεύγετε από το Ηράκλειο για λίγες μέρες island hopping ή πεζοπορίας; Αφήστε τις αποσκευές που δεν χρειάζεστε από €2,25 την ημέρα, με 25% έκπτωση σε διαμονή τριών ημερών και άνω.',
+        'Φεύγετε από το Ηράκλειο για λίγες μέρες island hopping ή πεζοπορίας; Αφήστε τις αποσκευές που δεν χρειάζεστε από €2,25 την ημέρα, με 25% έκπτωση όταν τις αφήνετε για τρεις ημέρες και άνω.',
       body: [
         {
           type: 'p',

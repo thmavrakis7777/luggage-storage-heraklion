@@ -29,7 +29,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Book online and the price drops' },
         {
           type: 'p',
-          text: 'Booking online takes 10% off automatically. No voucher code, nothing to enter — the discount is already applied in the total you see before you confirm. Store your bags for three days or more and that becomes 25% instead. The two do not stack; the longer stay simply replaces the standard discount with a bigger one.',
+          text: 'Booking online takes 10% off automatically. No voucher code, nothing to enter — the discount is already applied in the total you see before you confirm. Store your bags for three days or more and that becomes 25% instead. The two do not stack; leaving your bags longer simply replaces the standard discount with a bigger one.',
         },
         { type: 'h2', text: 'How days are counted' },
         {

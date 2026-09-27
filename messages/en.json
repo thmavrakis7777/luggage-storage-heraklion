@@ -26,7 +26,7 @@
   },
   "walkIn": {
     "title": "Walk-ins Welcome — No Reservation Required",
-    "subtitle": "Book online anytime for 10% off (25% for stays of 3+ days). Advance booking required Mon, Wed & Sat after 15:00, and all day Sunday."
+    "subtitle": "Book online anytime for 10% off (25% when you leave your luggage for 3+ days). Advance booking required Mon, Wed & Sat after 15:00, and all day Sunday."
   },
   "benefits": {
     "price": "From €3 / Day",
@@ -76,7 +76,7 @@
     },
     "anySize": "Any luggage size accepted. Mix and match sizes in one booking.",
     "specialRates": "Booking for a large group? Ask us for our special rates.",
-    "discountNote": "Book online for 10% off — automatically. Stay 3 or more days and save 25% instead.",
+    "discountNote": "Book online for 10% off — automatically. Leave your luggage for 3+ days and get a 25% discount instead.",
     "cta": "Book Now — Save 10%"
   },
   "why": {
@@ -190,11 +190,11 @@
       },
       "discount": {
         "question": "How do the online discounts work?",
-        "answer": "Book online and get 10% off automatically — no coupon code required. Stay 3 or more days and you'll get 25% off instead."
+        "answer": "Book online and get 10% off automatically — no coupon code required. Leave your luggage for 3 or more days and you'll get 25% off instead."
       },
       "longStay": {
         "question": "Can I leave luggage overnight or for a week?",
-        "answer": "Yes. Overnight, a week or longer all work the same way: you pay per bag per day, and stays of 3 days or more get 25% off when you book online. Drop-off and pick-up are during opening hours."
+        "answer": "Yes. Overnight, a week or longer all work the same way: you pay per bag per day, and if you leave your luggage for 3 days or more, you get 25% off when you book online. Drop-off and pick-up are during opening hours."
       },
       "transport": {
         "question": "How far are you from the port, the airport bus and the airport?",

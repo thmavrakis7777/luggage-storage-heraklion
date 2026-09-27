@@ -76,7 +76,7 @@
     },
     "anySize": "Jede Gepäckgröße wird angenommen. Kombinieren Sie verschiedene Größen in einer Buchung.",
     "specialRates": "Buchung für eine große Gruppe? Fragen Sie uns nach unseren Sonderkonditionen.",
-    "discountNote": "Online buchen und automatisch 10% Rabatt erhalten. Bleiben Sie 3 Tage oder länger und sparen Sie stattdessen 25%.",
+    "discountNote": "Online buchen und automatisch 10% Rabatt erhalten. Lassen Sie Ihr Gepäck 3 Tage oder länger bei uns und sparen Sie stattdessen 25%.",
     "cta": "Jetzt Buchen — 10% Sparen"
   },
   "why": {
@@ -190,7 +190,7 @@
       },
       "discount": {
         "question": "Wie funktionieren die Online-Rabatte?",
-        "answer": "Buchen Sie online und erhalten Sie automatisch 10% Rabatt — kein Gutscheincode nötig. Bleiben Sie 3 Tage oder länger, erhalten Sie stattdessen 25% Rabatt."
+        "answer": "Buchen Sie online und erhalten Sie automatisch 10% Rabatt — kein Gutscheincode nötig. Wenn Sie Ihr Gepäck 3 Tage oder länger bei uns lassen, erhalten Sie stattdessen 25% Rabatt."
       },
       "longStay": {
         "question": "Kann ich Gepäck über Nacht oder eine Woche lang abgeben?",

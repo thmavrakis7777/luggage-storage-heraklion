@@ -99,7 +99,7 @@ export const post: JournalPost = {
             'Ferry: the port is roughly a 15-minute walk from the centre, so leave your bags with us rather than waiting around the harbour.',
             'Cruise starting or ending in Heraklion: store luggage between leaving the ship and your flight, or before boarding.',
             'Just a few hours: a same-day drop-off and collection is charged as one day, from €2.70 with the online discount.',
-            'Several days away: from three days, the 25% long-stay rate applies automatically.',
+            'Several days away: leave your luggage for three days or more and the 25% discount applies automatically.',
             'Family or group: one booking and one reference for everyone, with every size mixed together.',
           ],
         },

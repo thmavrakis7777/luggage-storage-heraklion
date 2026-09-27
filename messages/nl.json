@@ -26,7 +26,7 @@
   },
   "walkIn": {
     "title": "Loop Gerust Binnen — Geen Reservering Nodig",
-    "subtitle": "Boek online op elk moment voor 10% korting (25% bij een verblijf van 3+ dagen). Vooraf boeken verplicht op ma, wo & za na 15:00 uur, en de hele zondag."
+    "subtitle": "Boek online op elk moment voor 10% korting (25% als je je bagage 3+ dagen achterlaat). Vooraf boeken verplicht op ma, wo & za na 15:00 uur, en de hele zondag."
   },
   "benefits": {
     "price": "Vanaf €3 / Dag",
@@ -76,7 +76,7 @@
     },
     "anySize": "Elke koffergrootte wordt geaccepteerd. Combineer verschillende maten in één boeking.",
     "specialRates": "Boeken voor een grote groep? Vraag ons naar onze speciale tarieven.",
-    "discountNote": "Boek online voor 10% korting — automatisch. Blijf 3 dagen of langer en bespaar in plaats daarvan 25%.",
+    "discountNote": "Boek online voor 10% korting — automatisch. Laat je bagage 3 dagen of langer bij ons achter en bespaar in plaats daarvan 25%.",
     "cta": "Nu Boeken — 10% Korting"
   },
   "why": {
@@ -190,7 +190,7 @@
       },
       "discount": {
         "question": "Hoe werken de online kortingen?",
-        "answer": "Boek online en krijg automatisch 10% korting — geen kortingscode nodig. Blijf 3 dagen of langer en krijg in plaats daarvan 25% korting."
+        "answer": "Boek online en krijg automatisch 10% korting — geen kortingscode nodig. Laat je bagage 3 dagen of langer bij ons achter en krijg in plaats daarvan 25% korting."
       },
       "longStay": {
         "question": "Kan ik bagage een nacht of een week achterlaten?",

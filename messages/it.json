@@ -26,7 +26,7 @@
   },
   "walkIn": {
     "title": "Accettiamo Clienti Senza Prenotazione",
-    "subtitle": "Prenota online in qualsiasi momento per il 10% di sconto (25% per soggiorni di 3+ giorni). Prenotazione anticipata richiesta lun, mer e sab dopo le 15:00, e tutta la domenica."
+    "subtitle": "Prenota online in qualsiasi momento per il 10% di sconto (25% se lasci i bagagli per 3+ giorni). Prenotazione anticipata richiesta lun, mer e sab dopo le 15:00, e tutta la domenica."
   },
   "benefits": {
     "price": "Da €3 / Giorno",
@@ -76,7 +76,7 @@
     },
     "anySize": "Accettiamo qualsiasi misura di bagaglio. Puoi combinare misure diverse nella stessa prenotazione.",
     "specialRates": "Prenoti per un gruppo numeroso? Chiedici le nostre tariffe speciali.",
-    "discountNote": "Prenota online per il 10% di sconto — automaticamente. Resta 3 giorni o più e risparmia il 25% invece.",
+    "discountNote": "Prenota online per il 10% di sconto — automaticamente. Lascia i bagagli per 3 giorni o più e risparmia invece il 25%.",
     "cta": "Prenota Ora — Sconto 10%"
   },
   "why": {
@@ -190,7 +190,7 @@
       },
       "discount": {
         "question": "Come funzionano gli sconti online?",
-        "answer": "Prenota online e ricevi automaticamente il 10% di sconto — nessun codice promozionale necessario. Resta 3 giorni o più e riceverai il 25% di sconto invece."
+        "answer": "Prenota online e ricevi automaticamente il 10% di sconto — nessun codice promozionale necessario. Lascia i bagagli per 3 giorni o più e riceverai invece il 25% di sconto."
       },
       "longStay": {
         "question": "Posso lasciare i bagagli per una notte o per una settimana?",

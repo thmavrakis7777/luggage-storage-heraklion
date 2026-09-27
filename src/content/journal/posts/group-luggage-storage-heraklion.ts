@@ -36,7 +36,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'What it costs' },
         {
           type: 'p',
-          text: 'The standard rates apply per bag, per day: €3 for a backpack, €4 for a cabin or medium suitcase and €5 for a large one, with 10% off for booking online, or 25% off for stays of three days or more. As an example, a group with ten large suitcases and six backpacks for one day comes to €68, or €61.20 with the online discount.',
+          text: 'The standard rates apply per bag, per day: €3 for a backpack, €4 for a cabin or medium suitcase and €5 for a large one, with 10% off for booking online, or 25% off when you leave your luggage for three days or more. As an example, a group with ten large suitcases and six backpacks for one day comes to €68, or €61.20 with the online discount.',
         },
         {
           type: 'p',
@@ -81,7 +81,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Τι κοστίζει' },
         {
           type: 'p',
-          text: 'Ισχύουν οι κανονικές τιμές ανά αποσκευή, ανά ημέρα: €3 για σακίδιο, €4 για βαλίτσα καμπίνας ή μεσαία και €5 για μεγάλη, με 10% έκπτωση για online κράτηση ή 25% για διαμονή τριών ημερών και άνω. Για παράδειγμα, ένα γκρουπ με δέκα μεγάλες βαλίτσες και έξι σακίδια για μία ημέρα κοστίζει €68, ή €61,20 με την online έκπτωση.',
+          text: 'Ισχύουν οι κανονικές τιμές ανά αποσκευή, ανά ημέρα: €3 για σακίδιο, €4 για βαλίτσα καμπίνας ή μεσαία και €5 για μεγάλη, με 10% έκπτωση για online κράτηση ή 25% αν αφήσετε τις αποσκευές σας για τρεις ημέρες και άνω. Για παράδειγμα, ένα γκρουπ με δέκα μεγάλες βαλίτσες και έξι σακίδια για μία ημέρα κοστίζει €68, ή €61,20 με την online έκπτωση.',
         },
         {
           type: 'p',

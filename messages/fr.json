@@ -26,7 +26,7 @@
   },
   "walkIn": {
     "title": "Sans Rendez-vous Bienvenus — Aucune Réservation Nécessaire",
-    "subtitle": "Réservez en ligne à tout moment pour 10% de réduction (25% pour un séjour de 3 jours ou plus). Réservation à l'avance requise lun, mer et sam après 15h00, et le dimanche toute la journée."
+    "subtitle": "Réservez en ligne à tout moment pour 10% de réduction (25% si vous laissez vos bagages 3 jours ou plus). Réservation à l'avance requise lun, mer et sam après 15h00, et le dimanche toute la journée."
   },
   "benefits": {
     "price": "Dès €3 / Jour",
@@ -76,7 +76,7 @@
     },
     "anySize": "Toutes tailles de bagages acceptées. Combinez différentes tailles dans une même réservation.",
     "specialRates": "Vous réservez pour un grand groupe ? Demandez-nous nos tarifs spéciaux.",
-    "discountNote": "Réservez en ligne pour 10% de réduction — automatiquement. Restez 3 jours ou plus et économisez 25% à la place.",
+    "discountNote": "Réservez en ligne pour 10% de réduction — automatiquement. Laissez vos bagages 3 jours ou plus et économisez 25% à la place.",
     "cta": "Réserver — 10% de Réduction"
   },
   "why": {
@@ -190,7 +190,7 @@
       },
       "discount": {
         "question": "Comment fonctionnent les réductions en ligne ?",
-        "answer": "Réservez en ligne et bénéficiez automatiquement de 10% de réduction — aucun code promo nécessaire. Restez 3 jours ou plus et vous bénéficierez de 25% de réduction à la place."
+        "answer": "Réservez en ligne et bénéficiez automatiquement de 10% de réduction — aucun code promo nécessaire. Laissez vos bagages 3 jours ou plus et vous bénéficierez de 25% de réduction à la place."
       },
       "longStay": {
         "question": "Puis-je laisser mes bagages une nuit ou une semaine ?",

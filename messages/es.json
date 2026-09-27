@@ -26,7 +26,7 @@
   },
   "walkIn": {
     "title": "Aceptamos Clientes Sin Reserva",
-    "subtitle": "Reserva online en cualquier momento y obtén un 10% de descuento (25% para estancias de 3+ días). Reserva anticipada necesaria lun, mié y sáb después de las 15:00, y todo el domingo."
+    "subtitle": "Reserva online en cualquier momento y obtén un 10% de descuento (25% si dejas tu equipaje 3+ días). Reserva anticipada necesaria lun, mié y sáb después de las 15:00, y todo el domingo."
   },
   "benefits": {
     "price": "Desde €3 / Día",
@@ -34,7 +34,7 @@
     "payment": "Efectivo o Tarjeta en Tienda",
     "anySize": "Cualquier Tamaño de Maleta",
     "secure": "100% Seguro",
-    "longStay": "25% Dto. en Estancias de 3+ Días"
+    "longStay": "25% Dto. desde 3 Días"
   },
   "howItWorks": {
     "eyebrow": "Cómo Funciona",
@@ -76,7 +76,7 @@
     },
     "anySize": "Aceptamos cualquier tamaño de maleta. Combina distintos tamaños en una misma reserva.",
     "specialRates": "¿Reservas para un grupo grande? Pregúntanos por nuestras tarifas especiales.",
-    "discountNote": "Reserva online y consigue un 10% de descuento automáticamente. Quédate 3 días o más y ahorra un 25% en su lugar.",
+    "discountNote": "Reserva online y consigue un 10% de descuento automáticamente. Deja tu equipaje 3 días o más y ahorra un 25% en su lugar.",
     "cta": "Reservar Ahora — 10% de Descuento"
   },
   "why": {
@@ -190,7 +190,7 @@
       },
       "discount": {
         "question": "¿Cómo funcionan los descuentos online?",
-        "answer": "Reserva online y obtén un 10% de descuento automáticamente, sin necesidad de código promocional. Quédate 3 días o más y obtendrás un 25% de descuento en su lugar."
+        "answer": "Reserva online y obtén un 10% de descuento automáticamente, sin necesidad de código promocional. Deja tu equipaje 3 días o más y obtendrás un 25% de descuento en su lugar."
       },
       "longStay": {
         "question": "¿Puedo dejar el equipaje una noche o una semana?",
