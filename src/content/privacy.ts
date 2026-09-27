@@ -2,7 +2,7 @@ import { business } from '@/lib/site';
 import type { Block, JournalLocale } from '@/content/journal/types';
 
 /** Bump when the policy text changes; shown on the page and in the sitemap. */
-export const PRIVACY_UPDATED = '2026-09-24';
+export const PRIVACY_UPDATED = '2026-09-27';
 
 interface PrivacyContent {
   title: string;
@@ -17,8 +17,8 @@ interface PrivacyContent {
  * Describes what the site actually does with personal data: the booking
  * form (src/components/booking/BookingForm.tsx), Supabase in eu-west-1,
  * the Telegram notification (src/lib/telegram.ts), hosting on Vercel, the
- * in-memory rate limiter, next-intl's NEXT_LOCALE cookie, GA4 and the
- * tap-to-load map. Update it when any of those change.
+ * in-memory rate limiter, next-intl's NEXT_LOCALE cookie, GA4 behind the
+ * cookie banner (src/lib/consent.ts) and the tap-to-load map. Update it when any of those change.
  */
 export const privacy: Record<JournalLocale, PrivacyContent> = {
   en: {
@@ -86,14 +86,14 @@ export const privacy: Record<JournalLocale, PrivacyContent> = {
       { type: 'h2', text: 'Cookies' },
       {
         type: 'p',
-        text: 'We do not use advertising cookies. The website may set a cookie called NEXT_LOCALE, which remembers the language you chose and is deleted when you close your browser.',
+        text: 'We do not use advertising cookies. The website may set a cookie called NEXT_LOCALE, which remembers the language you chose and is deleted when you close your browser. Your answer to the cookie banner is saved in your browser’s local storage for six months, so we don’t ask on every page.',
       },
     ],
     analytics: [
       { type: 'h2', text: 'Website statistics (Google Analytics)' },
       {
         type: 'p',
-        text: 'We use Google Analytics 4 to count visits and see which pages are useful. It sets cookies (_ga and _ga_*) that last up to two years and sends information about your visit to Google — the pages you view, your type of device and browser, and your approximate location. When a booking is completed, we also record its reference and value, never your name or phone number. [Google privacy policy](https://policies.google.com/privacy)',
+        text: 'We use Google Analytics 4 to count visits and see which pages are useful, but only if you choose “Accept” in the cookie banner; if you choose “Reject”, it never loads and sets no cookies. When it runs, it sets cookies (_ga and _ga_*) that last up to two years and sends information about your visit to Google — the pages you view, your type of device and browser, and your approximate location. When a booking is completed, we also record its reference and value, never your name or phone number. The legal basis is your consent (Article 6(1)(a) GDPR). You can change your choice at any time with “Cookie settings” at the bottom of every page; withdrawing it deletes these cookies. [Google privacy policy](https://policies.google.com/privacy)',
       },
     ],
     closing: [
@@ -188,14 +188,14 @@ export const privacy: Record<JournalLocale, PrivacyContent> = {
       { type: 'h2', text: 'Cookies' },
       {
         type: 'p',
-        text: 'Δεν χρησιμοποιούμε διαφημιστικά cookies. Η ιστοσελίδα μπορεί να ορίσει ένα cookie με το όνομα NEXT_LOCALE, που θυμάται τη γλώσσα που επιλέξατε και διαγράφεται όταν κλείσετε τον browser.',
+        text: 'Δεν χρησιμοποιούμε διαφημιστικά cookies. Η ιστοσελίδα μπορεί να ορίσει ένα cookie με το όνομα NEXT_LOCALE, που θυμάται τη γλώσσα που επιλέξατε και διαγράφεται όταν κλείσετε τον browser. Την απάντησή σας στο μήνυμα για τα cookies την αποθηκεύουμε στον browser σας (local storage) για έξι μήνες, ώστε να μη σας ρωτάμε σε κάθε σελίδα.',
       },
     ],
     analytics: [
       { type: 'h2', text: 'Στατιστικά επισκεψιμότητας (Google Analytics)' },
       {
         type: 'p',
-        text: 'Χρησιμοποιούμε το Google Analytics 4 για να μετράμε τις επισκέψεις και να βλέπουμε ποιες σελίδες είναι χρήσιμες. Ορίζει cookies (_ga και _ga_*) που διαρκούν έως δύο χρόνια και στέλνει στην Google πληροφορίες για την επίσκεψή σας — τις σελίδες που βλέπετε, τον τύπο συσκευής και browser και την κατά προσέγγιση τοποθεσία σας. Όταν ολοκληρώνεται μια κράτηση, καταγράφουμε επίσης τον κωδικό και την αξία της, ποτέ το όνομα ή το τηλέφωνό σας. [Πολιτική απορρήτου της Google](https://policies.google.com/privacy)',
+        text: 'Χρησιμοποιούμε το Google Analytics 4 για να μετράμε τις επισκέψεις και να βλέπουμε ποιες σελίδες είναι χρήσιμες, μόνο όμως αν επιλέξετε «Αποδοχή» στο μήνυμα για τα cookies· αν επιλέξετε «Απόρριψη», δεν φορτώνεται καθόλου και δεν ορίζει κανένα cookie. Όταν λειτουργεί, ορίζει cookies (_ga και _ga_*) που διαρκούν έως δύο χρόνια και στέλνει στην Google πληροφορίες για την επίσκεψή σας — τις σελίδες που βλέπετε, τον τύπο συσκευής και browser και την κατά προσέγγιση τοποθεσία σας. Όταν ολοκληρώνεται μια κράτηση, καταγράφουμε επίσης τον κωδικό και την αξία της, ποτέ το όνομα ή το τηλέφωνό σας. Νομική βάση είναι η συγκατάθεσή σας (άρθρο 6 παρ. 1 στοιχ. α΄ ΓΚΠΔ). Μπορείτε να αλλάξετε την επιλογή σας οποιαδήποτε στιγμή από τις «Ρυθμίσεις cookies» στο κάτω μέρος κάθε σελίδας· αν ανακαλέσετε τη συγκατάθεσή σας, τα cookies αυτά διαγράφονται. [Πολιτική απορρήτου της Google](https://policies.google.com/privacy)',
       },
     ],
     closing: [

@@ -219,6 +219,13 @@
     "subtitle": "Reserva Online y Ahorra un 10%.",
     "cta": "Reservar Ahora"
   },
+  "cookies": {
+    "label": "Consentimiento de cookies",
+    "text": "Usamos cookies de Google Analytics para contar visitas, solo si las aceptas.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "settings": "Configuración de cookies"
+  },
   "footer": {
     "tagline": "Consigna de equipaje segura y cercana en el corazón de Heraklion, Creta.",
     "quickLinksTitle": "Enlaces Rápidos",

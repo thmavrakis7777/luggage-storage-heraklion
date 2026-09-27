@@ -219,6 +219,13 @@
     "subtitle": "Boek Online & Bespaar 10%.",
     "cta": "Nu Boeken"
   },
+  "cookies": {
+    "label": "Toestemming voor cookies",
+    "text": "We gebruiken cookies van Google Analytics om bezoeken te tellen, alleen als je ze accepteert.",
+    "accept": "Accepteren",
+    "reject": "Weigeren",
+    "settings": "Cookie-instellingen"
+  },
   "footer": {
     "tagline": "Veilige, vriendelijke bagageopslag in het hart van Heraklion, Kreta.",
     "quickLinksTitle": "Snelle Links",

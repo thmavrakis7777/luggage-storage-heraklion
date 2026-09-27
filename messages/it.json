@@ -219,6 +219,13 @@
     "subtitle": "Prenota Online e Risparmia il 10%.",
     "cta": "Prenota Ora"
   },
+  "cookies": {
+    "label": "Consenso ai cookie",
+    "text": "Usiamo i cookie di Google Analytics per contare le visite, solo se li accetti.",
+    "accept": "Accetta",
+    "reject": "Rifiuta",
+    "settings": "Impostazioni cookie"
+  },
   "footer": {
     "tagline": "Deposito bagagli sicuro e cordiale nel cuore di Heraklion, Creta.",
     "quickLinksTitle": "Link Rapidi",

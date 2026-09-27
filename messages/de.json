@@ -219,6 +219,13 @@
     "subtitle": "Online Buchen & 10% Sparen.",
     "cta": "Jetzt Buchen"
   },
+  "cookies": {
+    "label": "Cookie-Einwilligung",
+    "text": "Wir verwenden Google-Analytics-Cookies für Besucherstatistiken, nur wenn Sie zustimmen.",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen",
+    "settings": "Cookie-Einstellungen"
+  },
   "footer": {
     "tagline": "Sichere, freundliche Gepäckaufbewahrung im Herzen von Heraklion, Kreta.",
     "quickLinksTitle": "Schnellzugriff",

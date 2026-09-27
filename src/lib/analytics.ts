@@ -3,10 +3,13 @@
  * function as Google's own snippet, which only needs `window.dataLayer` —
  * so this works correctly even before the actual gtag.js library has
  * finished loading (it drains the queued array once it does). Every export
- * is a no-op if the measurement ID isn't configured or `window` isn't
- * available, and none of them ever throw — analytics must never break or
+ * is a no-op if the measurement ID isn't configured, `window` isn't
+ * available or the visitor hasn't accepted analytics cookies (see
+ * ./consent), and none of them ever throw — analytics must never break or
  * delay the booking flow.
  */
+
+import { getConsent } from './consent';
 
 export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
@@ -17,8 +20,10 @@ declare global {
   }
 }
 
+let initialized = false;
+
 function gtag(...args: unknown[]) {
-  if (typeof window === 'undefined' || !GA_MEASUREMENT_ID) return;
+  if (typeof window === 'undefined' || !GA_MEASUREMENT_ID || getConsent() !== 'granted') return;
   try {
     // gtag.js only processes commands pushed as an `arguments` object — a
     // plain array is silently ignored, so nothing would ever be sent.
@@ -26,13 +31,27 @@ function gtag(...args: unknown[]) {
       // eslint-disable-next-line prefer-rest-params
       (window.dataLayer ??= []).push(arguments);
     };
+    // Google's snippet, queued ahead of the first event so the order holds
+    // however gtag.js and the page's effects race. Consent covers analytics
+    // only, so ad storage and ad signals are declared denied.
+    if (!initialized) {
+      initialized = true;
+      window.gtag('consent', 'default', {
+        analytics_storage: 'granted',
+        ad_storage: 'denied',
+        ad_user_data: 'denied',
+        ad_personalization: 'denied',
+      });
+      window.gtag('js', new Date());
+      window.gtag('config', GA_MEASUREMENT_ID, { send_page_view: false });
+    }
     window.gtag(...args);
   } catch {
     // Never let a blocked/broken analytics call affect the app.
   }
 }
 
-/** Manual page_view — the init script sets send_page_view: false so this is
+/** Manual page_view — the config above sets send_page_view: false so this is
  * the single source of page views, covering both the first load and every
  * client-side route change. */
 export function sendPageView(path: string) {

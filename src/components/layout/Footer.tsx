@@ -3,11 +3,14 @@ import { Link } from '@/i18n/navigation';
 import { Logo } from '@/components/ui/Logo';
 import { locales, localeNames } from '@/i18n/config';
 import { business, googleMapsUrl, telHref, whatsappHref } from '@/lib/site';
+import { GA_MEASUREMENT_ID } from '@/lib/analytics';
 import { isJournalLocale } from '@/content/journal/types';
+import { CookieSettingsButton } from './CookieSettingsButton';
 
 export function Footer() {
   const t = useTranslations('footer');
   const nav = useTranslations('nav');
+  const tCookies = useTranslations('cookies');
   const locale = useLocale();
   const showJournal = isJournalLocale(locale);
 
@@ -72,6 +75,15 @@ export function Footer() {
             >
               {t('privacy')}
             </Link>
+            {GA_MEASUREMENT_ID && (
+              <>
+                {' · '}
+                <CookieSettingsButton
+                  label={tCookies('settings')}
+                  className="underline underline-offset-2 hover:text-white/80 transition-colors"
+                />
+              </>
+            )}
           </p>
           <div className="flex flex-wrap gap-x-4 gap-y-1">
             {locales.map((locale) => (

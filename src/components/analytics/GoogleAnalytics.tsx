@@ -1,31 +1,28 @@
+'use client';
+
+import { useSyncExternalStore } from 'react';
 import Script from 'next/script';
 import { GA_MEASUREMENT_ID } from '@/lib/analytics';
+import { getConsent, subscribeConsent } from '@/lib/consent';
 
 /**
- * Loads gtag.js with strategy="afterInteractive" — after the page has
- * hydrated, never blocking initial render or LCP. The init is Google's own
- * snippet: gtag.js only acts on commands pushed as an `arguments` object,
- * never a plain array. send_page_view is disabled here since
- * AnalyticsPageView sends every page_view (including the first) explicitly,
- * giving one consistent code path instead of two. Renders nothing at all if
- * the env var is unset (e.g. local dev without it configured), same pattern
- * as the Telegram integration.
+ * Loads gtag.js only once the visitor has accepted analytics cookies — on
+ * the page where they click "Accept", or straight away on later visits.
+ * strategy="afterInteractive" keeps it off the critical path. The init
+ * commands (consent, js, config) are queued by the first gtag() call in
+ * lib/analytics, and gtag.js drains the queue when it arrives. Renders
+ * nothing at all if the env var is unset (e.g. local dev without it
+ * configured), same pattern as the Telegram integration.
  */
 export function GoogleAnalytics() {
-  if (!GA_MEASUREMENT_ID) return null;
+  const consent = useSyncExternalStore(subscribeConsent, getConsent, () => null);
+
+  if (!GA_MEASUREMENT_ID || consent !== 'granted') return null;
 
   return (
-    <>
-      <Script
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
-      />
-      <Script id="ga4-init" strategy="afterInteractive">
-        {`window.dataLayer = window.dataLayer || [];
-window.gtag = window.gtag || function gtag() { window.dataLayer.push(arguments); };
-window.gtag('js', new Date());
-window.gtag('config', '${GA_MEASUREMENT_ID}', { send_page_view: false });`}
-      </Script>
-    </>
+    <Script
+      src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+      strategy="afterInteractive"
+    />
   );
 }

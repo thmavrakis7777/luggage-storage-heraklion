@@ -219,6 +219,13 @@
     "subtitle": "Réservez en Ligne et Économisez 10%.",
     "cta": "Réserver"
   },
+  "cookies": {
+    "label": "Consentement aux cookies",
+    "text": "Nous utilisons des cookies Google Analytics pour mesurer les visites, uniquement si vous acceptez.",
+    "accept": "Accepter",
+    "reject": "Refuser",
+    "settings": "Paramètres des cookies"
+  },
   "footer": {
     "tagline": "Consigne à bagages sécurisée et accueillante au cœur d'Héraklion, en Crète.",
     "quickLinksTitle": "Liens Rapides",
