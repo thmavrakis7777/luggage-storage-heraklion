@@ -18,7 +18,7 @@ export function Pricing() {
         <div className="grid sm:grid-cols-3 gap-6 max-w-4xl mx-auto">
           {tiers.map((tier) => (
             <TiltCard key={tier} intensity={0.3}>
-              <div className="h-full p-8 border border-ink-100 bg-paper-50 text-center">
+              <div className="h-full p-8 border border-ink-100 bg-brand-50 text-center">
                 <h3 className="text-lg font-medium text-ink-900">{t(`${tier}.name`)}</h3>
                 <div className="mt-4 flex items-baseline justify-center gap-1">
                   <span className="font-serif text-4xl font-light text-ink-900">
