@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-storage-heraklion-city-centre-location',
   publishedAt: '2026-09-11',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Where to Leave Your Bags in Heraklion: Sfakianaki 4, Minutes From Everything',
@@ -11,7 +12,7 @@ export const post: JournalPost = {
       body: [
         {
           type: 'p',
-          text: 'Luggage storage is only convenient if it is on your way. Somewhere out by the ring road is not storage, it is an errand. We are at Sfakianaki 4, 71201 Heraklion — inside the centre, on foot from the places you are actually going.',
+          text: 'Luggage storage is only convenient if it is on your way. Somewhere out by the ring road is not storage, it is an errand. We are at Sfakianaki 4, 71201 Heraklion — [luggage storage inside the city centre](/), on foot from the places you are actually going.',
         },
         { type: 'h2', text: 'What is nearby' },
         {
@@ -57,7 +58,7 @@ export const post: JournalPost = {
       body: [
         {
           type: 'p',
-          text: 'Η φύλαξη αποσκευών είναι βολική μόνο αν βρίσκεται στον δρόμο σας. Κάπου έξω στον περιφερειακό δεν είναι φύλαξη, είναι αγγαρεία. Εμείς είμαστε στη Σφακιανάκη 4, 71201 Ηράκλειο — μέσα στο κέντρο, με τα πόδια από τα μέρη όπου πραγματικά πηγαίνετε.',
+          text: 'Η φύλαξη αποσκευών είναι βολική μόνο αν βρίσκεται στον δρόμο σας. Κάπου έξω στον περιφερειακό δεν είναι φύλαξη, είναι αγγαρεία. Εμείς είμαστε στη Σφακιανάκη 4, 71201 Ηράκλειο — [φύλαξη αποσκευών μέσα στο κέντρο της πόλης](/), με τα πόδια από τα μέρη όπου πραγματικά πηγαίνετε.',
         },
         { type: 'h2', text: 'Τι υπάρχει κοντά' },
         {

@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'heraklion-cruise-passengers-luggage-storage',
   publishedAt: '2026-09-14',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Heraklion Cruise Passengers: Where to Store Your Luggage',
@@ -31,7 +32,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Disembarkation day: from ship to flight' },
         {
           type: 'p',
-          text: 'Leaving the ship in the morning with a flight in the evening is the classic case. Bring your luggage up to the centre — about a 15-minute walk from the port, although with large suitcases many people take a taxi for this part — and leave it with us at Sfakianaki 4.',
+          text: 'Leaving the ship in the morning with a flight in the evening is the classic case. Bring your luggage up to the centre — about a 15-minute walk from the port, although with large suitcases many people take a taxi for this part — and leave it with us at Sfakianaki 4, [our luggage storage in central Heraklion](/).',
         },
         {
           type: 'p',
@@ -95,7 +96,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Ημέρα αποβίβασης: από το πλοίο στην πτήση' },
         {
           type: 'p',
-          text: 'Η αποβίβαση το πρωί με πτήση το βράδυ είναι η κλασική περίπτωση. Ανεβάστε τις αποσκευές σας στο κέντρο — περίπου 15 λεπτά με τα πόδια από το λιμάνι, αν και με μεγάλες βαλίτσες πολλοί προτιμούν ταξί για αυτό το κομμάτι — και αφήστε τες σε εμάς, στη Σφακιανάκη 4.',
+          text: 'Η αποβίβαση το πρωί με πτήση το βράδυ είναι η κλασική περίπτωση. Ανεβάστε τις αποσκευές σας στο κέντρο — περίπου 15 λεπτά με τα πόδια από το λιμάνι, αν και με μεγάλες βαλίτσες πολλοί προτιμούν ταξί για αυτό το κομμάτι — και αφήστε τες σε εμάς, στη Σφακιανάκη 4, στον [χώρο φύλαξης αποσκευών μας στο κέντρο του Ηρακλείου](/).',
         },
         {
           type: 'p',

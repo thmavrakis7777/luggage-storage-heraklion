@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-storage-near-lions-square-heraklion',
   publishedAt: '2026-09-14',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Luggage Storage Near Lions Square, Heraklion',
@@ -16,7 +17,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Five minutes from the square' },
         {
           type: 'p',
-          text: 'We are at Sfakianaki 4, about a five-minute walk from Lions Square and about a minute from Saint Minas Cathedral. That makes it easy to drop your bags first and arrive at the square with your hands free — or to finish your day there and collect your luggage on the way to the airport bus, which stops about a minute from our door.',
+          text: '[Our Heraklion luggage storage](/) is at Sfakianaki 4, about a five-minute walk from Lions Square and about a minute from Saint Minas Cathedral. That makes it easy to drop your bags first and arrive at the square with your hands free — or to finish your day there and collect your luggage on the way to the airport bus, which stops about a minute from our door.',
         },
         { type: 'h2', text: 'About Lions Square' },
         {
@@ -66,7 +67,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Πέντε λεπτά από την πλατεία' },
         {
           type: 'p',
-          text: 'Βρισκόμαστε στη Σφακιανάκη 4, περίπου πέντε λεπτά με τα πόδια από τα Λιοντάρια και περίπου ένα λεπτό από τον Άγιο Μηνά. Έτσι μπορείτε εύκολα να αφήσετε πρώτα τις αποσκευές σας και να φτάσετε στην πλατεία με άδεια χέρια — ή να τελειώσετε τη μέρα σας εκεί και να παραλάβετε τις αποσκευές καθ’ οδόν προς το λεωφορείο του αεροδρομίου, που σταματά περίπου ένα λεπτό από την πόρτα μας.',
+          text: 'Η [φύλαξη αποσκευών μας στο Ηράκλειο](/) βρίσκεται στη Σφακιανάκη 4, περίπου πέντε λεπτά με τα πόδια από τα Λιοντάρια και περίπου ένα λεπτό από τον Άγιο Μηνά. Έτσι μπορείτε εύκολα να αφήσετε πρώτα τις αποσκευές σας και να φτάσετε στην πλατεία με άδεια χέρια — ή να τελειώσετε τη μέρα σας εκεί και να παραλάβετε τις αποσκευές καθ’ οδόν προς το λεωφορείο του αεροδρομίου, που σταματά περίπου ένα λεπτό από την πόρτα μας.',
         },
         { type: 'h2', text: 'Λίγα λόγια για τα Λιοντάρια' },
         {

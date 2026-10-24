@@ -17,9 +17,11 @@ export async function generateMetadata(
   const t = await getTranslations({ locale, namespace: 'booking' });
   const url = `${siteUrl}/${locale}/book`;
 
+  // Search title/description are separate from the on-page H1/subtitle: the
+  // H1 alone ("Reserve Your Luggage Storage") never said where.
   return {
-    title: t('title'),
-    description: t('subtitle'),
+    title: t('metaTitle'),
+    description: t('metaDescription'),
     alternates: {
       canonical: url,
       languages: {
@@ -31,8 +33,8 @@ export async function generateMetadata(
     // the homepage's url/title), so the site name and the per-locale share
     // image are carried over explicitly.
     openGraph: {
-      title: t('title'),
-      description: t('subtitle'),
+      title: t('metaTitle'),
+      description: t('metaDescription'),
       url,
       siteName: business.name,
       locale,

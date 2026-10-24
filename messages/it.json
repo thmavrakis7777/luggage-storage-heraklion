@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Deposito Bagagli Heraklion Centro | Prenota Online e Risparmia il 10%",
-    "description": "Deposito bagagli sicuro nel cuore di Heraklion, Creta. Ogni misura di bagaglio, orari flessibili, gestione familiare e cordiale. Prenota online in 30 secondi e ottieni il 10% di sconto."
+    "title": "Deposito Bagagli Heraklion Centro | 10% di Sconto Online",
+    "description": "Deposito bagagli sicuro nel centro di Heraklion. Ogni misura, orari flessibili, gestione familiare. Prenota online in 30 secondi e risparmia il 10%."
   },
   "nav": {
     "home": "Home",
@@ -38,7 +38,7 @@
   },
   "howItWorks": {
     "eyebrow": "Come Funziona",
-    "title": "Deposita i Tuoi Bagagli in 3 Semplici Passaggi",
+    "title": "Deposita i Tuoi Bagagli a Heraklion in 3 Semplici Passaggi",
     "step1": {
       "number": "01",
       "title": "Prenota Online",
@@ -57,7 +57,7 @@
   },
   "pricing": {
     "eyebrow": "Prezzi",
-    "title": "Prezzi Semplici e Trasparenti",
+    "title": "Prezzi del Deposito Bagagli a Heraklion",
     "subtitle": "Paghi per bagaglio, per giorno. Accettiamo qualsiasi misura.",
     "backpack": {
       "name": "Zaino",
@@ -237,6 +237,8 @@
     "eyebrow": "Prenota Ora",
     "title": "Prenota il Tuo Deposito Bagagli",
     "subtitle": "Richiede circa 30 secondi. Nessun account, nessuna email, nessun pagamento online.",
+    "metaTitle": "Prenota il Deposito Bagagli a Heraklion | 10% di Sconto",
+    "metaDescription": "Prenota il deposito bagagli nel centro di Heraklion in circa 30 secondi. Nessun account, nessun pagamento online: paghi in negozio, con il 10% di sconto.",
     "form": {
       "name": "Nome Completo",
       "namePlaceholder": "Il tuo nome",
@@ -319,6 +321,7 @@
   "journal": {
     "eyebrow": "Journal",
     "title": "Deposito Bagagli e Note di Viaggio su Heraklion",
+    "homeTitle": "Guide e Note di Viaggio",
     "subtitle": "Note pratiche su come lasciare i bagagli, muoversi a Heraklion e sfruttare al meglio le ore tra il check-out e la partenza.",
     "readingTime": "{minutes} min di lettura",
     "readMore": "Leggi l'articolo",

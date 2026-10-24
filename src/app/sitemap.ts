@@ -13,10 +13,10 @@ import { PRIVACY_UPDATED } from '@/content/privacy';
 // lastmod must only move when a page's content actually changes — Google
 // ignores lastmod on sites where it changes on every deploy. Bump these by
 // hand when the copy of these pages is edited.
-const HOME_UPDATED = '2026-09-24';
+const HOME_UPDATED = '2026-10-24';
 // The EN/EL homepages also carry the journal links section, added later.
-const HOME_WITH_JOURNAL_UPDATED = '2026-09-24';
-const BOOK_UPDATED = '2026-09-14';
+const HOME_WITH_JOURNAL_UPDATED = '2026-10-24';
+const BOOK_UPDATED = '2026-10-24';
 
 const pages = ['', '/book'];
 

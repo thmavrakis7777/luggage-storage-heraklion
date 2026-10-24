@@ -3,7 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-storage-heraklion-complete-guide',
   publishedAt: '2026-09-14',
-  updatedAt: '2026-09-24',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Luggage Storage in Heraklion: The Complete Guide',
@@ -17,7 +17,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Where to store luggage in Heraklion' },
         {
           type: 'p',
-          text: 'The most practical place to leave bags is the city centre, because that is where your day actually happens. We are at Sfakianaki 4, 71201 Heraklion, on a small street in the centre, and most of the places travellers need are within walking distance:',
+          text: 'The most practical place to leave bags is the city centre, because that is where your day actually happens. [Our luggage storage](/) is at Sfakianaki 4, 71201 Heraklion, on a small street in the centre, and most of the places travellers need are within walking distance:',
         },
         {
           type: 'ul',
@@ -132,7 +132,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Πού να αφήσετε αποσκευές στο Ηράκλειο' },
         {
           type: 'p',
-          text: 'Το πιο πρακτικό σημείο για να αφήσετε τις αποσκευές σας είναι το κέντρο της πόλης, γιατί εκεί περνάτε στην πραγματικότητα τη μέρα σας. Βρισκόμαστε στη Σφακιανάκη 4, 71201 Ηράκλειο, σε έναν μικρό δρόμο του κέντρου, και τα περισσότερα σημεία που χρειάζονται οι ταξιδιώτες είναι σε απόσταση περπατήματος:',
+          text: 'Το πιο πρακτικό σημείο για να αφήσετε τις αποσκευές σας είναι το κέντρο της πόλης, γιατί εκεί περνάτε στην πραγματικότητα τη μέρα σας. Ο [χώρος φύλαξης αποσκευών μας](/) βρίσκεται στη Σφακιανάκη 4, 71201 Ηράκλειο, σε έναν μικρό δρόμο του κέντρου, και τα περισσότερα σημεία που χρειάζονται οι ταξιδιώτες είναι σε απόσταση περπατήματος:',
         },
         {
           type: 'ul',

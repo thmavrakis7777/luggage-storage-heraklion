@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-storage-near-heraklion-port',
   publishedAt: '2026-09-14',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Luggage Storage Near Heraklion Port for Ferry Passengers',
@@ -16,7 +17,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'How far the port is from us' },
         {
           type: 'p',
-          text: 'We are at Sfakianaki 4, roughly a 15-minute walk from the port. The walk into the centre is uphill. One pleasant route is 25th August Street, the pedestrian street that climbs from the old harbour to Lions Square — and Lions Square is about five minutes from our door. With a small bag the walk is easy; with several large suitcases, a taxi for that one leg is worth considering.',
+          text: '[Our luggage storage in Heraklion](/) is at Sfakianaki 4, roughly a 15-minute walk from the port. The walk into the centre is uphill. One pleasant route is 25th August Street, the pedestrian street that climbs from the old harbour to Lions Square — and Lions Square is about five minutes from our door. With a small bag the walk is easy; with several large suitcases, a taxi for that one leg is worth considering.',
         },
         { type: 'h2', text: 'Arriving by ferry' },
         {
@@ -70,7 +71,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Πόσο απέχει το λιμάνι από εμάς' },
         {
           type: 'p',
-          text: 'Βρισκόμαστε στη Σφακιανάκη 4, περίπου 15 λεπτά με τα πόδια από το λιμάνι. Η διαδρομή προς το κέντρο είναι ανηφορική. Μια ευχάριστη επιλογή είναι η 25ης Αυγούστου, ο πεζόδρομος που ανεβαίνει από το παλιό λιμάνι μέχρι τα Λιοντάρια — και τα Λιοντάρια απέχουν περίπου πέντε λεπτά από την πόρτα μας. Με μια μικρή τσάντα η βόλτα είναι εύκολη· με αρκετές μεγάλες βαλίτσες, αξίζει να σκεφτείτε ένα ταξί για αυτό το κομμάτι.',
+          text: 'Ο [χώρος φύλαξης αποσκευών μας στο Ηράκλειο](/) βρίσκεται στη Σφακιανάκη 4, περίπου 15 λεπτά με τα πόδια από το λιμάνι. Η διαδρομή προς το κέντρο είναι ανηφορική. Μια ευχάριστη επιλογή είναι η 25ης Αυγούστου, ο πεζόδρομος που ανεβαίνει από το παλιό λιμάνι μέχρι τα Λιοντάρια — και τα Λιοντάρια απέχουν περίπου πέντε λεπτά από την πόρτα μας. Με μια μικρή τσάντα η βόλτα είναι εύκολη· με αρκετές μεγάλες βαλίτσες, αξίζει να σκεφτείτε ένα ταξί για αυτό το κομμάτι.',
         },
         { type: 'h2', text: 'Αν φτάνετε με πλοίο' },
         {

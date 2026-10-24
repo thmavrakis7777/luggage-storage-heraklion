@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Consigne à Bagages Héraklion Centre-Ville | Réservez en Ligne et Économisez 10%",
-    "description": "Consigne à bagages sécurisée au cœur d'Héraklion, en Crète. Toutes tailles de bagages, horaires flexibles, entreprise familiale accueillante. Réservez en ligne en 30 secondes et bénéficiez de 10% de réduction."
+    "title": "Consigne à Bagages Héraklion Centre | 10% de Réduction",
+    "description": "Consigne à bagages sécurisée au centre d'Héraklion. Toutes tailles, horaires flexibles, entreprise familiale. Réservez en ligne et économisez 10%."
   },
   "nav": {
     "home": "Accueil",
@@ -38,7 +38,7 @@
   },
   "howItWorks": {
     "eyebrow": "Comment Ça Marche",
-    "title": "Déposez Vos Bagages en 3 Étapes Simples",
+    "title": "Déposez Vos Bagages à Héraklion en 3 Étapes Simples",
     "step1": {
       "number": "01",
       "title": "Réservez en Ligne",
@@ -57,7 +57,7 @@
   },
   "pricing": {
     "eyebrow": "Tarifs",
-    "title": "Des Tarifs Simples et Transparents",
+    "title": "Tarifs de la Consigne à Bagages à Héraklion",
     "subtitle": "Vous payez par bagage, par jour. Toutes tailles de bagages acceptées.",
     "backpack": {
       "name": "Sac à Dos",
@@ -237,6 +237,8 @@
     "eyebrow": "Réserver",
     "title": "Réservez Votre Consigne à Bagages",
     "subtitle": "Prend environ 30 secondes. Aucun compte, aucun email, aucun paiement en ligne.",
+    "metaTitle": "Réservez une Consigne à Bagages à Héraklion",
+    "metaDescription": "Réservez votre consigne à bagages au centre d'Héraklion en 30 secondes environ. Sans compte ni paiement en ligne : vous payez sur place, avec 10% de réduction.",
     "form": {
       "name": "Nom Complet",
       "namePlaceholder": "Votre nom",
@@ -319,6 +321,7 @@
   "journal": {
     "eyebrow": "Journal",
     "title": "Consigne à Bagages et Notes de Voyage sur Héraklion",
+    "homeTitle": "Guides et Notes de Voyage",
     "subtitle": "Des notes pratiques pour déposer vos bagages, circuler dans Héraklion et profiter des heures entre le départ de l'hôtel et le vôtre.",
     "readingTime": "{minutes} min de lecture",
     "readMore": "Lire l'article",

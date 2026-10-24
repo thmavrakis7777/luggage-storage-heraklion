@@ -30,11 +30,17 @@ const googlePlaceId = 'ChIJdxT7weRbmhQRRJmQOaUjx4s';
 /** Opens the listing's Google reviews — readable without signing in. */
 export const googleReviewsUrl = `https://search.google.com/local/reviews?placeid=${googlePlaceId}`;
 
+/** The listing itself on Google Maps, by its CID (verified to open it) —
+ * the structured data's `hasMap` and `sameAs`. Unlike googleMapsUrl (a
+ * search, fine for the visitor-facing buttons) or a share.google short
+ * link (a redirect), this URL is the listing. */
+export const googlePlaceUrl = 'https://www.google.com/maps?cid=10072058284179757380';
+
 /** Official profiles elsewhere (Google Business Profile, TripAdvisor,
  * social media). Listed as `sameAs` in the structured data so search
  * engines and AI assistants can tie them to this site. */
 export const profileUrls: string[] = [
-  'https://share.google/nVFDyNh1VDy7mi2za', // Google Business Profile
+  googlePlaceUrl, // Google Business Profile
 ];
 
 export const telHref = `tel:${business.phone}`;

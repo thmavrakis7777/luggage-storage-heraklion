@@ -26,7 +26,9 @@ export function JournalLinks() {
       <div className="container-narrow mx-auto">
         <div className="text-center mb-10">
           <span className="eyebrow">{t('eyebrow')}</span>
-          <h2 className="text-headline mt-4 text-ink-900">{t('title')}</h2>
+          {/* Not the journal page's own title: that one leads with "Luggage
+              Storage", which belongs to this page's own headings. */}
+          <h2 className="text-headline mt-4 text-ink-900">{t('homeTitle')}</h2>
         </div>
 
         <ul className="divide-y divide-ink-100 border-t border-b border-ink-100">

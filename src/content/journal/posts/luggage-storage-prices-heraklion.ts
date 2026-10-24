@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-storage-prices-heraklion',
   publishedAt: '2026-09-11',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Luggage Storage Prices in Heraklion: €3–€5 per Bag, per Day',
@@ -49,7 +50,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'How and when you pay' },
         {
           type: 'p',
-          text: 'You pay at the store when you collect, in cash or by card. Nothing is charged online, we never ask for card details on the website, and there is no deposit. If your plans change and you never turn up, you have not paid anything.',
+          text: 'You pay at [our luggage storage on Sfakianaki 4](/) when you collect, in cash or by card. Nothing is charged online, we never ask for card details on the website, and there is no deposit. If your plans change and you never turn up, you have not paid anything.',
         },
         {
           type: 'p',
@@ -102,7 +103,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Πώς και πότε πληρώνετε' },
         {
           type: 'p',
-          text: 'Πληρώνετε στο κατάστημα κατά την παραλαβή, με μετρητά ή κάρτα. Δεν χρεώνεται τίποτα online, δεν ζητάμε ποτέ στοιχεία κάρτας στην ιστοσελίδα και δεν υπάρχει προκαταβολή. Αν αλλάξουν τα σχέδιά σας και τελικά δεν έρθετε, δεν έχετε πληρώσει τίποτα.',
+          text: 'Πληρώνετε στον [χώρο φύλαξης αποσκευών μας στη Σφακιανάκη 4](/) κατά την παραλαβή, με μετρητά ή κάρτα. Δεν χρεώνεται τίποτα online, δεν ζητάμε ποτέ στοιχεία κάρτας στην ιστοσελίδα και δεν υπάρχει προκαταβολή. Αν αλλάξουν τα σχέδιά σας και τελικά δεν έρθετε, δεν έχετε πληρώσει τίποτα.',
         },
         {
           type: 'p',

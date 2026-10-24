@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Consigna de Equipaje Heraklion Centro | Reserva Online y Ahorra 10%",
-    "description": "Consigna de equipaje segura en el corazón de Heraklion, Creta. Cualquier tamaño de maleta, horarios flexibles, negocio familiar y cercano. Reserva online en 30 segundos y consigue un 10% de descuento."
+    "title": "Consigna de Equipaje Heraklion Centro | 10% de Descuento",
+    "description": "Consigna de equipaje segura en el centro de Heraklion. Cualquier tamaño, horario flexible, negocio familiar. Reserva online con un 10% de descuento."
   },
   "nav": {
     "home": "Inicio",
@@ -38,7 +38,7 @@
   },
   "howItWorks": {
     "eyebrow": "Cómo Funciona",
-    "title": "Guarda tu Equipaje en 3 Sencillos Pasos",
+    "title": "Guarda tu Equipaje en Heraklion en 3 Sencillos Pasos",
     "step1": {
       "number": "01",
       "title": "Reserva Online",
@@ -57,7 +57,7 @@
   },
   "pricing": {
     "eyebrow": "Precios",
-    "title": "Precios Simples y Transparentes",
+    "title": "Precios de la Consigna de Equipaje en Heraklion",
     "subtitle": "Pagas por maleta, por día. Aceptamos cualquier tamaño.",
     "backpack": {
       "name": "Mochila",
@@ -237,6 +237,8 @@
     "eyebrow": "Reservar",
     "title": "Reserva tu Consigna de Equipaje",
     "subtitle": "Tarda unos 30 segundos. Sin cuenta, sin email, sin pago online.",
+    "metaTitle": "Reserva tu Consigna de Equipaje en Heraklion",
+    "metaDescription": "Reserva tu consigna de equipaje en el centro de Heraklion en unos 30 segundos. Sin cuenta ni pago online: pagas en la tienda, con un 10% de descuento.",
     "form": {
       "name": "Nombre Completo",
       "namePlaceholder": "Tu nombre",
@@ -319,6 +321,7 @@
   "journal": {
     "eyebrow": "Blog",
     "title": "Consigna de Equipaje y Notas de Viaje sobre Heraclión",
+    "homeTitle": "Guías y Notas de Viaje",
     "subtitle": "Notas prácticas sobre dónde dejar tu equipaje, cómo moverte por Heraclión y cómo aprovechar las horas entre la salida del hotel y tu partida.",
     "readingTime": "{minutes} min de lectura",
     "readMore": "Leer artículo",

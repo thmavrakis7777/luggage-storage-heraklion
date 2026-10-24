@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'one-day-in-heraklion-without-your-luggage',
   publishedAt: '2026-09-11',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'One Day in Heraklion, Hands Free: A Walkable Plan',
@@ -41,7 +42,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'The practical bit' },
         {
           type: 'p',
-          text: 'Every stop above is walkable from the city centre, which is also where we are — Sfakianaki 4, about a minute from Saint Minas Cathedral and five minutes from Lions Square. Drop your bags with us in the morning, do the whole loop unencumbered, and collect them on your way to the port or the airport bus.',
+          text: 'Every stop above is walkable from the city centre, which is also where [our luggage storage](/) is — Sfakianaki 4, about a minute from Saint Minas Cathedral and five minutes from Lions Square. Drop your bags with us in the morning, do the whole loop unencumbered, and collect them on your way to the port or the airport bus.',
         },
       ],
     },
@@ -82,7 +83,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Το πρακτικό κομμάτι' },
         {
           type: 'p',
-          text: 'Κάθε στάση παραπάνω είναι προσβάσιμη με τα πόδια από το κέντρο της πόλης — εκεί ακριβώς είμαστε κι εμείς, στη Σφακιανάκη 4, περίπου ένα λεπτό από τον Άγιο Μηνά και πέντε λεπτά από τα Λιοντάρια. Αφήστε τις αποσκευές σας το πρωί, κάντε όλη τη διαδρομή ελεύθεροι και παραλάβετέ τες καθ’ οδόν προς το λιμάνι ή το λεωφορείο του αεροδρομίου.',
+          text: 'Κάθε στάση παραπάνω είναι προσβάσιμη με τα πόδια από το κέντρο της πόλης — εκεί ακριβώς βρίσκεται και ο [χώρος φύλαξης αποσκευών μας](/), στη Σφακιανάκη 4, περίπου ένα λεπτό από τον Άγιο Μηνά και πέντε λεπτά από τα Λιοντάρια. Αφήστε τις αποσκευές σας το πρωί, κάντε όλη τη διαδρομή ελεύθεροι και παραλάβετέ τες καθ’ οδόν προς το λιμάνι ή το λεωφορείο του αεροδρομίου.',
         },
       ],
     },

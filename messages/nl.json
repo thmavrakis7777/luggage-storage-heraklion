@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Bagageopslag Heraklion Centrum | Online Boeken & 10% Korting",
-    "description": "Veilige bagageopslag in het hart van Heraklion, Kreta. Elke koffergrootte, flexibele tijden, vriendelijk familiebedrijf. Boek online in 30 seconden en krijg 10% korting."
+    "title": "Bagageopslag Heraklion Centrum | 10% Korting Online",
+    "description": "Veilige bagageopslag in het centrum van Heraklion. Elke koffergrootte, flexibele tijden, familiebedrijf. Boek online in 30 seconden met 10% korting."
   },
   "nav": {
     "home": "Home",
@@ -38,7 +38,7 @@
   },
   "howItWorks": {
     "eyebrow": "Hoe Het Werkt",
-    "title": "Berg je Bagage op in 3 Eenvoudige Stappen",
+    "title": "Berg je Bagage op in Heraklion in 3 Eenvoudige Stappen",
     "step1": {
       "number": "01",
       "title": "Boek Online",
@@ -57,7 +57,7 @@
   },
   "pricing": {
     "eyebrow": "Prijzen",
-    "title": "Eenvoudige, Transparante Prijzen",
+    "title": "Prijzen voor Bagageopslag in Heraklion",
     "subtitle": "Je betaalt per tas, per dag. Elke koffergrootte wordt geaccepteerd.",
     "backpack": {
       "name": "Rugzak",
@@ -237,6 +237,8 @@
     "eyebrow": "Nu Boeken",
     "title": "Reserveer je Bagageopslag",
     "subtitle": "Duurt ongeveer 30 seconden. Geen account, geen e-mail, geen online betaling.",
+    "metaTitle": "Bagageopslag in Heraklion Boeken | 10% Korting",
+    "metaDescription": "Reserveer bagageopslag in het centrum van Heraklion in ongeveer 30 seconden. Geen account, geen online betaling: je betaalt in de winkel, met 10% korting.",
     "form": {
       "name": "Volledige Naam",
       "namePlaceholder": "Je naam",
@@ -319,6 +321,7 @@
   "journal": {
     "eyebrow": "Journal",
     "title": "Bagageopslag & Reisnotities over Heraklion",
+    "homeTitle": "Gidsen & Reisnotities",
     "subtitle": "Praktische notities over het opslaan van je bagage, je verplaatsen in Heraklion en het benutten van de uren tussen uitchecken en vertrek.",
     "readingTime": "{minutes} min leestijd",
     "readMore": "Lees artikel",

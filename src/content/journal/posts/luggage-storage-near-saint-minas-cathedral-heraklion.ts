@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-storage-near-saint-minas-cathedral-heraklion',
   publishedAt: '2026-09-14',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Luggage Storage Near Saint Minas Cathedral, Heraklion',
@@ -16,7 +17,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'One minute from the cathedral' },
         {
           type: 'p',
-          text: 'We are at Sfakianaki 4, a short walk from Agia Ekaterini Square, where the cathedral stands. If you can find the cathedral, you are practically at our door. From here, Lions Square is about five minutes away on foot and the airport bus station about a minute.',
+          text: '[Our luggage storage in central Heraklion](/) is at Sfakianaki 4, a short walk from Agia Ekaterini Square, where the cathedral stands. If you can find the cathedral, you are practically at our door. From here, Lions Square is about five minutes away on foot and the airport bus station about a minute.',
         },
         { type: 'h2', text: 'About Saint Minas Cathedral' },
         {
@@ -65,7 +66,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Ένα λεπτό από τον Άγιο Μηνά' },
         {
           type: 'p',
-          text: 'Βρισκόμαστε στη Σφακιανάκη 4, σε μικρή απόσταση από την Πλατεία Αγίας Αικατερίνης, όπου βρίσκεται ο ναός. Αν ξέρετε πώς να φτάσετε στον Άγιο Μηνά, είστε ουσιαστικά στην πόρτα μας. Από εδώ τα Λιοντάρια απέχουν περίπου πέντε λεπτά με τα πόδια και η στάση του λεωφορείου για το αεροδρόμιο περίπου ένα λεπτό.',
+          text: 'Ο [χώρος φύλαξης αποσκευών μας στο κέντρο του Ηρακλείου](/) βρίσκεται στη Σφακιανάκη 4, σε μικρή απόσταση από την Πλατεία Αγίας Αικατερίνης, όπου βρίσκεται ο ναός. Αν ξέρετε πώς να φτάσετε στον Άγιο Μηνά, είστε ουσιαστικά στην πόρτα μας. Από εδώ τα Λιοντάρια απέχουν περίπου πέντε λεπτά με τα πόδια και η στάση του λεωφορείου για το αεροδρόμιο περίπου ένα λεπτό.',
         },
         { type: 'h2', text: 'Λίγα λόγια για τον Άγιο Μηνά' },
         {

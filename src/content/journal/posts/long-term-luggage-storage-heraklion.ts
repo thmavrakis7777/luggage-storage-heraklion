@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'long-term-luggage-storage-heraklion',
   publishedAt: '2026-09-11',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Long-Term Luggage Storage in Heraklion: 25% Off From Three Days',
@@ -27,7 +28,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'How the 3+ day discount works' },
         {
           type: 'p',
-          text: 'Storage of three days or more gets 25% off instead of the standard 10% online discount. It applies automatically when you book — you do not need to ask for it, and there is no code to enter. The two discounts do not stack; leaving your luggage longer simply replaces the smaller discount with the bigger one.',
+          text: 'At [our luggage storage in Heraklion city centre](/), storage of three days or more gets 25% off instead of the standard 10% online discount. It applies automatically when you book — you do not need to ask for it, and there is no code to enter. The two discounts do not stack; leaving your luggage longer simply replaces the smaller discount with the bigger one.',
         },
         {
           type: 'p',
@@ -76,7 +77,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Πώς λειτουργεί η τιμή μακράς διάρκειας' },
         {
           type: 'p',
-          text: 'Η φύλαξη τριών ημερών ή περισσότερο έχει 25% έκπτωση αντί για τη βασική έκπτωση 10% της online κράτησης. Εφαρμόζεται αυτόματα κατά την κράτηση — δεν χρειάζεται να τη ζητήσετε και δεν υπάρχει κωδικός να πληκτρολογήσετε. Οι δύο εκπτώσεις δεν συνδυάζονται· η μεγαλύτερη διάρκεια απλώς αντικαθιστά τη μικρότερη έκπτωση με τη μεγαλύτερη.',
+          text: 'Στον [χώρο φύλαξης αποσκευών μας στο κέντρο του Ηρακλείου](/), η φύλαξη τριών ημερών ή περισσότερο έχει 25% έκπτωση αντί για τη βασική έκπτωση 10% της online κράτησης. Εφαρμόζεται αυτόματα κατά την κράτηση — δεν χρειάζεται να τη ζητήσετε και δεν υπάρχει κωδικός να πληκτρολογήσετε. Οι δύο εκπτώσεις δεν συνδυάζονται· η μεγαλύτερη διάρκεια απλώς αντικαθιστά τη μικρότερη έκπτωση με τη μεγαλύτερη.',
         },
         {
           type: 'p',

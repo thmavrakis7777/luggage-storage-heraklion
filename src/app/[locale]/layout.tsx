@@ -3,7 +3,7 @@ import { Cormorant_Garamond, EB_Garamond, Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { locales, type Locale } from '@/i18n/config';
-import { siteUrl, business, geo, googleMapsUrl, profileUrls } from '@/lib/site';
+import { siteUrl, business, geo, googlePlaceUrl, profileUrls } from '@/lib/site';
 import { OPENING_HOURS_SCHEMA } from '@/lib/hours';
 import { formatEuros, LUGGAGE_SIZES, PRICE_PER_DAY_CENTS } from '@/lib/pricing';
 import { Navigation } from '@/components/layout/Navigation';
@@ -127,7 +127,7 @@ export default async function LocaleLayout({
         unitCode: 'DAY',
       },
     })),
-    hasMap: googleMapsUrl,
+    hasMap: googlePlaceUrl,
     ...(profileUrls.length > 0 && { sameAs: profileUrls }),
     address: {
       '@type': 'PostalAddress',

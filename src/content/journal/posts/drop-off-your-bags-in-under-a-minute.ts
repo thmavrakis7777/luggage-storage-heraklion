@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'drop-off-your-bags-in-under-a-minute',
   publishedAt: '2026-09-11',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'How Long Does It Take to Drop Off Your Luggage? About a Minute',
@@ -25,7 +26,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Step two: walk in and hand over the bags' },
         {
           type: 'p',
-          text: 'Come to Sfakianaki 4, give us your name, and hand over your luggage. We match it to your booking and you are back out the door. In practice this is a minute, most of which is saying hello.',
+          text: 'Come to [our luggage storage in Heraklion](/) at Sfakianaki 4, give us your name, and hand over your luggage. We match it to your booking and you are back out the door. In practice this is a minute, most of which is saying hello.',
         },
         { type: 'h2', text: 'Step three: come back and collect' },
         {
@@ -70,7 +71,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Βήμα δεύτερο: περνάτε και παραδίδετε τις αποσκευές' },
         {
           type: 'p',
-          text: 'Έρχεστε στη Σφακιανάκη 4, μας λέτε το όνομά σας και παραδίδετε τις αποσκευές. Τις αντιστοιχούμε με την κράτησή σας και είστε ήδη έξω από την πόρτα. Στην πράξη είναι ένα λεπτό, και το μεγαλύτερο μέρος του είναι το καλωσόρισμα.',
+          text: 'Έρχεστε στον [χώρο φύλαξης αποσκευών μας στο Ηράκλειο](/), στη Σφακιανάκη 4, μας λέτε το όνομά σας και παραδίδετε τις αποσκευές. Τις αντιστοιχούμε με την κράτησή σας και είστε ήδη έξω από την πόρτα. Στην πράξη είναι ένα λεπτό, και το μεγαλύτερο μέρος του είναι το καλωσόρισμα.',
         },
         { type: 'h2', text: 'Βήμα τρίτο: επιστρέφετε και παραλαμβάνετε' },
         {

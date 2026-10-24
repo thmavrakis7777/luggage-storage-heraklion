@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Gepäckaufbewahrung Heraklion Stadtzentrum | Online Buchen & 10% Sparen",
-    "description": "Sichere Gepäckaufbewahrung im Herzen von Heraklion, Kreta. Jede Gepäckgröße, flexible Zeiten, freundlicher Familienbetrieb. Jetzt online buchen in 30 Sekunden und 10% sparen."
+    "title": "Gepäckaufbewahrung Heraklion Zentrum | 10% Online-Rabatt",
+    "description": "Sichere Gepäckaufbewahrung im Zentrum von Heraklion. Jede Gepäckgröße, flexible Zeiten, Familienbetrieb. In 30 Sekunden online buchen und 10% sparen."
   },
   "nav": {
     "home": "Startseite",
@@ -38,7 +38,7 @@
   },
   "howItWorks": {
     "eyebrow": "So Funktioniert's",
-    "title": "Ihr Gepäck in 3 Einfachen Schritten Verstauen",
+    "title": "Ihr Gepäck in Heraklion in 3 Einfachen Schritten Verstauen",
     "step1": {
       "number": "01",
       "title": "Online Buchen",
@@ -57,7 +57,7 @@
   },
   "pricing": {
     "eyebrow": "Preise",
-    "title": "Einfache, Transparente Preise",
+    "title": "Preise für Gepäckaufbewahrung in Heraklion",
     "subtitle": "Zahlung pro Gepäckstück, pro Tag. Jede Gepäckgröße wird angenommen.",
     "backpack": {
       "name": "Rucksack",
@@ -237,6 +237,8 @@
     "eyebrow": "Jetzt Buchen",
     "title": "Ihre Gepäckaufbewahrung Reservieren",
     "subtitle": "Dauert etwa 30 Sekunden. Kein Konto, keine E-Mail, keine Online-Zahlung.",
+    "metaTitle": "Gepäckaufbewahrung in Heraklion Buchen | 10% Rabatt",
+    "metaDescription": "Reservieren Sie Ihre Gepäckaufbewahrung im Zentrum von Heraklion in etwa 30 Sekunden. Kein Konto, keine Online-Zahlung: Sie zahlen vor Ort, mit 10% Rabatt.",
     "form": {
       "name": "Vollständiger Name",
       "namePlaceholder": "Ihr Name",
@@ -319,6 +321,7 @@
   "journal": {
     "eyebrow": "Journal",
     "title": "Gepäckaufbewahrung & Reisenotizen aus Heraklion",
+    "homeTitle": "Ratgeber & Reisenotizen",
     "subtitle": "Praktische Hinweise zur Aufbewahrung Ihres Gepäcks, zur Fortbewegung in Heraklion und dazu, wie Sie die Stunden zwischen Check-out und Abreise optimal nutzen.",
     "readingTime": "{minutes} Min. Lesezeit",
     "readMore": "Artikel lesen",

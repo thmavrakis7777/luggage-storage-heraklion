@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-lockers-vs-staffed-storage-heraklion',
   publishedAt: '2026-09-24',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Luggage Lockers in Heraklion vs Staffed Storage: Which Should You Choose?',
@@ -30,7 +31,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'How staffed storage works with us' },
         {
           type: 'p',
-          text: 'We have no lockers. You hand your bags to a person, every bag is tagged, you get a receipt, and our staff keep your luggage in a locked room with CCTV until you come back for it. We are a family business at Sfakianaki 4 in the centre of Heraklion — the first luggage storage in the city — and we are open every day. There is more detail in [how we keep your bags safe](/journal/is-luggage-storage-safe-in-heraklion).',
+          text: 'We have no lockers. You hand your bags to a person, every bag is tagged, you get a receipt, and our staff keep your luggage in a locked room with CCTV until you come back for it. We are a family business at Sfakianaki 4 in the centre of Heraklion — [the first luggage storage in the city](/) — and we are open every day. There is more detail in [how we keep your bags safe](/journal/is-luggage-storage-safe-in-heraklion).',
         },
         {
           type: 'ul',
@@ -88,7 +89,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Πώς λειτουργεί η φύλαξη με προσωπικό σε εμάς' },
         {
           type: 'p',
-          text: 'Δεν έχουμε θυρίδες. Δίνετε τις αποσκευές σας σε άνθρωπο, κάθε αποσκευή παίρνει ετικέτα, εσείς παίρνετε απόδειξη και το προσωπικό μας φυλάει τις αποσκευές σας σε κλειδωμένο χώρο με κάμερες ασφαλείας μέχρι να επιστρέψετε. Είμαστε οικογενειακή επιχείρηση στη Σφακιανάκη 4, στο κέντρο του Ηρακλείου — ο πρώτος χώρος φύλαξης αποσκευών στην πόλη — και είμαστε ανοιχτά κάθε μέρα. Περισσότερες λεπτομέρειες θα βρείτε στο [πώς φυλάμε με ασφάλεια τις αποσκευές σας](/journal/is-luggage-storage-safe-in-heraklion).',
+          text: 'Δεν έχουμε θυρίδες. Δίνετε τις αποσκευές σας σε άνθρωπο, κάθε αποσκευή παίρνει ετικέτα, εσείς παίρνετε απόδειξη και το προσωπικό μας φυλάει τις αποσκευές σας σε κλειδωμένο χώρο με κάμερες ασφαλείας μέχρι να επιστρέψετε. Είμαστε οικογενειακή επιχείρηση στη Σφακιανάκη 4, στο κέντρο του Ηρακλείου — [ο πρώτος χώρος φύλαξης αποσκευών στην πόλη](/) — και είμαστε ανοιχτά κάθε μέρα. Περισσότερες λεπτομέρειες θα βρείτε στο [πώς φυλάμε με ασφάλεια τις αποσκευές σας](/journal/is-luggage-storage-safe-in-heraklion).',
         },
         {
           type: 'ul',

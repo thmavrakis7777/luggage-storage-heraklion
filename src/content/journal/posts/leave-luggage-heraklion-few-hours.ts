@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'leave-luggage-heraklion-few-hours',
   publishedAt: '2026-09-14',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Where to Leave Luggage in Heraklion for a Few Hours',
@@ -47,7 +48,7 @@ export const post: JournalPost = {
         },
         {
           type: 'p',
-          text: 'Staffed storage in the city centre sits between the two. It is on the way to the airport bus and within walking distance of the port, it takes bags of any size, and a person hands them back to you. We are at Sfakianaki 4, about a minute from Saint Minas Cathedral and five minutes from Lions Square.',
+          text: 'Staffed storage in the city centre sits between the two. It is on the way to the airport bus and within walking distance of the port, it takes bags of any size, and a person hands them back to you. [Our city-centre luggage storage](/) is at Sfakianaki 4, about a minute from Saint Minas Cathedral and five minutes from Lions Square.',
         },
         { type: 'h2', text: 'Book, or just walk in?' },
         {
@@ -118,7 +119,7 @@ export const post: JournalPost = {
         },
         {
           type: 'p',
-          text: 'Η φύλαξη με προσωπικό στο κέντρο της πόλης βρίσκεται κάπου ανάμεσα. Είναι στον δρόμο προς το λεωφορείο του αεροδρομίου και σε απόσταση περπατήματος από το λιμάνι, δέχεται αποσκευές κάθε μεγέθους και σας τις επιστρέφει ένας άνθρωπος. Βρισκόμαστε στη Σφακιανάκη 4, περίπου ένα λεπτό από τον Άγιο Μηνά και πέντε λεπτά από τα Λιοντάρια.',
+          text: 'Η φύλαξη με προσωπικό στο κέντρο της πόλης βρίσκεται κάπου ανάμεσα. Είναι στον δρόμο προς το λεωφορείο του αεροδρομίου και σε απόσταση περπατήματος από το λιμάνι, δέχεται αποσκευές κάθε μεγέθους και σας τις επιστρέφει ένας άνθρωπος. Ο [χώρος φύλαξης αποσκευών μας στο κέντρο](/) βρίσκεται στη Σφακιανάκη 4, περίπου ένα λεπτό από τον Άγιο Μηνά και πέντε λεπτά από τα Λιοντάρια.',
         },
         { type: 'h2', text: 'Κράτηση ή απλώς να περάσετε;' },
         {

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Luggage Storage Heraklion City Center | Book Online & Save 10%",
+    "title": "Luggage Storage Heraklion City Center | 10% Off Online",
     "description": "Secure luggage storage in the heart of Heraklion, Crete. Any bag size, flexible hours, friendly family business. Book online in 30 seconds and get 10% off."
   },
   "nav": {
@@ -38,7 +38,7 @@
   },
   "howItWorks": {
     "eyebrow": "How It Works",
-    "title": "Store Your Bags in 3 Simple Steps",
+    "title": "Store Your Luggage in Heraklion in 3 Simple Steps",
     "step1": {
       "number": "01",
       "title": "Book Online",
@@ -57,7 +57,7 @@
   },
   "pricing": {
     "eyebrow": "Pricing",
-    "title": "Simple, Transparent Pricing",
+    "title": "Luggage Storage Prices in Heraklion",
     "subtitle": "Pay per bag, per day. Any luggage size accepted.",
     "backpack": {
       "name": "Backpack",
@@ -237,6 +237,8 @@
     "eyebrow": "Book Now",
     "title": "Reserve Your Luggage Storage",
     "subtitle": "Takes about 30 seconds. No account, no email, no online payment.",
+    "metaTitle": "Book Luggage Storage in Heraklion | 10% Off Online",
+    "metaDescription": "Reserve luggage storage in central Heraklion in about 30 seconds. No account and no online payment: you pay at the store, with 10% off.",
     "form": {
       "name": "Full Name",
       "namePlaceholder": "Your name",
@@ -319,6 +321,7 @@
   "journal": {
     "eyebrow": "Journal",
     "title": "Luggage Storage & Heraklion Travel Notes",
+    "homeTitle": "Guides & Travel Notes",
     "subtitle": "Practical notes on storing your bags, getting around Heraklion, and making the most of the hours between a checkout and a departure.",
     "byline": "By {name}",
     "readingTime": "{minutes} min read",

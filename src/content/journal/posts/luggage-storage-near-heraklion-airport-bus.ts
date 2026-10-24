@@ -3,6 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-storage-near-heraklion-airport-bus',
   publishedAt: '2026-09-11',
+  updatedAt: '2026-10-24',
   content: {
     en: {
       title: 'Luggage Storage Near the Heraklion Airport Bus Stop',
@@ -16,7 +17,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Why the bus stop matters' },
         {
           type: 'p',
-          text: 'We are about a minute on foot from the airport bus station in the centre of Heraklion, and the airport itself is roughly 6.5 km away. That proximity is the entire point: your bags are not a detour on the way to your flight, they are on the route.',
+          text: '[Our luggage storage](/) is about a minute on foot from the airport bus station in the centre of Heraklion, and the airport itself is roughly 6.5 km away. That proximity is the entire point: your bags are not a detour on the way to your flight, they are on the route.',
         },
         {
           type: 'p',
@@ -60,7 +61,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Γιατί μετράει η στάση του λεωφορείου' },
         {
           type: 'p',
-          text: 'Απέχουμε περίπου ένα λεπτό με τα πόδια από τον σταθμό του λεωφορείου για το αεροδρόμιο, στο κέντρο του Ηρακλείου, ενώ το ίδιο το αεροδρόμιο βρίσκεται περίπου 6,5 χλμ. μακριά. Αυτή η εγγύτητα είναι όλο το νόημα: οι αποσκευές σας δεν αποτελούν παράκαμψη προς την πτήση σας, βρίσκονται πάνω στη διαδρομή.',
+          text: 'Ο [χώρος φύλαξης αποσκευών μας](/) απέχει περίπου ένα λεπτό με τα πόδια από τον σταθμό του λεωφορείου για το αεροδρόμιο, στο κέντρο του Ηρακλείου, ενώ το ίδιο το αεροδρόμιο βρίσκεται περίπου 6,5 χλμ. μακριά. Αυτή η εγγύτητα είναι όλο το νόημα: οι αποσκευές σας δεν αποτελούν παράκαμψη προς την πτήση σας, βρίσκονται πάνω στη διαδρομή.',
         },
         {
           type: 'p',
