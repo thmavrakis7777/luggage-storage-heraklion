@@ -16,7 +16,9 @@ import { PRIVACY_UPDATED } from '@/content/privacy';
 const HOME_UPDATED = '2026-10-24';
 // The EN/EL homepages also carry the journal links section, added later.
 const HOME_WITH_JOURNAL_UPDATED = '2026-10-24';
-const BOOK_UPDATED = '2026-10-24';
+// Visible copy only: the 2026-10-24 search title/description change left the
+// page itself as it was.
+const BOOK_UPDATED = '2026-09-24';
 
 const pages = ['', '/book'];
 
@@ -50,12 +52,16 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // two — advertising hreflang for locales that 404 would be worse than
   // omitting them.
   const posts = getAllPosts();
-  const newestPost = posts.map(lastModified).reduce((latest, date) => (date > latest ? date : latest));
+  // The listing shows each post's title and description, not its body, so it
+  // changes when a post is published — not when a post's body is updated.
+  const newestPublished = posts
+    .map((post) => post.publishedAt)
+    .reduce((latest, date) => (date > latest ? date : latest));
 
   for (const locale of JOURNAL_LOCALES) {
     entries.push({
       url: `${siteUrl}/${locale}/journal`,
-      lastModified: new Date(`${newestPost}T00:00:00Z`),
+      lastModified: new Date(`${newestPublished}T00:00:00Z`),
       changeFrequency: 'monthly',
       priority: 0.6,
       alternates: { languages: journalLanguageAlternates('/journal') },
