@@ -1,0 +1,30 @@
+# After every successful production deploy (Vercel reports it to GitHub as a
+# deployment with environment "Production"), tell IndexNow which pages changed.
+# "Run workflow" in the Actions tab does the same by hand; tick "all" to
+# submit every page in the sitemap.
+name: IndexNow
+
+on:
+  deployment_status:
+  workflow_dispatch:
+    inputs:
+      all:
+        description: Submit every page in the sitemap, not just the recently changed ones
+        type: boolean
+        default: false
+
+jobs:
+  submit:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.deployment_status.state == 'success' &&
+       github.event.deployment_status.environment == 'Production')
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: node scripts/indexnow.mjs ${{ inputs.all && '--all' || '' }}
