@@ -21,6 +21,10 @@ export type Block =
 
 export interface PostContent {
   title: string;
+  /** Shorter <title> for search results, when `title` — also the H1, the
+   * structured-data headline and the text of every link to the post — is too
+   * long for one. Defaults to `title`. */
+  metaTitle?: string;
   /** Doubles as the meta description and the listing-card excerpt. */
   description: string;
   body: Block[];

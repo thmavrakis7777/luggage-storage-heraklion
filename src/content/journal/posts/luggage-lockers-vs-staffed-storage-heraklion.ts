@@ -7,6 +7,7 @@ export const post: JournalPost = {
   content: {
     en: {
       title: 'Luggage Lockers in Heraklion vs Staffed Storage: Which Should You Choose?',
+      metaTitle: 'Luggage Lockers in Heraklion vs Staffed Storage',
       description:
         'Looking for luggage lockers in Heraklion? How self-service lockers compare with staffed luggage storage on bag size, security, price and opening hours — and when each one makes sense.',
       body: [

@@ -43,7 +43,7 @@ export async function generateMetadata(
   const url = `${siteUrl}/${locale}/journal/${slug}`;
 
   return {
-    title: content.title,
+    title: content.metaTitle ?? content.title,
     description: content.description,
     alternates: {
       canonical: url,

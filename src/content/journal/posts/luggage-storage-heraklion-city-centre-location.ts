@@ -7,6 +7,7 @@ export const post: JournalPost = {
   content: {
     en: {
       title: 'Where to Leave Your Bags in Heraklion: Sfakianaki 4, Minutes From Everything',
+      metaTitle: 'Where to Leave Your Bags in Heraklion: Sfakianaki 4',
       description:
         'Our location in Heraklion city centre — one minute from Saint Minas Cathedral and the airport bus stop, five from Lions Square, fifteen from the port.',
       body: [
