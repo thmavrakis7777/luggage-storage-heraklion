@@ -20,7 +20,7 @@
   "hero": {
     "eyebrow": "Heraklion City Center",
     "title": "Luggage Storage in Heraklion City Center",
-    "subtitle": "Drop your bags in minutes and explore Heraklion hands-free. 100% secure, any luggage size, central location.",
+    "subtitle": "Drop your bags in minutes and explore Heraklion hands-free. Staff-only, camera-monitored room, any luggage size, central location.",
     "ctaPrimary": "Book Now — Get 10% OFF",
     "ctaSecondary": "Find Us"
   },
@@ -33,7 +33,7 @@
     "discount": "10% OFF Online Booking",
     "payment": "Cash or Card at Store",
     "anySize": "Any Luggage Size",
-    "secure": "100% Secure",
+    "secure": "Camera-Monitored Room",
     "longStay": "25% OFF for 3+ Days"
   },
   "howItWorks": {
@@ -135,7 +135,7 @@
     "weekdays": "Monday–Friday",
     "saturday": "Saturday",
     "sunday": "Sunday",
-    "advanceBookingNote": "Staff is on-site by appointment only Mon, Wed & Sat after 15:00, and all day Sunday — advance booking required during those times."
+    "advanceBookingNote": "Please book ahead for Mon, Wed & Sat after 15:00, and all day Sunday."
   },
   "transfer": {
     "eyebrow": "Airport Transfer",
@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "At a Glance",
     "title": "Key Facts",
-    "summary": "{name} is the first luggage storage in Heraklion, Crete — staffed, family-run and in the city centre. It is open every day and charges {min}–{max} per bag per day.",
+    "summary": "{name} is an independent luggage storage in Heraklion, Crete — staffed, family-run and in the city centre. It is open every day and charges {min}–{max} per bag per day.",
     "labels": {
       "prices": "Prices",
       "discounts": "Online discounts",
       "payment": "Payment",
       "booking": "Booking",
+      "type": "Type of storage",
       "security": "Security",
       "luggage": "Luggage",
       "nearby": "Nearby",
@@ -160,6 +161,7 @@
     "prices": "{items} — per bag, per day. The drop-off and pick-up days both count.",
     "payment": "Cash or card, paid at the store. No online payment.",
     "booking": "Online in about 30 seconds with just a name and phone number — no account, no email. Walk-ins welcome.",
+    "type": "Staffed and independent: not automated lockers, and not a partner shop on a booking platform. You book directly with us.",
     "security": "No lockers: every bag is tagged, you get a receipt, and our staff keep it in a locked room with CCTV.",
     "luggage": "Any size, from backpacks to large suitcases — plus prams, bikes, surfboards, musical instruments and boxes. No food.",
     "extras": "A free toilet for customers, and airport transfers arranged on request."
@@ -183,6 +185,10 @@
       "lockers": {
         "question": "Do you have luggage lockers?",
         "answer": "No — every bag is handed to a person, not left in a self-service locker. We tag it, give you a receipt and keep it in a locked room with CCTV. There is no fixed compartment size, so large suitcases, several bags or a bike are no problem."
+      },
+      "independent": {
+        "question": "Are you an independent luggage storage?",
+        "answer": "Yes. We are an independent, family-run business and we don't partner with booking platforms. You book directly with us on this website, with no app and no account, and pay at the store. You hand your bags to our staff and collect them from our staff. They stay in a dedicated, camera-monitored room with staff-only access."
       },
       "payment": {
         "question": "How do I pay?",

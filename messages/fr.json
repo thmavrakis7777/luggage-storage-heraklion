@@ -20,7 +20,7 @@
   "hero": {
     "eyebrow": "Héraklion Centre-Ville",
     "title": "Consigne à Bagages au Centre d'Héraklion",
-    "subtitle": "Déposez vos bagages en quelques minutes et explorez Héraklion les mains libres. 100% sécurisé, toutes tailles de bagages, emplacement central.",
+    "subtitle": "Déposez vos bagages en quelques minutes et explorez Héraklion les mains libres. Pièce sous vidéosurveillance réservée au personnel, toutes tailles de bagages, emplacement central.",
     "ctaPrimary": "Réserver — 10% de Réduction",
     "ctaSecondary": "Nous Trouver"
   },
@@ -33,7 +33,7 @@
     "discount": "10% de Réduction en Réservant en Ligne",
     "payment": "Espèces ou Carte en Magasin",
     "anySize": "Toutes Tailles de Bagages",
-    "secure": "100% Sécurisé",
+    "secure": "Pièce sous Vidéosurveillance",
     "longStay": "25% de Réduction dès 3 Jours"
   },
   "howItWorks": {
@@ -135,7 +135,7 @@
     "weekdays": "Lundi–Vendredi",
     "saturday": "Samedi",
     "sunday": "Dimanche",
-    "advanceBookingNote": "Le personnel n'est présent que sur rendez-vous lun, mer et sam après 15h00, et le dimanche toute la journée — une réservation à l'avance est requise durant ces horaires."
+    "advanceBookingNote": "Merci de réserver à l'avance pour lun, mer et sam après 15h00, et le dimanche toute la journée."
   },
   "transfer": {
     "eyebrow": "Transfert Aéroport",
@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "En Bref",
     "title": "L'Essentiel",
-    "summary": "{name} est la première consigne à bagages d'Héraklion, en Crète — familiale, tenue par du personnel et en plein centre. Elle est ouverte tous les jours et coûte {min}–{max} par bagage et par jour.",
+    "summary": "{name} est une consigne à bagages indépendante à Héraklion, en Crète — familiale, tenue par du personnel et en plein centre. Elle est ouverte tous les jours et coûte {min}–{max} par bagage et par jour.",
     "labels": {
       "prices": "Tarifs",
       "discounts": "Réductions en ligne",
       "payment": "Paiement",
       "booking": "Réservation",
+      "type": "Type de consigne",
       "security": "Sécurité",
       "luggage": "Bagages",
       "nearby": "À proximité",
@@ -160,6 +161,7 @@
     "prices": "{items} — par bagage et par jour. Les jours de dépôt et de retrait comptent tous les deux.",
     "payment": "Espèces ou carte, sur place. Pas de paiement en ligne.",
     "booking": "En ligne en 30 secondes environ, avec juste un nom et un numéro de téléphone — sans compte ni email. Sans rendez-vous bienvenus.",
+    "type": "Tenue par du personnel et indépendante : ni casiers automatiques, ni commerce partenaire d'une plateforme de réservation. Vous réservez directement chez nous.",
     "security": "Pas de casiers : chaque bagage reçoit une étiquette, vous recevez un reçu, et notre personnel le garde dans une pièce fermée à clé et sous vidéosurveillance.",
     "luggage": "Toutes tailles, du sac à dos à la grande valise — ainsi que poussettes, vélos, planches de surf, instruments de musique et cartons. Pas de nourriture.",
     "extras": "Des toilettes gratuites pour les clients, et des transferts vers l'aéroport sur demande."
@@ -183,6 +185,10 @@
       "lockers": {
         "question": "Avez-vous des casiers à bagages ?",
         "answer": "Non — chaque bagage est remis à une personne, pas laissé dans un casier en libre-service. Nous l'étiquetons, vous remettons un reçu et le gardons dans une pièce fermée à clé et sous vidéosurveillance. Il n'y a pas de compartiments de taille fixe, donc les grandes valises, plusieurs bagages ou un vélo ne posent aucun problème."
+      },
+      "independent": {
+        "question": "Êtes-vous une consigne à bagages indépendante ?",
+        "answer": "Oui. Nous sommes une entreprise familiale indépendante, tenue par notre personnel, et nous ne travaillons pas avec des plateformes de réservation. Vous réservez directement chez nous sur ce site, sans application ni compte, et vous payez sur place. Vous remettez vos bagages à notre personnel et vous les récupérez auprès de notre personnel. Ils restent dans une pièce dédiée, sous vidéosurveillance et accessible uniquement au personnel."
       },
       "payment": {
         "question": "Comment puis-je payer ?",

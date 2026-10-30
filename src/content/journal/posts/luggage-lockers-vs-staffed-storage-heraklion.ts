@@ -3,7 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'luggage-lockers-vs-staffed-storage-heraklion',
   publishedAt: '2026-09-24',
-  updatedAt: '2026-10-24',
+  updatedAt: '2026-10-30',
   content: {
     en: {
       title: 'Luggage Lockers in Heraklion vs Staffed Storage: Which Should You Choose?',
@@ -32,7 +32,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'How staffed storage works with us' },
         {
           type: 'p',
-          text: 'We have no lockers. You hand your bags to a person, every bag is tagged, you get a receipt, and our staff keep your luggage in a locked room with CCTV until you come back for it. We are a family business at Sfakianaki 4 in the centre of Heraklion — [the first luggage storage in the city](/) — and we are open every day. There is more detail in [how we keep your bags safe](/journal/is-luggage-storage-safe-in-heraklion).',
+          text: 'We have no lockers. You hand your bags to a person, every bag is tagged, you get a receipt, and our staff keep your luggage in a locked room with CCTV until you come back for it. We are a family business at Sfakianaki 4 in the centre of Heraklion — [an independent, staffed luggage storage](/) — and we are open every day. There is more detail in [how we keep your bags safe](/journal/is-luggage-storage-safe-in-heraklion).',
         },
         {
           type: 'ul',
@@ -42,6 +42,11 @@ export const post: JournalPost = {
             'A few hours, overnight or a whole week all work the same way.',
             'You pay at the store, in cash or by card. Nothing is paid online.',
           ],
+        },
+        { type: 'h2', text: 'Independent storage, booked directly' },
+        {
+          type: 'p',
+          text: 'Some luggage storage is booked through online platforms that place your bags with a partner shop, café or hotel. We are an independent, family-run business and we do not partner with any platform. You book directly with us on this website, with no app and no account, see the price before you confirm, and get 10% off for booking online. You pay at the store, hand your bags to our staff and collect them from our staff. Your luggage stays in a dedicated room used only for luggage, monitored by cameras, with access restricted to staff.',
         },
         { type: 'h2', text: 'What it costs' },
         {
@@ -90,7 +95,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Πώς λειτουργεί η φύλαξη με προσωπικό σε εμάς' },
         {
           type: 'p',
-          text: 'Δεν έχουμε θυρίδες. Δίνετε τις αποσκευές σας σε άνθρωπο, κάθε αποσκευή παίρνει ετικέτα, εσείς παίρνετε απόδειξη και το προσωπικό μας φυλάει τις αποσκευές σας σε κλειδωμένο χώρο με κάμερες ασφαλείας μέχρι να επιστρέψετε. Είμαστε οικογενειακή επιχείρηση στη Σφακιανάκη 4, στο κέντρο του Ηρακλείου — [ο πρώτος χώρος φύλαξης αποσκευών στην πόλη](/) — και είμαστε ανοιχτά κάθε μέρα. Περισσότερες λεπτομέρειες θα βρείτε στο [πώς φυλάμε με ασφάλεια τις αποσκευές σας](/journal/is-luggage-storage-safe-in-heraklion).',
+          text: 'Δεν έχουμε θυρίδες. Δίνετε τις αποσκευές σας σε άνθρωπο, κάθε αποσκευή παίρνει ετικέτα, εσείς παίρνετε απόδειξη και το προσωπικό μας φυλάει τις αποσκευές σας σε κλειδωμένο χώρο με κάμερες ασφαλείας μέχρι να επιστρέψετε. Είμαστε οικογενειακή επιχείρηση στη Σφακιανάκη 4, στο κέντρο του Ηρακλείου — [ένας ανεξάρτητος, επανδρωμένος χώρος φύλαξης αποσκευών](/) — και είμαστε ανοιχτά κάθε μέρα. Περισσότερες λεπτομέρειες θα βρείτε στο [πώς φυλάμε με ασφάλεια τις αποσκευές σας](/journal/is-luggage-storage-safe-in-heraklion).',
         },
         {
           type: 'ul',
@@ -100,6 +105,11 @@ export const post: JournalPost = {
             'Λίγες ώρες, ένα βράδυ ή μια ολόκληρη εβδομάδα λειτουργούν με τον ίδιο τρόπο.',
             'Πληρώνετε στο κατάστημα, με μετρητά ή κάρτα. Τίποτα δεν πληρώνεται online.',
           ],
+        },
+        { type: 'h2', text: 'Ανεξάρτητη φύλαξη, με απευθείας κράτηση' },
+        {
+          type: 'p',
+          text: 'Ορισμένοι χώροι φύλαξης αποσκευών κλείνονται μέσω online πλατφορμών, που αφήνουν τις αποσκευές σας σε κάποιο συνεργαζόμενο κατάστημα, καφέ ή ξενοδοχείο. Εμείς είμαστε ανεξάρτητη, οικογενειακή επιχείρηση και δεν συνεργαζόμαστε με καμία πλατφόρμα. Κάνετε κράτηση απευθείας σε εμάς από αυτή την ιστοσελίδα, χωρίς εφαρμογή και χωρίς λογαριασμό, βλέπετε την τιμή πριν επιβεβαιώσετε και έχετε 10% έκπτωση με online κράτηση. Πληρώνετε στο κατάστημα, παραδίδετε τις αποσκευές σας στο προσωπικό μας και τις παραλαμβάνετε από το προσωπικό μας. Οι αποσκευές σας μένουν σε ξεχωριστό χώρο που χρησιμοποιείται μόνο για αποσκευές, με κάμερες ασφαλείας και πρόσβαση μόνο για το προσωπικό.',
         },
         { type: 'h2', text: 'Πόσο κοστίζει' },
         {

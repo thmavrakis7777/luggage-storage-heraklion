@@ -20,7 +20,7 @@
   "hero": {
     "eyebrow": "Heraklion Centro",
     "title": "Deposito Bagagli nel Centro di Heraklion",
-    "subtitle": "Lascia i tuoi bagagli in pochi minuti ed esplora Heraklion a mani libere. 100% sicuro, ogni misura di bagaglio, posizione centrale.",
+    "subtitle": "Lascia i tuoi bagagli in pochi minuti ed esplora Heraklion a mani libere. Locale videosorvegliato riservato al personale, ogni misura di bagaglio, posizione centrale.",
     "ctaPrimary": "Prenota Ora — Sconto 10%",
     "ctaSecondary": "Come Trovarci"
   },
@@ -33,7 +33,7 @@
     "discount": "10% di Sconto su Prenotazione Online",
     "payment": "Contanti o Carta in Negozio",
     "anySize": "Qualsiasi Misura di Bagaglio",
-    "secure": "100% Sicuro",
+    "secure": "Locale Videosorvegliato",
     "longStay": "25% di Sconto per 3+ Giorni"
   },
   "howItWorks": {
@@ -135,7 +135,7 @@
     "weekdays": "Lunedì–Venerdì",
     "saturday": "Sabato",
     "sunday": "Domenica",
-    "advanceBookingNote": "Il personale è in sede solo su appuntamento lun, mer e sab dopo le 15:00, e tutta la domenica — in questi orari è richiesta la prenotazione anticipata."
+    "advanceBookingNote": "Prenota in anticipo per lun, mer e sab dopo le 15:00, e per tutta la domenica."
   },
   "transfer": {
     "eyebrow": "Transfer Aeroportuale",
@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "In Breve",
     "title": "Informazioni Chiave",
-    "summary": "{name} è il primo deposito bagagli di Heraklion, a Creta: a gestione familiare, con personale, nel centro città. È aperto tutti i giorni e costa {min}–{max} per bagaglio al giorno.",
+    "summary": "{name} è un deposito bagagli indipendente di Heraklion, a Creta: a gestione familiare, con personale, nel centro città. È aperto tutti i giorni e costa {min}–{max} per bagaglio al giorno.",
     "labels": {
       "prices": "Prezzi",
       "discounts": "Sconti online",
       "payment": "Pagamento",
       "booking": "Prenotazione",
+      "type": "Tipo di deposito",
       "security": "Sicurezza",
       "luggage": "Bagagli",
       "nearby": "Nelle vicinanze",
@@ -160,6 +161,7 @@
     "prices": "{items} — per bagaglio, al giorno. Contano sia il giorno di consegna sia quello di ritiro.",
     "payment": "Contanti o carta, in negozio. Nessun pagamento online.",
     "booking": "Online in circa 30 secondi, con solo nome e numero di telefono — nessun account, nessuna email. Accettiamo anche clienti senza prenotazione.",
+    "type": "Con personale e indipendente: niente armadietti automatici e nessun negozio partner di una piattaforma di prenotazione. Prenoti direttamente da noi.",
     "security": "Niente armadietti: ogni bagaglio riceve un'etichetta, tu una ricevuta, e il nostro personale lo custodisce in un locale chiuso a chiave e videosorvegliato.",
     "luggage": "Qualsiasi misura, dagli zaini alle valigie grandi — oltre a passeggini, biciclette, tavole da surf, strumenti musicali e scatoloni. Niente cibo.",
     "extras": "Un bagno gratuito per i clienti e transfer da e per l'aeroporto su richiesta."
@@ -183,6 +185,10 @@
       "lockers": {
         "question": "Avete armadietti per i bagagli?",
         "answer": "No — ogni bagaglio viene consegnato a una persona, non lasciato in un armadietto self-service. Lo etichettiamo, ti diamo una ricevuta e lo custodiamo in un locale chiuso a chiave e videosorvegliato. Non ci sono scomparti di misura fissa, quindi valigie grandi, più bagagli o una bici non sono un problema."
+      },
+      "independent": {
+        "question": "Siete un deposito bagagli indipendente?",
+        "answer": "Sì. Siamo un'attività familiare indipendente, con il nostro personale, e non collaboriamo con piattaforme di prenotazione. Prenoti direttamente da noi su questo sito, senza app né account, e paghi in negozio. Consegni i bagagli al nostro personale e li ritiri dal nostro personale. Restano in un locale dedicato e videosorvegliato, con accesso riservato al personale."
       },
       "payment": {
         "question": "Come si paga?",

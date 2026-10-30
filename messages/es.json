@@ -20,7 +20,7 @@
   "hero": {
     "eyebrow": "Heraklion Centro",
     "title": "Consigna de Equipaje en el Centro de Heraklion",
-    "subtitle": "Deja tu equipaje en minutos y explora Heraklion con las manos libres. 100% seguro, cualquier tamaño de maleta, ubicación central.",
+    "subtitle": "Deja tu equipaje en minutos y explora Heraklion con las manos libres. Cuarto con cámaras de vigilancia y acceso solo para el personal, cualquier tamaño de maleta, ubicación central.",
     "ctaPrimary": "Reservar Ahora — 10% de Descuento",
     "ctaSecondary": "Cómo Llegar"
   },
@@ -33,7 +33,7 @@
     "discount": "10% de Descuento por Reserva Online",
     "payment": "Efectivo o Tarjeta en Tienda",
     "anySize": "Cualquier Tamaño de Maleta",
-    "secure": "100% Seguro",
+    "secure": "Cuarto con Cámaras",
     "longStay": "25% Dto. desde 3 Días"
   },
   "howItWorks": {
@@ -135,7 +135,7 @@
     "weekdays": "Lunes–Viernes",
     "saturday": "Sábado",
     "sunday": "Domingo",
-    "advanceBookingNote": "El personal está presente solo con cita previa lun, mié y sáb después de las 15:00, y todo el domingo — se requiere reserva anticipada en esos horarios."
+    "advanceBookingNote": "Reserva con antelación para lun, mié y sáb después de las 15:00, y todo el domingo."
   },
   "transfer": {
     "eyebrow": "Traslado al Aeropuerto",
@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "De un Vistazo",
     "title": "Datos Clave",
-    "summary": "{name} es la primera consigna de equipaje de Heraklion, Creta: familiar, atendida por personal y en pleno centro. Abre todos los días y cuesta {min}–{max} por maleta y día.",
+    "summary": "{name} es una consigna de equipaje independiente en Heraklion, Creta: familiar, atendida por personal y en pleno centro. Abre todos los días y cuesta {min}–{max} por maleta y día.",
     "labels": {
       "prices": "Precios",
       "discounts": "Descuentos online",
       "payment": "Pago",
       "booking": "Reserva",
+      "type": "Tipo de consigna",
       "security": "Seguridad",
       "luggage": "Equipaje",
       "nearby": "Cerca",
@@ -160,6 +161,7 @@
     "prices": "{items} — por maleta y día. Cuentan tanto el día de entrega como el de recogida.",
     "payment": "Efectivo o tarjeta, en la tienda. Sin pago online.",
     "booking": "Online en unos 30 segundos, solo con nombre y teléfono — sin cuenta ni email. También aceptamos clientes sin reserva.",
+    "type": "Atendida por personal e independiente: ni taquillas automáticas ni tienda asociada a una plataforma de reservas. Reservas directamente con nosotros.",
     "security": "Sin taquillas: cada maleta lleva una etiqueta, tú recibes un recibo y nuestro personal la guarda en un cuarto cerrado con llave y con cámaras de vigilancia.",
     "luggage": "Cualquier tamaño, de mochilas a maletas grandes, además de carritos de bebé, bicicletas, tablas de surf, instrumentos musicales y cajas. Sin comida.",
     "extras": "Un aseo gratuito para clientes y traslados al aeropuerto bajo petición."
@@ -183,6 +185,10 @@
       "lockers": {
         "question": "¿Tenéis taquillas para equipaje?",
         "answer": "No: cada maleta se entrega a una persona, no se deja en una taquilla de autoservicio. La etiquetamos, te damos un recibo y la guardamos en un cuarto cerrado con llave y con cámaras de vigilancia. No hay compartimentos de tamaño fijo, así que las maletas grandes, varios bultos o una bici no son problema."
+      },
+      "independent": {
+        "question": "¿Sois una consigna de equipaje independiente?",
+        "answer": "Sí. Somos un negocio familiar independiente, atendido por nuestro personal, y no trabajamos con plataformas de reservas. Reservas directamente con nosotros en esta web, sin app ni cuenta, y pagas en la tienda. Entregas tu equipaje a nuestro personal y nuestro personal te lo devuelve. Se guarda en un cuarto exclusivo con cámaras de vigilancia y acceso solo para el personal."
       },
       "payment": {
         "question": "¿Cómo pago?",

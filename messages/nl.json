@@ -20,7 +20,7 @@
   "hero": {
     "eyebrow": "Heraklion Centrum",
     "title": "Bagageopslag in het Centrum van Heraklion",
-    "subtitle": "Breng je tas in enkele minuten weg en verken Heraklion met lege handen. 100% veilig, elke koffergrootte, centrale ligging.",
+    "subtitle": "Breng je tas in enkele minuten weg en verken Heraklion met lege handen. Ruimte met camerabewaking, alleen voor personeel, elke koffergrootte, centrale ligging.",
     "ctaPrimary": "Nu Boeken — 10% Korting",
     "ctaSecondary": "Vind Ons"
   },
@@ -33,7 +33,7 @@
     "discount": "10% Korting bij Online Boeking",
     "payment": "Contant of Kaart in de Winkel",
     "anySize": "Elke Koffergrootte",
-    "secure": "100% Veilig",
+    "secure": "Ruimte met Camera's",
     "longStay": "25% Korting vanaf 3 Dagen"
   },
   "howItWorks": {
@@ -135,7 +135,7 @@
     "weekdays": "Maandag–Vrijdag",
     "saturday": "Zaterdag",
     "sunday": "Zondag",
-    "advanceBookingNote": "Personeel is alleen op afspraak aanwezig op ma, wo & za na 15:00 uur, en de hele zondag — op die momenten is vooraf boeken verplicht."
+    "advanceBookingNote": "Boek graag vooraf voor ma, wo & za na 15:00 uur, en de hele zondag."
   },
   "transfer": {
     "eyebrow": "Luchthaventransfer",
@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "In het Kort",
     "title": "Belangrijkste Feiten",
-    "summary": "{name} is de eerste bagageopslag van Heraklion, Kreta — bemand, gerund door een familie en midden in het centrum. Elke dag open, voor {min}–{max} per stuk bagage per dag.",
+    "summary": "{name} is een onafhankelijke bagageopslag in Heraklion, Kreta — bemand, gerund door een familie en midden in het centrum. Elke dag open, voor {min}–{max} per stuk bagage per dag.",
     "labels": {
       "prices": "Prijzen",
       "discounts": "Online kortingen",
       "payment": "Betaling",
       "booking": "Boeken",
+      "type": "Soort opslag",
       "security": "Veiligheid",
       "luggage": "Bagage",
       "nearby": "In de buurt",
@@ -160,6 +161,7 @@
     "prices": "{items} — per stuk bagage, per dag. De dag van afgifte en de dag van ophalen tellen allebei.",
     "payment": "Contant of met kaart, in de winkel. Geen online betaling.",
     "booking": "Online in ongeveer 30 seconden, met alleen naam en telefoonnummer — geen account, geen e-mail. Binnenlopen zonder reservering kan ook.",
+    "type": "Bemand en onafhankelijk: geen automatische kluisjes en geen partnerwinkel van een boekingsplatform. Je boekt rechtstreeks bij ons.",
     "security": "Geen kluisjes: elk stuk bagage krijgt een label, jij krijgt een bon, en ons personeel bewaart het in een afgesloten ruimte met camerabewaking.",
     "luggage": "Elke maat, van rugzakken tot grote koffers — plus kinderwagens, fietsen, surfplanken, muziekinstrumenten en dozen. Geen eten.",
     "extras": "Een gratis toilet voor klanten, en luchthaventransfers op aanvraag."
@@ -183,6 +185,10 @@
       "lockers": {
         "question": "Hebben jullie bagagekluisjes?",
         "answer": "Nee — elk stuk bagage wordt aan een persoon overhandigd, niet in een zelfbedieningskluisje achtergelaten. We voorzien het van een label, geven je een bon en bewaren het in een afgesloten ruimte met camerabewaking. Er zijn geen vakken met een vaste maat, dus grote koffers, meerdere tassen of een fiets zijn geen probleem."
+      },
+      "independent": {
+        "question": "Zijn jullie een onafhankelijke bagageopslag?",
+        "answer": "Ja. Wij zijn een onafhankelijk familiebedrijf met eigen personeel en werken niet samen met boekingsplatforms. Je boekt rechtstreeks bij ons op deze website, zonder app en zonder account, en betaalt in de winkel. Je geeft je bagage af bij ons personeel en haalt die ook weer op bij ons personeel. Die blijft in een eigen ruimte met camerabewaking, alleen toegankelijk voor personeel."
       },
       "payment": {
         "question": "Hoe betaal ik?",

@@ -3,7 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'is-luggage-storage-safe-in-heraklion',
   publishedAt: '2026-09-11',
-  updatedAt: '2026-10-24',
+  updatedAt: '2026-10-30',
   content: {
     en: {
       title: 'Is Luggage Storage in Heraklion Safe? Here Is Exactly How It Works',
@@ -14,14 +14,14 @@ export const post: JournalPost = {
           type: 'p',
           text: 'Handing your suitcase to someone you have never met is a strange thing to do on holiday, and it is completely fair to want to know what happens next. Here is the honest answer, with no marketing language attached.',
         },
-        { type: 'h2', text: 'Your bags stay with people, not in an unattended locker' },
+        { type: 'h2', text: 'Your bags go to a person, not into a locker' },
         {
           type: 'p',
-          text: 'We are [a small, family-run luggage storage in the centre of Heraklion](/), not a wall of automated lockers in a corridor. Your luggage is handed over in person to someone who works here, kept indoors on our premises, and handed back to you in person. During opening hours there is always someone on site with the bags.',
+          text: 'We are [a small, family-run luggage storage in the centre of Heraklion](/), not a wall of automated lockers in a corridor. Your luggage is handed over in person to someone who works here, kept indoors on our premises, and handed back to you in person.',
         },
         {
           type: 'p',
-          text: 'Every bag gets a tag, you get a receipt, and the bags are kept in a locked room with CCTV until you come back for them.',
+          text: 'Every bag gets a tag, you get a receipt, and the bags are kept in a locked room with CCTV until you come back for them. That room is used only for luggage, and access is restricted to our staff.',
         },
         { type: 'h2', text: 'Every booking gets its own reference' },
         {
@@ -67,14 +67,14 @@ export const post: JournalPost = {
           type: 'p',
           text: 'Το να δώσετε τη βαλίτσα σας σε κάποιον που δεν έχετε ξαναδεί δεν είναι κάτι που κάνει κανείς με ελαφριά καρδιά, και είναι απολύτως λογικό να θέλετε να ξέρετε τι γίνεται μετά. Εδώ είναι η ειλικρινής απάντηση, χωρίς διαφημιστικά λόγια.',
         },
-        { type: 'h2', text: 'Οι αποσκευές σας μένουν με ανθρώπους, όχι σε αφύλακτη θυρίδα' },
+        { type: 'h2', text: 'Δίνετε τις αποσκευές σας σε άνθρωπο, όχι σε θυρίδα' },
         {
           type: 'p',
-          text: 'Είμαστε [ένας μικρός οικογενειακός χώρος φύλαξης αποσκευών στο κέντρο του Ηρακλείου](/), όχι ένας τοίχος με αυτόματες θυρίδες σε κάποιον διάδρομο. Οι αποσκευές σας παραδίδονται από χέρι σε χέρι σε άνθρωπο που δουλεύει εδώ, φυλάσσονται σε εσωτερικό χώρο και σας επιστρέφονται ξανά προσωπικά. Τις ώρες λειτουργίας υπάρχει πάντα κάποιος στον χώρο μαζί με τις αποσκευές.',
+          text: 'Είμαστε [ένας μικρός οικογενειακός χώρος φύλαξης αποσκευών στο κέντρο του Ηρακλείου](/), όχι ένας τοίχος με αυτόματες θυρίδες σε κάποιον διάδρομο. Οι αποσκευές σας παραδίδονται από χέρι σε χέρι σε άνθρωπο που δουλεύει εδώ, φυλάσσονται σε εσωτερικό χώρο και σας επιστρέφονται ξανά προσωπικά.',
         },
         {
           type: 'p',
-          text: 'Κάθε αποσκευή παίρνει ετικέτα, εσείς παίρνετε απόδειξη, και οι αποσκευές φυλάσσονται σε κλειδωμένο χώρο με κάμερες ασφαλείας μέχρι να επιστρέψετε να τις πάρετε.',
+          text: 'Κάθε αποσκευή παίρνει ετικέτα, εσείς παίρνετε απόδειξη, και οι αποσκευές φυλάσσονται σε κλειδωμένο χώρο με κάμερες ασφαλείας μέχρι να επιστρέψετε να τις πάρετε. Ο χώρος αυτός χρησιμοποιείται μόνο για αποσκευές και η πρόσβαση επιτρέπεται μόνο στο προσωπικό μας.',
         },
         { type: 'h2', text: 'Κάθε κράτηση έχει τον δικό της κωδικό' },
         {

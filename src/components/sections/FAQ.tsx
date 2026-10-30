@@ -7,6 +7,7 @@ export const FAQ_KEYS = [
   'specialItems',
   'security',
   'lockers',
+  'independent',
   'payment',
   'discount',
   'longStay',

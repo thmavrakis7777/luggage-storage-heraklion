@@ -104,6 +104,7 @@ export default async function LocaleLayout({
   const t = await getTranslations({ locale: locale as Locale, namespace: 'meta' });
   const tNav = await getTranslations({ locale: locale as Locale, namespace: 'nav' });
   const tPricing = await getTranslations({ locale: locale as Locale, namespace: 'pricing' });
+  const tFacts = await getTranslations({ locale: locale as Locale, namespace: 'facts' });
   const prices = Object.values(PRICE_PER_DAY_CENTS);
 
   const jsonLd = {
@@ -111,6 +112,7 @@ export default async function LocaleLayout({
     '@type': 'SelfStorage',
     name: business.name,
     description: t('description'),
+    disambiguatingDescription: tFacts('type'),
     url: `${siteUrl}/${locale}`,
     image: `${siteUrl}/logo.jpg`,
     telephone: business.phone,

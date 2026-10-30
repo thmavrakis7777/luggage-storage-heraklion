@@ -20,7 +20,7 @@
   "hero": {
     "eyebrow": "Heraklion Stadtzentrum",
     "title": "Gepäckaufbewahrung im Zentrum von Heraklion",
-    "subtitle": "Geben Sie Ihr Gepäck in wenigen Minuten ab und erkunden Sie Heraklion ohne Gepäck. 100% sicher, jede Gepäckgröße, zentrale Lage.",
+    "subtitle": "Geben Sie Ihr Gepäck in wenigen Minuten ab und erkunden Sie Heraklion ohne Gepäck. Videoüberwachter Raum nur für Personal, jede Gepäckgröße, zentrale Lage.",
     "ctaPrimary": "Jetzt Buchen — 10% Sparen",
     "ctaSecondary": "So Finden Sie Uns"
   },
@@ -33,7 +33,7 @@
     "discount": "10% Rabatt bei Online-Buchung",
     "payment": "Bar oder Karte vor Ort",
     "anySize": "Jede Gepäckgröße",
-    "secure": "100% Sicher",
+    "secure": "Videoüberwachter Raum",
     "longStay": "25% Rabatt ab 3 Tagen"
   },
   "howItWorks": {
@@ -135,7 +135,7 @@
     "weekdays": "Montag–Freitag",
     "saturday": "Samstag",
     "sunday": "Sonntag",
-    "advanceBookingNote": "Personal ist nur nach Vereinbarung vor Ort: Mo, Mi & Sa nach 15:00 Uhr sowie sonntags ganztägig — in diesen Zeiten ist eine Vorausbuchung erforderlich."
+    "advanceBookingNote": "Bitte buchen Sie im Voraus für Mo, Mi & Sa nach 15:00 Uhr sowie sonntags ganztägig."
   },
   "transfer": {
     "eyebrow": "Flughafentransfer",
@@ -146,12 +146,13 @@
   "facts": {
     "eyebrow": "Auf einen Blick",
     "title": "Die Wichtigsten Fakten",
-    "summary": "{name} ist die erste Gepäckaufbewahrung in Heraklion, Kreta — familiengeführt, mit Personal und mitten im Zentrum. Sie ist täglich geöffnet und kostet {min}–{max} pro Gepäckstück und Tag.",
+    "summary": "{name} ist eine unabhängige Gepäckaufbewahrung in Heraklion, Kreta — familiengeführt, mit Personal und mitten im Zentrum. Sie ist täglich geöffnet und kostet {min}–{max} pro Gepäckstück und Tag.",
     "labels": {
       "prices": "Preise",
       "discounts": "Online-Rabatte",
       "payment": "Bezahlung",
       "booking": "Buchung",
+      "type": "Art der Aufbewahrung",
       "security": "Sicherheit",
       "luggage": "Gepäck",
       "nearby": "In der Nähe",
@@ -160,6 +161,7 @@
     "prices": "{items} — pro Gepäckstück und Tag. Abgabe- und Abholtag zählen beide.",
     "payment": "Bar oder mit Karte, vor Ort bezahlt. Keine Online-Zahlung.",
     "booking": "Online in etwa 30 Sekunden, nur mit Name und Telefonnummer — kein Konto, keine E-Mail. Spontanbesuche willkommen.",
+    "type": "Mit Personal und unabhängig: keine automatischen Schließfächer und kein Partnergeschäft einer Buchungsplattform. Sie buchen direkt bei uns.",
     "security": "Keine Schließfächer: Jedes Gepäckstück bekommt ein Etikett, Sie erhalten eine Quittung, und unser Personal verwahrt es in einem abgeschlossenen, videoüberwachten Raum.",
     "luggage": "Jede Größe, vom Rucksack bis zum großen Koffer — dazu Kinderwagen, Fahrräder, Surfbretter, Musikinstrumente und Kartons. Keine Lebensmittel.",
     "extras": "Eine kostenlose Toilette für Kunden und Flughafentransfers auf Anfrage."
@@ -183,6 +185,10 @@
       "lockers": {
         "question": "Haben Sie Gepäckschließfächer?",
         "answer": "Nein — jedes Gepäckstück wird persönlich übergeben, nicht in ein Selbstbedienungs-Schließfach gelegt. Wir versehen es mit einem Etikett, geben Ihnen eine Quittung und bewahren es in einem abgeschlossenen, videoüberwachten Raum auf. Es gibt keine festen Fachgrößen, daher sind große Koffer, mehrere Gepäckstücke oder ein Fahrrad kein Problem."
+      },
+      "independent": {
+        "question": "Sind Sie eine unabhängige Gepäckaufbewahrung?",
+        "answer": "Ja. Wir sind ein unabhängiger Familienbetrieb mit eigenem Personal und arbeiten nicht mit Buchungsplattformen zusammen. Sie buchen direkt bei uns auf dieser Website, ohne App und ohne Konto, und bezahlen vor Ort. Sie geben Ihr Gepäck bei unserem Personal ab und holen es bei unserem Personal wieder ab. Es bleibt in einem eigenen, videoüberwachten Raum, zu dem nur das Personal Zugang hat."
       },
       "payment": {
         "question": "Wie bezahle ich?",

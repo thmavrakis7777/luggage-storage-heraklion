@@ -3,7 +3,7 @@ import type { JournalPost } from '../types';
 export const post: JournalPost = {
   slug: 'drop-off-your-bags-in-under-a-minute',
   publishedAt: '2026-09-11',
-  updatedAt: '2026-10-24',
+  updatedAt: '2026-10-30',
   content: {
     en: {
       title: 'How Long Does It Take to Drop Off Your Luggage? About a Minute',
@@ -46,7 +46,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Can you just turn up?' },
         {
           type: 'p',
-          text: 'Yes. Walk-ins are welcome during normal opening hours and you do not need a reservation. Booking online simply takes 10% off the price and guarantees someone is there — which matters most during the appointment-only windows above.',
+          text: 'Yes. Walk-ins are welcome during normal opening hours and you do not need a reservation. Booking online simply takes 10% off the price and means someone is there to meet you — which matters most during the appointment-only windows above.',
         },
       ],
     },
@@ -91,7 +91,7 @@ export const post: JournalPost = {
         { type: 'h2', text: 'Μπορείτε απλώς να περάσετε;' },
         {
           type: 'p',
-          text: 'Ναι. Δεχόμαστε επισκέψεις χωρίς ραντεβού εντός του κανονικού ωραρίου και δεν χρειάζεται κράτηση. Η online κράτηση απλώς σας δίνει 10% έκπτωση και εξασφαλίζει ότι κάποιος θα είναι εκεί — κάτι που μετράει περισσότερο στα παραπάνω διαστήματα που λειτουργούν κατόπιν ραντεβού.',
+          text: 'Ναι. Δεχόμαστε επισκέψεις χωρίς ραντεβού εντός του κανονικού ωραρίου και δεν χρειάζεται κράτηση. Η online κράτηση απλώς σας δίνει 10% έκπτωση και σημαίνει ότι κάποιος θα είναι εκεί για να σας υποδεχτεί — κάτι που μετράει περισσότερο στα παραπάνω διαστήματα που λειτουργούν κατόπιν ραντεβού.',
         },
       ],
     },
