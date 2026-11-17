@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { getSupabaseClient } from '@/lib/supabase';
 
 /**
@@ -10,10 +10,22 @@ import { getSupabaseClient } from '@/lib/supabase';
  * Read-only: it asks the same lookup function the success page uses for a
  * reference no booking can have (real ones look like `XX-XXXXXX`), so no
  * booking is read or written and nothing is sent to Telegram.
+ *
+ * When CRON_SECRET is set, Vercel sends `Authorization: Bearer $CRON_SECRET`
+ * with its cron calls and any other caller gets 401 (an uptime monitor must
+ * then send the same header).
  */
 const PROBE_REFERENCE = 'health-check';
 
-export async function GET() {
+export async function GET(req: NextRequest) {
+  const secret = process.env.CRON_SECRET;
+  if (secret && req.headers.get('authorization') !== `Bearer ${secret}`) {
+    return NextResponse.json(
+      { error: 'unauthorized' },
+      { status: 401, headers: { 'Cache-Control': 'no-store' } },
+    );
+  }
+
   try {
     const { error } = await getSupabaseClient().rpc('get_booking_by_reference', {
       p_reference: PROBE_REFERENCE,
